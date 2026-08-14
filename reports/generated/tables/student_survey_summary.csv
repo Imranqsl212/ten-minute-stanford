@@ -1,0 +1,14 @@
+metric,label,count,denominator,share,notes
+reported_late,Said distance had made them late,14,27,0.5185185185185185,Mutually exclusive response category
+close_call,Said it had been close,6,27,0.2222222222222222,Mutually exclusive response category
+never_late,Said distance had never made them late,7,27,0.25925925925925924,Mutually exclusive response category
+late_or_close_call,Reported lateness or a close call,20,27,0.7407407407407407,Combines the two yes responses and the close-call response
+selected_walking,Selected walking,21,27,0.7777777777777778,Respondents could select more than one mode
+selected_biking,Selected biking,11,27,0.4074074074074074,Respondents could select more than one mode
+selected_e-scooter,Selected e-scooter,5,27,0.18518518518518517,Respondents could select more than one mode
+transition_may_exceed_10min,Reported a usual transition time or range extending beyond ten minutes,19,23,0.8260869565217391,Self-reported estimate; does not imply the respondent had a ten-minute gap
+reported_exact_ten_minute_gap,Explicitly reported a current ten-minute class gap,5,23,0.21739130434782608,Based on the respondent's free-text course-pair answer
+reported_concrete_consequence,Described a concrete consequence beyond arrival time,11,23,0.4782608695652174,Manually coded from the expanded impact question
+missed_class_content,Reported missing class content or an announcement,6,23,0.2608695652173913,Mutually exclusive manually coded impact category
+course_choice_effect,Reported that distance affected a course choice,2,23,0.08695652173913043,Mutually exclusive manually coded impact category
+skipped_adjacent_activity,"Reported skipping office hours, a study group or lunch",3,23,0.13043478260869565,Mutually exclusive manually coded impact category

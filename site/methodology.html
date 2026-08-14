@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Methods and limitations for the Ten-Minute Stanford schedule analysis.">
+  <meta name="theme-color" content="#8c1515">
+  <title>Methodology | Ten-Minute Stanford</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body class="reference-layout">
+  <div class="reading-progress" aria-hidden="true"><span></span></div>
+  <div class="draft-banner">Publication prototype <span aria-hidden="true">&middot;</span> Transparent methods</div>
+
+  <header class="site-header compact-header">
+    <div class="utility-bar">
+      <span>Independent analysis</span>
+      <span>Winter 2026 snapshot</span>
+    </div>
+    <a class="masthead" href="index.html">The Ten-Minute Stanford</a>
+    <nav class="section-nav" aria-label="Project pages">
+      <a href="index.html">Story</a>
+      <a class="active" href="methodology.html">Methodology</a>
+      <a href="source-log.html">Sources</a>
+      <a href="data/analysis_summary.json">Data</a>
+    </nav>
+  </header>
+
+  <main class="reference-main">
+    <article class="reference-page">
+      <header class="reference-header">
+        <p class="eyebrow">How the analysis works</p>
+        <h1>Methodology</h1>
+        <p class="dek">A reproducible model of possible ten-minute transitions in Stanford's published Winter 2026 schedule.</p>
+        <div class="reference-meta">
+          <span>Snapshots: Aug. 3 and 5, 2026</span>
+          <span>Unit: potential meeting pair</span>
+          <span>Not a student-level analysis</span>
+        </div>
+      </header>
+
+      <section>
+        <h2>Research question</h2>
+        <p>For pairs of physical class meetings scheduled ten minutes apart, what share of shortest walking- and bicycle-network routes fit inside that interval under stated speed assumptions?</p>
+        <aside class="data-callout">
+          <strong>The denominator is not students.</strong>
+          <p>The model counts possible ordered combinations of scheduled meetings. It does not observe co-enrollment, actual trips or late arrivals.</p>
+        </aside>
+      </section>
+
+      <section id="schedule-snapshot">
+        <h2>1. Schedule snapshot</h2>
+        <p>The collector discovered 253 subject codes and requested 579 mobile pages plus 253 public XML department queries from <a href="https://explorecourses.stanford.edu/">Stanford ExploreCourses</a>. The XML request follows the mentor-recommended, third-party <a href="https://github.com/jeremyephron/explore-courses-api/blob/master/explorecourses/course_connection.py">CourseConnection implementation</a>; its <a href="https://github.com/jeremyephron/explore-courses-api/blob/master/explorecourses/classes.py">XML classes</a> served as a field reference. This project parses Stanford's current <code>xml-20200810</code> response directly, and the <a href="data/source_manifest.json">source manifest</a> publishes every exact request URL and hash.</p>
+        <p>The XML snapshot returned <a href="data/claim_audit.json">27,197 Winter sections and enrollment/capacity fields for every section</a>. Complete schedules were expanded to <a href="data/validation.json">6,876 meeting-day rows</a>. All 27,197 class numbers matched the earlier mobile snapshot; 6,868 of 6,871 previously accepted mobile meeting rows matched XML exactly. Three differences exposed HTML parsing errors, while XML supplied corrected values for five old anomaly rows. XML is therefore the canonical source for dates, weekdays, times and rooms.</p>
+        <p>Rows were eligible when they represented non-cancelled, in-person meetings from Monday through Friday with a queryable room label, start and end time, and valid date range. Remote listings, weekend meetings and listings without a queryable room label were not used.</p>
+        <dl class="number-grid">
+          <div><dt>6,026</dt><dd>eligible listing-day rows</dd></div>
+          <div><dt>5,848</dt><dd>rows mapped to facilities</dd></div>
+          <div><dt>97.05%</dt><dd>row-level mapping rate</dd></div>
+        </dl>
+      </section>
+
+      <section id="walking-network">
+        <h2>2. Rooms and cross-listings</h2>
+        <p>The analysis queried 384 unique room labels against Stanford Campus Map. It retained 138 exact matches and 221 audited fallback matches; 25 labels covering 178 otherwise eligible rows remained unresolved and were not assigned guessed coordinates.</p>
+        <p>Cross-listed courses can create several administrative records for one physical class. Records sharing room, facility, weekday, start and end time, start date and end date were counted once. This collapsed 1,394 duplicate listings and left 4,454 mapped physical meeting-day rows.</p>
+        <p>Results are aggregated at the Campus Map facility level. Bishop Auditorium and multiple Lathrop room labels, for example, resolve to facility <code>08-350</code> and are reported under its official building label, Lathrop Library.</p>
+      </section>
+
+      <section>
+        <h2>3. Walking network</h2>
+        <p>An OpenStreetMap snapshot retrieved through Overpass supplied ways whose OSM access tags permit walking. It reports an OSM database timestamp of <code>2026-08-03T10:23:14Z</code>. Ways tagged indoor or as corridors were excluded. <code>foot=no</code> and <code>foot=private</code> were excluded; <code>access=no</code> and <code>access=private</code> were excluded unless <code>foot</code> explicitly allowed walking. Retained segments were treated as undirected.</p>
+        <p>The retained network initially contained 116,885 nodes and 133,653 unique undirected graph edges across 222 components. Routing used the largest connected component, with 114,337 nodes and 131,249 unique edges, to prevent facilities from snapping to tiny disconnected fragments. All 75 facility coordinates were snapped to this component; the median snap distance was 18.4 meters and the maximum was 61.0 meters. Dijkstra's algorithm then calculated the shortest route for every ordered facility pair. Straight-line distances from each facility point to its nearest network node were added, but those connectors are not path-verified and may cross barriers.</p>
+        <aside class="data-callout muted-callout">
+          <strong>This is not an accessibility map.</strong>
+          <p>Neither graph was validated for wheelchair travel or accessible entrances, elevators, indoor paths, construction or crowding. Of <a href="data/validation.json">30,835 highway ways in the saved OSM snapshot, 51 (0.17%) have a <code>wheelchair</code> tag and 128 (0.42%) have an <code>incline</code> tag</a>. OSM documents <a href="https://wiki.openstreetmap.org/wiki/Key:wheelchair">wheelchair access</a> and <a href="https://wiki.openstreetmap.org/wiki/Key:incline">incline</a> as explicit tags; an absent tag is not evidence that a way is inaccessible or flat. No wheelchair time is reported. Use Stanford's <a href="https://maps.stanford.edu/ada/">Campus Access Guide</a> for building-specific information.</p>
+        </aside>
+      </section>
+
+      <section id="bicycle-network">
+        <h2>4. Bicycle network</h2>
+        <p>The directional bicycle graph excludes steps, indoor ways, mapped bicycle prohibitions and restricted access without a bicycle override. Footways and pedestrian ways require explicit bicycle permission. Generic and bicycle-specific one-way tags are respected.</p>
+        <p>The largest weakly connected component contains 84,225 nodes and 166,688 directed edges. All 75 facilities snapped within 75.9 meters and all 5,625 directed facility pairs connected. Facility points are not bike racks, and the model does not include finding, parking or walking a bicycle.</p>
+      </section>
+
+      <section>
+        <h2>5. Potential transitions and slots</h2>
+        <p>For each physical meeting, the code joined every different meeting on the same weekday that began exactly ten minutes after the first ended and had at least one actual occurrence of that weekday inside the overlap of their active date ranges.</p>
+        <p>The date-overlap join initially produced 284,226 pair rows. It excluded 1 same-class-number pair-date row linking two consecutive CHEMENG 20 records, leaving 284,225 rows before recurrence deduplication. It then collapsed 1,146 repeated date-block rows. This left 283,079 ordered potential pairs, all connected in both networks.</p>
+        <p>The analysis groups pairs into 25 actual end-to-start time slots and 92 weekday-slot combinations. XML enrollment totals describe scheduled section-seat instances around a slot, not unique students or observed routes. Pairs remain equally weighted because class size alone cannot reveal co-enrollment between two sections.</p>
+        <p>The four <a href="data/course_transition_cases.csv">course-level cases</a> are selected by fixed rules near the overall median, 9.5 minutes, 12 minutes and the longest modeled route. They illustrate the range and are not a sample of observed student schedules.</p>
+      </section>
+
+      <section>
+        <h2>6. Components, subjects and enrollment</h2>
+        <h3>Lecture and discussion timing</h3>
+        <p><a href="https://advising.stanford.edu/current-students/advising-student-handbook/course-catalog">Stanford Academic Advising defines <code>LEC</code> as a lecture course and <code>DIS</code> as the discussion-section component of a lecture course</a>. The component analysis uses eligible section-listing meeting-day rows before room matching: 2,035 LEC rows and 911 DIS rows. A section scheduled on several weekdays contributes one row per listed weekday, so these counts describe the timetable rather than unique students or attendance.</p>
+        <p>Start times were grouped into five fixed bins, and median times plus weekday shares were calculated from the same rows. Inspect the <a href="data/component_time_summary.csv">component time table</a> and <a href="data/component_day_summary.csv">component weekday table</a>.</p>
+        <p>The route comparison filters the main pair table to the 62,525 possible pairs for which both meetings are coded <code>LEC</code> or <code>DIS</code>. It reports counts, median and 90th-percentile route times, and shares within and above ten minutes for all four directional component combinations. These are still equally weighted possible meeting pairs, not observed student transitions. Inspect the <a href="data/component_transition_summary.csv">component transition table</a>.</p>
+
+        <h3>Subject-area locations</h3>
+        <p>The ExploreCourses index supplied 253 subject code-label pairs. Stanford's <a href="https://siris.stanford.edu/sites/g/files/sbiybj16456/files/media/file/common-terms-in-siris-student-analytics.pdf">SIRIS terminology</a> says a subject usually represents a domain of study but can also identify a curricular category. The analysis therefore says “subject area,” not “department.”</p>
+        <p>The <a href="data/department_location_summary.csv">location table</a> groups the 5,848 mapped section-listing meeting-day rows by published subject code and Campus Map facility. Cross-listed listings remain under each published subject code; the 178 eligible rows with unresolved room labels are excluded from this geographic comparison.</p>
+        <p>Every deduplicated physical meeting also retains all of its published subject codes. Each possible pair is attributed to every subject represented at its origin for outgoing measures and every subject represented at its destination for incoming measures. The <a href="data/subject_transition_feasibility.csv">subject transition table</a> covers 161 subject areas and reports counts, route-time summaries and shares within and above ten minutes in both directions. Because a cross-listed meeting can belong to several subject codes, counts across subject rows do not sum to the campus-wide denominator.</p>
+
+        <h3>Large-enrollment screen</h3>
+        <p><a href="https://studentservices.stanford.edu/my-academics/enroll-classes/enrollment-troubleshooting">Stanford Student Services says cross-listed classes are typically combined at the same time and place</a>. Records grouped into one physical meeting retain their combined course labels and summed reported section enrollment.</p>
+        <p>The screen keeps different-building combinations in which both meetings report at least 100 enrolled, then collapses identical course-time-building combinations recurring across weekdays. It produced <a href="data/high_enrollment_transitions.csv">187 combinations, of which 42 exceed ten modeled minutes at 3 mph</a>. The smaller enrollment demonstrates only that both meetings clear the threshold; it is not co-enrollment, traffic or proof that anyone took both.</p>
+      </section>
+
+      <section>
+        <h2>7. Student survey</h2>
+        <p>The project compiles 27 responses from people the authors identify as Stanford students. The <a href="https://docs.google.com/spreadsheets/d/1gF9X8H8e44hamMNEyIAbUJVcV6Bubre1K2IJJMwd5ZI/edit?gid=1824059912#gid=1824059912">linked Google Sheet</a> exported 26 response rows on Aug. 12, 2026. One response retained from the earlier reporting file was absent from that export and is marked as a separate source batch. Unique respondent IDs leave 27 rows; the reporting file contains no names or contact information.</p>
+        <p>Four respondents received the original questionnaire and 23 received expanded follow-up questions. Fourteen of 27 selected a yes response to the lateness question, six selected the close-call response and seven selected never. Respondents could select more than one mode: 21 selected walking, 11 biking and five an e-scooter.</p>
+        <p>The authors manually coded each expanded open-text impact answer into one mutually exclusive category. Eleven of 23 described a concrete consequence: six reported missing class content or an announcement, two reported a course-choice effect and three reported skipping office hours, a study group or lunch. Self-reported course pairs, class gaps and travel times were not independently verified or used in the route model. The <a href="data/student_survey_summary.csv">published summary table</a> is recalculated from the normalized reporting file and checked again by the publication audit.</p>
+      </section>
+
+      <section>
+        <h2>8. Time scenarios</h2>
+        <p>Network distance was converted to time at 2, 3 and 4 miles per hour. These are sensitivity tests, not measured student groups. A second scenario reserves two of the ten minutes for leaving and entering buildings.</p>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Walking scenario</th><th>Route only</th><th>With 2-minute building allowance</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>2 mph</td><td>56.2%</td><td>41.9%</td></tr>
+              <tr><td>3 mph</td><td>82.5%</td><td>69.0%</td></tr>
+              <tr><td>4 mph</td><td>94.1%</td><td>85.5%</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>The same pair denominator was also tested with 12- and 15-minute time budgets. The 12-minute case is hypothetical. The 15-minute case is a historical comparison with the AY 2021-22 meeting pattern documented in <a href="https://stanforddaily.com/2021/09/14/overlapping-class-meeting-times-leave-students-stressed/">prior Daily reporting</a> and its <a href="https://docs.google.com/spreadsheets/d/1Gxv03c2yyypmCF1Hot5VJ9f3Wi5LADMyjLsmiABhNsQ/edit?gid=1166637319#gid=1166637319">linked schedule sheet</a>; it is not a current policy claim or an analysis of 2021 course locations.</p>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Passing-period budget at 3 mph</th><th>Route only</th><th>With 2-minute building allowance</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>10 minutes</td><td>82.5%</td><td>69.0%</td></tr>
+              <tr><td>12 minutes</td><td>89.9%</td><td>82.5%</td></tr>
+              <tr><td>15 minutes</td><td>97.3%</td><td>93.1%</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p><a href="data/passing_period_scenarios.csv">Inspect all passing-period, speed and building-allowance combinations.</a></p>
+        <p>Bicycle distances were tested at 6, 8 and 10 mph. At 8 mph, <a href="data/bicycle_speed_summary.csv">99.9% fit route-only and 99.4% fit with two minutes reserved</a> for handling and building transitions. These are assumptions, not measured rider groups. <a href="https://transportation.stanford.edu/getting-stanford/bike/education/comply-bike-laws">Stanford publishes a 10 mph maximum in the central Pedestrian Zone</a>.</p>
+      </section>
+
+      <section>
+        <h2>Principal limitations</h2>
+        <ul class="limitation-list">
+          <li>No student schedules, co-enrollment or observed trips are available.</li>
+          <li>Section enrollment is available, but pairs cannot be weighted as student flows without co-enrollment.</li>
+          <li>Published rooms and times can change, and Axess may differ from the snapshot.</li>
+          <li>Campus Map points are not verified doors.</li>
+          <li>Straight facility-to-network connectors are not path-verified and may cross barriers.</li>
+          <li>Shortest-network routes may differ from routes people choose.</li>
+          <li>Unmapped rooms can introduce geographic bias, even though all mapped facilities connected to the retained graph.</li>
+          <li>Facility-level aggregation can combine named spaces inside one Campus Map facility.</li>
+          <li>Indoor and corridor tags are filtered when present, but OSM tags can be incomplete or incorrect.</li>
+          <li>The bicycle model omits bike availability, racks, parking, mounting and dismounting.</li>
+          <li>Neither network is a wheelchair routing model.</li>
+          <li>The model does not measure lateness, buses, weather or instructor behavior.</li>
+          <li>The 27 survey responses are a convenience sample; respondent identities and self-reported course details were not independently verified, and the results cannot estimate campus-wide prevalence.</li>
+        </ul>
+      </section>
+
+      <section class="download-panel">
+        <p class="eyebrow">Audit the work</p>
+        <h2>Downloads</h2>
+        <div class="method-links">
+          <a href="data/analysis_summary.json">Analysis summary</a>
+          <a href="data/validation.json">Validation report</a>
+          <a href="data/publication_audit.json">Publication audit</a>
+          <a href="data/claim_audit.json">Claim ledger</a>
+          <a href="data/source_manifest.json">Source manifest</a>
+          <a href="data/speed_summary.csv">Speed scenarios</a>
+          <a href="data/bicycle_speed_summary.csv">Bicycle scenarios</a>
+          <a href="data/passing_period_scenarios.csv">Passing-period scenarios</a>
+          <a href="data/time_slot_summary.csv">Actual time slots</a>
+          <a href="data/weekday_time_slot_summary.csv">Weekday slots</a>
+          <a href="data/component_time_summary.csv">Lecture and discussion times</a>
+          <a href="data/component_day_summary.csv">Lecture and discussion weekdays</a>
+          <a href="data/component_transition_summary.csv">Lecture and discussion transitions</a>
+          <a href="data/department_location_summary.csv">Subject-area locations</a>
+          <a href="data/subject_transition_feasibility.csv">Subject-area transition feasibility</a>
+          <a href="data/high_enrollment_transitions.csv">Large-enrollment screen</a>
+          <a href="data/student_survey_summary.csv">27-response survey summary</a>
+          <a href="data/course_transition_cases.csv">Four course cases</a>
+          <a href="data/course_transition_examples.csv">Course examples</a>
+        </div>
+      </section>
+
+      <footer class="reference-footer">
+        <a href="index.html">Back to the story</a>
+        <a href="source-log.html">Review the source log</a>
+      </footer>
+    </article>
+  </main>
+</body>
+</html>

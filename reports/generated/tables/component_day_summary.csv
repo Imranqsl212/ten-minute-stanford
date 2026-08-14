@@ -1,0 +1,11 @@
+component,day,section_listing_meeting_day_rows,distinct_class_sections,reported_enrollment_seat_instances,component_label,share_of_component_rows,weekday_order
+DIS,Mon,18,18,89.0,Discussion,0.019758507135016465,0
+DIS,Tue,102,102,1256.0,Discussion,0.1119648737650933,1
+DIS,Wed,191,191,768.0,Discussion,0.20965971459934138,2
+DIS,Thu,345,344,2040.0,Discussion,0.3787047200878156,3
+DIS,Fri,255,255,1178.0,Discussion,0.27991218441273324,4
+LEC,Mon,452,452,14349.0,Lecture,0.2221130221130221,0
+LEC,Tue,463,460,12232.0,Lecture,0.22751842751842752,1
+LEC,Wed,473,471,15021.0,Lecture,0.23243243243243245,2
+LEC,Thu,449,449,12118.0,Lecture,0.22063882063882065,3
+LEC,Fri,198,188,8094.0,Lecture,0.0972972972972973,4

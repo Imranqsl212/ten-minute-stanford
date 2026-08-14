@@ -1,0 +1,11 @@
+component,time_bin,section_listing_meeting_day_rows,distinct_class_sections,reported_enrollment_seat_instances,component_label,share_of_component_rows,time_bin_order
+DIS,Before 10:30 a.m.,95,90,494.0,Discussion,0.10428100987925357,0
+DIS,10:30-11:59 a.m.,198,185,1393.0,Discussion,0.21734357848518113,1
+DIS,Noon-2:29 p.m.,190,179,1573.0,Discussion,0.20856201975850713,2
+DIS,2:30-4:29 p.m.,208,204,1046.0,Discussion,0.2283205268935236,3
+DIS,4:30 p.m. or later,220,218,825.0,Discussion,0.2414928649835346,4
+LEC,Before 10:30 a.m.,364,166,11179.0,Lecture,0.17886977886977887,0
+LEC,10:30-11:59 a.m.,585,289,17752.0,Lecture,0.28746928746928746,1
+LEC,Noon-2:29 p.m.,593,317,19302.0,Lecture,0.2914004914004914,2
+LEC,2:30-4:29 p.m.,360,201,9601.0,Lecture,0.1769041769041769,3
+LEC,4:30 p.m. or later,133,78,3980.0,Lecture,0.06535626535626536,4

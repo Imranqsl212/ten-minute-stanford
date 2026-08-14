@@ -1,0 +1,385 @@
+room,match_status,match_label,facility_id,latitude,longitude,address,candidate_count,query_used
+100-101K,exact,100-101k,01-100,37.42808165,-122.17096679,"450 jane stanford way, bldg. 100 stanford",1,100-101K
+110-101,exact,110-101,01-110,37.42799043,-122.1705374,"450 jane stanford way, bldg. 110 stanford",1,110-101
+110-112,exact,110-112,01-110,37.42799043,-122.1705374,"450 jane stanford way, bldg. 110 stanford",1,110-112
+110-114,exact,110-114,01-110,37.42799043,-122.1705374,"450 jane stanford way, bldg. 110 stanford",1,110-114
+120-101,exact,120-101,01-120,37.42831533,-122.16949722,"450 jane stanford way, bldg. 120 stanford",1,120-101
+120-215,exact,120-215,01-120,37.42831533,-122.16949722,"450 jane stanford way, bldg. 120 stanford",1,120-215
+120-314,exact,120-314,01-120,37.42831533,-122.16949722,"450 jane stanford way, bldg. 120 stanford",1,120-314
+120-410,exact,120-410,01-120,37.42831533,-122.16949722,"450 jane stanford way, bldg. 120 stanford",1,120-410
+120-414,exact,120-414,01-120,37.42831533,-122.16949722,"450 jane stanford way, bldg. 120 stanford",1,120-414
+120-452,fallback,building 120,01-120,37.42831533,-122.16949722,"450 jane stanford way, bldg. 120 stanford",1,Building 120
+120-59,exact,120-59,01-120,37.42831533,-122.16949722,"450 jane stanford way, bldg. 120 stanford",1,120-59
+120-S40,exact,120-s40,01-120,37.42831533,-122.16949722,"450 jane stanford way, bldg. 120 stanford",1,120-S40
+160-120,exact,160-120,01-160,37.42826985,-122.16901666,"450 jane stanford way, bldg. 160 stanford",1,160-120
+160-123,exact,160-123,01-160,37.42826985,-122.16901666,"450 jane stanford way, bldg. 160 stanford",1,160-123
+160-124,exact,160-124,01-160,37.42826985,-122.16901666,"450 jane stanford way, bldg. 160 stanford",1,160-124
+160-125,exact,160-125,01-160,37.42826985,-122.16901666,"450 jane stanford way, bldg. 160 stanford",1,160-125
+160-127,exact,160-127,01-160,37.42826985,-122.16901666,"450 jane stanford way, bldg. 160 stanford",1,160-127
+160-129,fallback,building 160,01-160,37.42826985,-122.16901666,"450 jane stanford way, bldg. 160 stanford",1,Building 160
+160-314,exact,160-314,01-160,37.42826985,-122.16901666,"450 jane stanford way, bldg. 160 stanford",1,160-314
+160-315,exact,160-315,01-160,37.42826985,-122.16901666,"450 jane stanford way, bldg. 160 stanford",1,160-315
+160-317,exact,160-317,01-160,37.42826985,-122.16901666,"450 jane stanford way, bldg. 160 stanford",1,160-317
+160-318,exact,160-318,01-160,37.42826985,-122.16901666,"450 jane stanford way, bldg. 160 stanford",1,160-318
+160-319,exact,160-319,01-160,37.42826985,-122.16901666,"450 jane stanford way, bldg. 160 stanford",1,160-319
+160-321,exact,160-321,01-160,37.42826985,-122.16901666,"450 jane stanford way, bldg. 160 stanford",1,160-321
+160-322,exact,160-322,01-160,37.42826985,-122.16901666,"450 jane stanford way, bldg. 160 stanford",1,160-322
+160-323,exact,160-323,01-160,37.42826985,-122.16901666,"450 jane stanford way, bldg. 160 stanford",1,160-323
+160-325,exact,160-325,01-160,37.42826985,-122.16901666,"450 jane stanford way, bldg. 160 stanford",1,160-325
+160-326,exact,160-326,01-160,37.42826985,-122.16901666,"450 jane stanford way, bldg. 160 stanford",1,160-326
+160-328,exact,160-328,01-160,37.42826985,-122.16901666,"450 jane stanford way, bldg. 160 stanford",1,160-328
+160-329,exact,160-329,01-160,37.42826985,-122.16901666,"450 jane stanford way, bldg. 160 stanford",1,160-329
+160-330,exact,160-330,01-160,37.42826985,-122.16901666,"450 jane stanford way, bldg. 160 stanford",1,160-330
+160-331,exact,160-331,01-160,37.42826985,-122.16901666,"450 jane stanford way, bldg. 160 stanford",1,160-331
+160-332,exact,160-332,01-160,37.42826985,-122.16901666,"450 jane stanford way, bldg. 160 stanford",1,160-332
+160-B35,exact,160-b35,01-160,37.42826985,-122.16901666,"450 jane stanford way, bldg. 160 stanford",1,160-B35
+160-B37,exact,160-b37,01-160,37.42826985,-122.16901666,"450 jane stanford way, bldg. 160 stanford",1,160-B37
+160-B40,exact,160-b40,01-160,37.42826985,-122.16901666,"450 jane stanford way, bldg. 160 stanford",1,160-B40
+20-21B,exact,20-21b,01-020,37.42746758,-122.16907304,"450 jane stanford way, bldg. 20 stanford",1,20-21B
+20-21G,exact,20-21g,01-020,37.42746758,-122.16907304,"450 jane stanford way, bldg. 20 stanford",1,20-21G
+20-22K,exact,20-22k,01-020,37.42746758,-122.16907304,"450 jane stanford way, bldg. 20 stanford",1,20-22K
+200-002,exact,200-002,01-200,37.42807156,-122.16855824,"450 jane stanford way, bldg. 200 stanford",1,200-002
+200-013,exact,200-013,01-200,37.42807156,-122.16855824,"450 jane stanford way, bldg. 200 stanford",1,200-013
+200-015,exact,200-015,01-200,37.42807156,-122.16855824,"450 jane stanford way, bldg. 200 stanford",1,200-015
+200-030,exact,200-030,01-200,37.42807156,-122.16855824,"450 jane stanford way, bldg. 200 stanford",1,200-030
+200-032,exact,200-032,01-200,37.42807156,-122.16855824,"450 jane stanford way, bldg. 200 stanford",1,200-032
+200-034,exact,200-034,01-200,37.42807156,-122.16855824,"450 jane stanford way, bldg. 200 stanford",1,200-034
+200-105,exact,200-105,01-200,37.42807156,-122.16855824,"450 jane stanford way, bldg. 200 stanford",1,200-105
+200-107,exact,200-107,01-200,37.42807156,-122.16855824,"450 jane stanford way, bldg. 200 stanford",1,200-107
+200-124,exact,200-124,01-200,37.42807156,-122.16855824,"450 jane stanford way, bldg. 200 stanford",1,200-124
+200-201,exact,200-201,01-200,37.42807156,-122.16855824,"450 jane stanford way, bldg. 200 stanford",1,200-201
+200-202,exact,200-202,01-200,37.42807156,-122.16855824,"450 jane stanford way, bldg. 200 stanford",1,200-202
+200-203,exact,200-203,01-200,37.42807156,-122.16855824,"450 jane stanford way, bldg. 200 stanford",1,200-203
+200-205,exact,200-205,01-200,37.42807156,-122.16855824,"450 jane stanford way, bldg. 200 stanford",1,200-205
+200-217,exact,200-217,01-200,37.42807156,-122.16855824,"450 jane stanford way, bldg. 200 stanford",1,200-217
+200-219,exact,200-219,01-200,37.42807156,-122.16855824,"450 jane stanford way, bldg. 200 stanford",1,200-219
+200-230,exact,200-230,01-200,37.42807156,-122.16855824,"450 jane stanford way, bldg. 200 stanford",1,200-230
+200-303,exact,200-303,01-200,37.42807156,-122.16855824,"450 jane stanford way, bldg. 200 stanford",1,200-303
+200-305,exact,200-305,01-200,37.42807156,-122.16855824,"450 jane stanford way, bldg. 200 stanford",1,200-305
+240-101,exact,240-101,01-240,37.42739711,-122.16874137,"450 jane stanford way, bldg. 240 stanford",1,240-101
+240-110,exact,240-110,01-240,37.42739711,-122.16874137,"450 jane stanford way, bldg. 240 stanford",1,240-110
+240-201,exact,240-201,01-240,37.42739711,-122.16874137,"450 jane stanford way, bldg. 240 stanford",1,240-201
+240-202,exact,240-202,01-240,37.42739711,-122.16874137,"450 jane stanford way, bldg. 240 stanford",1,240-202
+240-207,fallback,building 240,01-240,37.42739711,-122.16874137,"450 jane stanford way, bldg. 240 stanford",1,Building 240
+240-210,fallback,building 240,01-240,37.42739711,-122.16874137,"450 jane stanford way, bldg. 240 stanford",1,Building 240
+250-108,exact,250-108,01-250,37.42694623,-122.16889253,"450 jane stanford way, bldg. 250 stanford",1,250-108
+250-201,exact,250-201,01-250,37.42694623,-122.16889253,"450 jane stanford way, bldg. 250 stanford",1,250-201
+260-001,exact,260-001,01-260,37.42635992,-122.16914738,"450 jane stanford way, bldg. 260 stanford",1,260-001
+260-002,exact,260-002,01-260,37.42635992,-122.16914738,"450 jane stanford way, bldg. 260 stanford",1,260-002
+260-003,exact,260-003,01-260,37.42635992,-122.16914738,"450 jane stanford way, bldg. 260 stanford",1,260-003
+260-004,exact,260-004,01-260,37.42635992,-122.16914738,"450 jane stanford way, bldg. 260 stanford",1,260-004
+260-007,exact,260-007,01-260,37.42635992,-122.16914738,"450 jane stanford way, bldg. 260 stanford",1,260-007
+260-008,exact,260-008,01-260,37.42635992,-122.16914738,"450 jane stanford way, bldg. 260 stanford",1,260-008
+260-011,exact,260-011,01-260,37.42635992,-122.16914738,"450 jane stanford way, bldg. 260 stanford",1,260-011
+260-012,exact,260-012,01-260,37.42635992,-122.16914738,"450 jane stanford way, bldg. 260 stanford",1,260-012
+260-113,exact,260-113,01-260,37.42635992,-122.16914738,"450 jane stanford way, bldg. 260 stanford",1,260-113
+260-241,exact,260-241,01-260,37.42635992,-122.16914738,"450 jane stanford way, bldg. 260 stanford",1,260-241
+260-244,exact,260-244,01-260,37.42635992,-122.16914738,"450 jane stanford way, bldg. 260 stanford",1,260-244
+260-301,exact,260-301,01-260,37.42635992,-122.16914738,"450 jane stanford way, bldg. 260 stanford",1,260-301
+30-101,exact,30-101,01-030,37.42701665,-122.16922417,"450 jane stanford way, bldg. 30 stanford",1,30-101
+30-102,exact,30-102,01-030,37.42701665,-122.16922417,"450 jane stanford way, bldg. 30 stanford",1,30-102
+300-300,exact,300-300,01-300,37.42636354,-122.16968483,"450 jane stanford way, bldg. 300 stanford",1,300-300
+300-303,exact,300-303,01-300,37.42636354,-122.16968483,"450 jane stanford way, bldg. 300 stanford",1,300-303
+320-105,exact,320-105,01-320,37.42694141,-122.17188691,"450 jane stanford way, bldg. 320 stanford",1,320-105
+320-109,exact,320-109,01-320,37.42694141,-122.17188691,"450 jane stanford way, bldg. 320 stanford",1,320-109
+320-220,exact,320-220,01-320,37.42694141,-122.17188691,"450 jane stanford way, bldg. 320 stanford",1,320-220
+320-227,exact,320-227,01-320,37.42694141,-122.17188691,"450 jane stanford way, bldg. 320 stanford",1,320-227
+320-241,exact,320-241,01-320,37.42694141,-122.17188691,"450 jane stanford way, bldg. 320 stanford",1,320-241
+360-361A,exact,360-361a,01-360,37.4275543,-122.17174044,"450 jane stanford way, bldg. 360 stanford",1,360-361A
+370-370,exact,370-370,01-370,37.42800421,-122.17158967,"450 jane stanford way, bldg. 370 stanford",1,370-370
+380-380C,exact,380-380c,01-380,37.42866351,-122.17132774,"450 jane stanford way, bldg. 380 stanford",1,380-380C
+380-380D,exact,380-380d,01-380,37.42866351,-122.17132774,"450 jane stanford way, bldg. 380 stanford",1,380-380D
+380-380F,exact,380-380f,01-380,37.42866351,-122.17132774,"450 jane stanford way, bldg. 380 stanford",1,380-380F
+380-380W,exact,380-380w,01-380,37.42866351,-122.17132774,"450 jane stanford way, bldg. 380 stanford",1,380-380W
+380-380X,exact,380-380x,01-380,37.42866351,-122.17132774,"450 jane stanford way, bldg. 380 stanford",1,380-380X
+380-380Y,exact,380-380y,01-380,37.42866351,-122.17132774,"450 jane stanford way, bldg. 380 stanford",1,380-380Y
+380-381T,exact,380-381t,01-380,37.42866351,-122.17132774,"450 jane stanford way, bldg. 380 stanford",1,380-381T
+380-381U,exact,380-381u,01-380,37.42866351,-122.17132774,"450 jane stanford way, bldg. 380 stanford",1,380-381U
+40-41J,exact,40-41j,01-040,37.42687504,-122.16951609,"450 jane stanford way, bldg. 40 stanford",1,40-41J
+40-42A,exact,40-42a,01-040,37.42687504,-122.16951609,"450 jane stanford way, bldg. 40 stanford",1,40-42A
+420-040,exact,420-040,01-420,37.4285954,-122.17082454,"450 jane stanford way, bldg. 420 stanford",1,420-040
+420-041,exact,420-041,01-420,37.4285954,-122.17082454,"450 jane stanford way, bldg. 420 stanford",1,420-041
+460-020,fallback,building 460,01-460,37.42850083,-122.17035999,"450 jane stanford way, bldg. 460 stanford",1,Building 460
+460-126,exact,460-126,01-460,37.42850083,-122.17035999,"450 jane stanford way, bldg. 460 stanford",1,460-126
+460-301,exact,460-301,01-460,37.42850083,-122.17035999,"450 jane stanford way, bldg. 460 stanford",1,460-301
+460-334,exact,460-334,01-460,37.42850083,-122.17035999,"450 jane stanford way, bldg. 460 stanford",1,460-334
+460-429,exact,460-429,01-460,37.42850083,-122.17035999,"450 jane stanford way, bldg. 460 stanford",1,460-429
+50-51A,no_result,,,,,,0,
+50-51B,exact,50-51b,01-050,37.42696071,-122.16991448,"450 jane stanford way, bldg. 50 stanford",1,50-51B
+50-51P,exact,50-51p,01-050,37.42696071,-122.16991448,"450 jane stanford way, bldg. 50 stanford",1,50-51P
+50-52E,exact,50-52e,01-050,37.42696071,-122.16991448,"450 jane stanford way, bldg. 50 stanford",1,50-52E
+50-52H,exact,50-52h,01-050,37.42696071,-122.16991448,"450 jane stanford way, bldg. 50 stanford",1,50-52H
+50-52T,exact,50-52t,01-050,37.42696071,-122.16991448,"450 jane stanford way, bldg. 50 stanford",1,50-52T
+500-106,fallback,building 500,02-500,37.42591658,-122.16969562,488 escondido mall stanford,1,Building 500
+530-127,exact,530-127,02-530,37.42622527,-122.17113018,440 escondido mall stanford,1,530-127
+540-103,exact,540-103,02-540,37.4260325,-122.17116749,439 panama mall stanford,1,540-103
+540-108,exact,540-108,02-540,37.4260325,-122.17116749,439 panama mall stanford,1,540-108
+550-STUDIO 2,fallback,building 550,02-550,37.42630025,-122.17187851,416 escondido mall stanford,1,Building 550
+60-108,exact,60-108,01-060,37.42715836,-122.17085141,"450 jane stanford way, bldg. 60 stanford",1,60-108
+60-109,exact,60-109,01-060,37.42715836,-122.17085141,"450 jane stanford way, bldg. 60 stanford",1,60-109
+70-71D,fallback,building 70,01-070,37.42724339,-122.17124819,"450 jane stanford way, bldg. 70 stanford",1,Building 70
+90-92Q,exact,90-92q,01-090,37.42793484,-122.1712637,"450 jane stanford way, bldg. 90 stanford",1,90-92Q
+ACSR Milas Studio,no_result,,,,,,0,
+AGASSIZ 10 (Hopkins),no_result,,,,,,0,
+AGASSIZ 12 (Hopkins),no_result,,,,,,0,
+ANKO 008,fallback,anko building,03-300,37.42634875,-122.16832225,485 lasuen mall stanford,1,Anko Building
+ANKO 033,fallback,anko building,03-300,37.42634875,-122.16832225,485 lasuen mall stanford,1,Anko Building
+ANKO 106,fallback,anko building,03-300,37.42634875,-122.16832225,485 lasuen mall stanford,1,Anko Building
+ANKO 107,fallback,anko building,03-300,37.42634875,-122.16832225,485 lasuen mall stanford,1,Anko Building
+ANKO 108,fallback,anko building,03-300,37.42634875,-122.16832225,485 lasuen mall stanford,1,Anko Building
+ANKO 109,fallback,anko building,03-300,37.42634875,-122.16832225,485 lasuen mall stanford,1,Anko Building
+AOERC 103B,fallback,aoerc,04-640,37.42673639,-122.17748435,285 santa teresa st stanford,1,AOERC
+AOERC Avery Recreational Pool,fallback,aoerc,04-640,37.42673639,-122.17748435,285 santa teresa st stanford,1,AOERC
+AOERC Basketball Court 1,fallback,aoerc,04-640,37.42673639,-122.17748435,285 santa teresa st stanford,1,AOERC
+AOERC Basketball Court 2,fallback,aoerc,04-640,37.42673639,-122.17748435,285 santa teresa st stanford,1,AOERC
+AOERC Basketball Court 3,fallback,aoerc,04-640,37.42673639,-122.17748435,285 santa teresa st stanford,1,AOERC
+AOERC Climbing Wall 1,fallback,aoerc,04-640,37.42673639,-122.17748435,285 santa teresa st stanford,1,AOERC
+AOERC Cycling Room,fallback,aoerc,04-640,37.42673639,-122.17748435,285 santa teresa st stanford,1,AOERC
+AOERC Fitness Center,fallback,aoerc,04-640,37.42673639,-122.17748435,285 santa teresa st stanford,1,AOERC
+AOERC Studio 111,fallback,aoerc,04-640,37.42673639,-122.17748435,285 santa teresa st stanford,1,AOERC
+AOERC Studio 203,fallback,aoerc,04-640,37.42673639,-122.17748435,285 santa teresa st stanford,1,AOERC
+"Alway Building, Room M015A",fallback,alway building,07-307,37.4324018,-122.1749141,300 n pasteur dr palo alto,1,Alway Building
+"Alway Building, Room M106",fallback,alway building,07-307,37.4324018,-122.1749141,300 n pasteur dr palo alto,1,Alway Building
+"Alway Building, Room M108",fallback,alway building,07-307,37.4324018,-122.1749141,300 n pasteur dr palo alto,1,Alway Building
+"Alway Building, Room M112",fallback,alway building,07-307,37.4324018,-122.1749141,300 n pasteur dr palo alto,1,Alway Building
+"Alway Building, Room M114",fallback,alway building,07-307,37.4324018,-122.1749141,300 n pasteur dr palo alto,1,Alway Building
+"Alway Building, Room M212/212A",fallback,alway building,07-307,37.4324018,-122.1749141,300 n pasteur dr palo alto,1,Alway Building
+"Alway Building, Room M214/214A",fallback,alway building,07-307,37.4324018,-122.1749141,300 n pasteur dr palo alto,1,Alway Building
+"Alway Building, Room M218/218A",fallback,alway building,07-307,37.4324018,-122.1749141,300 n pasteur dr palo alto,1,Alway Building
+Art Gallery 110,fallback,art gallery,03-001,37.42801265,-122.16768911,419 lasuen mall stanford,1,Art Gallery
+Art Gallery 18,fallback,art gallery,03-001,37.42801265,-122.16768911,419 lasuen mall stanford,1,Art Gallery
+Art Gallery 7,fallback,art gallery,03-001,37.42801265,-122.16768911,419 lasuen mall stanford,1,Art Gallery
+BARNUM 002A,fallback,barnum center,03-050,37.42566583,-122.16876356,505 lasuen mall stanford,1,Barnum Center
+Beckman Center B060,fallback,beckman center,07-530,37.43204161,-122.17645796,279 campus dr stanford,1,Beckman Center
+Beckman Center B100,fallback,beckman center,07-530,37.43204161,-122.17645796,279 campus dr stanford,1,Beckman Center
+Bing Concert Hall Stage,no_result,,,,,,0,
+Bing Concert Hall Studio,no_result,,,,,,0,
+Bishop Auditorium,exact,bishop auditorium,08-350,37.4292163,-122.167296,518 memorial way stanford,1,Bishop Auditorium
+Braun 102,exact,braun 102,02-210,37.42374459,-122.16943027,541 lasuen mall stanford,1,Braun 102
+Braun 103,fallback,braun music center,02-210,37.42374459,-122.16943027,541 lasuen mall stanford,1,Braun Music Center
+Braun 105,fallback,braun music center,02-210,37.42374459,-122.16943027,541 lasuen mall stanford,1,Braun Music Center
+Braun 106,fallback,braun music center,02-210,37.42374459,-122.16943027,541 lasuen mall stanford,1,Braun Music Center
+Braun 111,fallback,braun music center,02-210,37.42374459,-122.16943027,541 lasuen mall stanford,1,Braun Music Center
+Braun 131,fallback,braun music center,02-210,37.42374459,-122.16943027,541 lasuen mall stanford,1,Braun Music Center
+Braun 211,fallback,braun music center,02-210,37.42374459,-122.16943027,541 lasuen mall stanford,1,Braun Music Center
+Braun 226,fallback,braun music center,02-210,37.42374459,-122.16943027,541 lasuen mall stanford,1,Braun Music Center
+Braun Rehearsal Hall,exact,braun rehearsal hall,02-210,37.42374459,-122.16943027,541 lasuen mall stanford,1,Braun Rehearsal Hall
+CCSR 0236,fallback,center for clinical sciences research,07-590,37.43230097,-122.1775376,269 campus dr stanford,1,Center for Clinical Sciences Research
+CCSR 0245,fallback,center for clinical sciences research,07-590,37.43230097,-122.1775376,269 campus dr stanford,1,Center for Clinical Sciences Research
+CCSR 4107,fallback,center for clinical sciences research,07-590,37.43230097,-122.1775376,269 campus dr stanford,1,Center for Clinical Sciences Research
+CCSR 4205,fallback,center for clinical sciences research,07-590,37.43230097,-122.1775376,269 campus dr stanford,1,Center for Clinical Sciences Research
+CODAB60,fallback,cordura hall,14-070,37.43048734,-122.17877394,210 panama st stanford,1,Cordura Hall
+CODAB80,fallback,cordura hall,14-070,37.43048734,-122.17877394,210 panama st stanford,1,Cordura Hall
+CODAB90,fallback,cordura hall,14-070,37.43048734,-122.17877394,210 panama st stanford,1,Cordura Hall
+Campbell Recital Hall,exact,campbell recital hall,02-210,37.42374459,-122.16943027,541 lasuen mall stanford,1,Campbell Recital Hall
+Cemex Auditorium,exact,cemex auditorium,08-050C,37.42854991,-122.16278488,641 knight way stanford,1,Cemex Auditorium
+Chemistry Gazebo,no_result,,,,,,0,
+Clark Center S361,fallback,clark center,07-340,37.43134094,-122.17436685,318 campus dr stanford,1,Clark Center
+DINKG10,exact,dinkg10,02-200,37.42406648,-122.16987507,471 lagunita dr stanford,1,DINKG10
+Dinkelspiel Auditorium,exact,dinkelspiel auditorium,02-200,37.42406648,-122.16987507,471 lagunita dr stanford,1,Dinkelspiel Auditorium
+E.D. Stone Edwards Bldg R358,fallback,edwards building,07-309,37.43268048,-122.17623231,300 n pasteur dr palo alto,1,Edwards Building
+EDWRDSR166,fallback,edwards building,07-309,37.43268048,-122.17623231,300 n pasteur dr palo alto,1,Edwards Building
+Econ 106,fallback,landau building,08-290,37.42862149,-122.16582921,579 jane stanford way stanford,1,Landau Building
+Econ 139,fallback,landau building,08-290,37.42862149,-122.16582921,579 jane stanford way stanford,1,Landau Building
+Econ 140,fallback,landau building,08-290,37.42862149,-122.16582921,579 jane stanford way stanford,1,Landau Building
+Econ 206,exact,econ 206,08-290,37.42862149,-122.16582921,579 jane stanford way stanford,1,Econ 206
+Econ 218,exact,econ 218,08-290,37.42862149,-122.16582921,579 jane stanford way stanford,1,Econ 218
+Encina Center 464,fallback,encina center,06-010,37.42728603,-122.16468448,616 jane stanford way stanford,1,Encina Center
+Encina Commons 119,fallback,encina commons,06-040,37.42675416,-122.16487085,615 crothers way stanford,1,Encina Commons
+Encina Commons 123,fallback,encina commons,06-040,37.42675416,-122.16487085,615 crothers way stanford,1,Encina Commons
+Encina West 101,fallback,encina west,06-020,37.42735276,-122.1651294,417 galvez mall stanford,1,Encina West
+Encina West 108,fallback,encina west,06-020,37.42735276,-122.1651294,417 galvez mall stanford,1,Encina West
+Encina West 202,fallback,encina west,06-020,37.42735276,-122.1651294,417 galvez mall stanford,1,Encina West
+Encina West 208,fallback,encina west,06-020,37.42735276,-122.1651294,417 galvez mall stanford,1,Encina West
+Encina West 219,fallback,encina west,06-020,37.42735276,-122.1651294,417 galvez mall stanford,1,Encina West
+Encina West 400,fallback,encina west,06-020,37.42735276,-122.1651294,417 galvez mall stanford,1,Encina West
+Encina West 417,fallback,encina west,06-020,37.42735276,-122.1651294,417 galvez mall stanford,1,Encina West
+FISHER CLS (Hopkins),no_result,,,,,,0,
+GSB Botha-Chan 104,fallback,botha-chan,08-050A,37.42813685,-122.16149107,655 knight way stanford,1,Botha-Chan
+GSB Botha-Chan 130,fallback,botha-chan,08-050A,37.42813685,-122.16149107,655 knight way stanford,1,Botha-Chan
+GSB Botha-Chan 332,fallback,botha-chan,08-050A,37.42813685,-122.16149107,655 knight way stanford,1,Botha-Chan
+GSB Class of 1968 102,fallback,class of 1968 building,08-050F,37.42765559,-122.16207778,653 jane stanford way stanford,1,Class of 1968 Building
+GSB Class of 1968 105,fallback,class of 1968 building,08-050F,37.42765559,-122.16207778,653 jane stanford way stanford,1,Class of 1968 Building
+GSB Class of 1968 106,fallback,class of 1968 building,08-050F,37.42765559,-122.16207778,653 jane stanford way stanford,1,Class of 1968 Building
+GSB Faculty East 101,fallback,faculty office building,08-050A,37.42813685,-122.16149107,655 knight way stanford,1,Faculty Office Building
+GSB Faculty East 102,fallback,faculty office building,08-050A,37.42813685,-122.16149107,655 knight way stanford,1,Faculty Office Building
+GSB Faculty East 103,fallback,faculty office building,08-050A,37.42813685,-122.16149107,655 knight way stanford,1,Faculty Office Building
+GSB Faculty East 104,fallback,faculty office building,08-050A,37.42813685,-122.16149107,655 knight way stanford,1,Faculty Office Building
+GSB Faculty East 233,fallback,faculty office building,08-050A,37.42813685,-122.16149107,655 knight way stanford,1,Faculty Office Building
+GSB Faculty East 247,fallback,faculty office building,08-050A,37.42813685,-122.16149107,655 knight way stanford,1,Faculty Office Building
+GSB Faculty East 259,fallback,faculty office building,08-050A,37.42813685,-122.16149107,655 knight way stanford,1,Faculty Office Building
+GSB Gunn 101,fallback,635 knight way,08-050D,37.42827678,-122.16342673,635 knight way stanford,1,635 Knight Way
+GSB Gunn 102,fallback,635 knight way,08-050D,37.42827678,-122.16342673,635 knight way stanford,1,635 Knight Way
+GSB McClelland 101D,fallback,mcclelland building,08-050E,37.4278322,-122.16291652,643 jane stanford way stanford,1,McClelland Building
+GSB McClelland 104,fallback,mcclelland building,08-050E,37.4278322,-122.16291652,643 jane stanford way stanford,1,McClelland Building
+GSB McClelland 105,fallback,mcclelland building,08-050E,37.4278322,-122.16291652,643 jane stanford way stanford,1,McClelland Building
+GSB McClelland 109,fallback,mcclelland building,08-050E,37.4278322,-122.16291652,643 jane stanford way stanford,1,McClelland Building
+GSB Patterson 101,fallback,patterson building,08-050G,37.42750799,-122.16139893,663 jane stanford way stanford,1,Patterson Building
+GSB Patterson 107,fallback,patterson building,08-050G,37.42750799,-122.16139893,663 jane stanford way stanford,1,Patterson Building
+GSB Zambrano 301,fallback,zambrano hall,08-050C,37.42854991,-122.16278488,641 knight way stanford,1,Zambrano Hall
+Gates B1,fallback,gates computer science,07-450,37.43011014,-122.17341616,353 jane stanford way stanford,1,Gates Computer Science
+Gates B12,fallback,gates computer science,07-450,37.43011014,-122.17341616,353 jane stanford way stanford,1,Gates Computer Science
+Gates B3,fallback,gates computer science,07-450,37.43011014,-122.17341616,353 jane stanford way stanford,1,Gates Computer Science
+Gates100,exact,gates100,07-450,37.43011014,-122.17341616,353 jane stanford way stanford,1,Gates100
+Gilbert Biological Science 117,fallback,gilbert biological science,07-420,37.43001364,-122.1724925,371 jane stanford way stanford,1,Gilbert Biological Science
+Gold Driving Range,no_result,,,,,,0,
+Green Earth Sciences104,fallback,green earth sciences,04-460,37.42673375,-122.17399972,367 panama mall stanford,1,Green Earth Sciences
+Green Earth Sciences131,fallback,green earth sciences,04-460,37.42673375,-122.17399972,367 panama mall stanford,1,Green Earth Sciences
+Green Earth Sciences134,fallback,green earth sciences,04-460,37.42673375,-122.17399972,367 panama mall stanford,1,Green Earth Sciences
+Green Earth Sciences150,fallback,green earth sciences,04-460,37.42673375,-122.17399972,367 panama mall stanford,1,Green Earth Sciences
+Hewlett Teaching Center 102,fallback,hewlett teaching center,04-510,37.42900001,-122.17285486,370 jane stanford way stanford,1,Hewlett Teaching Center
+Hewlett Teaching Center 103,fallback,hewlett teaching center,04-510,37.42900001,-122.17285486,370 jane stanford way stanford,1,Hewlett Teaching Center
+Hewlett Teaching Center 200,fallback,hewlett teaching center,04-510,37.42900001,-122.17285486,370 jane stanford way stanford,1,Hewlett Teaching Center
+Hewlett Teaching Center 201,fallback,hewlett teaching center,04-510,37.42900001,-122.17285486,370 jane stanford way stanford,1,Hewlett Teaching Center
+Hewlett Teaching Center Rm 101,fallback,hewlett teaching center,04-510,37.42900001,-122.17285486,370 jane stanford way stanford,1,Hewlett Teaching Center
+Huang Engineering Center 18,fallback,huang engineering center,04-080,37.42787956,-122.17429865,475 via ortega stanford,1,Huang Engineering Center
+Huang Engineering Center 203,fallback,huang engineering center,04-080,37.42787956,-122.17429865,475 via ortega stanford,1,Huang Engineering Center
+Hum Rgts / Int'l Rel Conf Room,no_result,,,,,,0,
+Jasper Ridge Hillside Lab,no_result,,,,,,0,
+"Knight Building, Room K18",fallback,knight building,08-365,37.43003917,-122.16694598,521 memorial way stanford,1,Knight Building
+Knoll 103,fallback,knoll,05-300,37.42098281,-122.17238243,660 lomita ct stanford,1,Knoll
+Knoll 315,fallback,knoll,05-300,37.42098281,-122.17238243,660 lomita ct stanford,1,Knoll
+Knoll 317,fallback,knoll,05-300,37.42098281,-122.17238243,660 lomita ct stanford,1,Knoll
+Knoll217,exact,knoll217,05-300,37.42098281,-122.17238243,660 lomita ct stanford,1,Knoll217
+LATHROP199,fallback,lathrop library,08-350,37.4292163,-122.167296,518 memorial way stanford,1,Lathrop Library
+LAW 14,fallback,559 nathan abbott way,02-050,37.42404801,-122.16771738,559 nathan abbott way stanford,1,559 Nathan Abbott Way
+LAW 180,fallback,559 nathan abbott way,02-050,37.42404801,-122.16771738,559 nathan abbott way stanford,1,559 Nathan Abbott Way
+LAW 185,fallback,559 nathan abbott way,02-050,37.42404801,-122.16771738,559 nathan abbott way stanford,1,559 Nathan Abbott Way
+LAW 190,fallback,559 nathan abbott way,02-050,37.42404801,-122.16771738,559 nathan abbott way stanford,1,559 Nathan Abbott Way
+LAW 21,fallback,559 nathan abbott way,02-050,37.42404801,-122.16771738,559 nathan abbott way stanford,1,559 Nathan Abbott Way
+LAW 230,fallback,559 nathan abbott way,02-050,37.42404801,-122.16771738,559 nathan abbott way stanford,1,559 Nathan Abbott Way
+LAW 26,fallback,559 nathan abbott way,02-050,37.42404801,-122.16771738,559 nathan abbott way stanford,1,559 Nathan Abbott Way
+LAW 27,fallback,559 nathan abbott way,02-050,37.42404801,-122.16771738,559 nathan abbott way stanford,1,559 Nathan Abbott Way
+LAW 272,fallback,559 nathan abbott way,02-050,37.42404801,-122.16771738,559 nathan abbott way stanford,1,559 Nathan Abbott Way
+LAW 280A,fallback,559 nathan abbott way,02-050,37.42404801,-122.16771738,559 nathan abbott way stanford,1,559 Nathan Abbott Way
+LAW 280B,fallback,559 nathan abbott way,02-050,37.42404801,-122.16771738,559 nathan abbott way stanford,1,559 Nathan Abbott Way
+LAW 285,fallback,559 nathan abbott way,02-050,37.42404801,-122.16771738,559 nathan abbott way stanford,1,559 Nathan Abbott Way
+LAW 29,fallback,559 nathan abbott way,02-050,37.42404801,-122.16771738,559 nathan abbott way stanford,1,559 Nathan Abbott Way
+LAW 290,fallback,559 nathan abbott way,02-050,37.42404801,-122.16771738,559 nathan abbott way stanford,1,559 Nathan Abbott Way
+LAW 301B,fallback,559 nathan abbott way,02-050,37.42404801,-122.16771738,559 nathan abbott way stanford,1,559 Nathan Abbott Way
+LAW 320D,fallback,559 nathan abbott way,02-050,37.42404801,-122.16771738,559 nathan abbott way stanford,1,559 Nathan Abbott Way
+LAW 320F,fallback,559 nathan abbott way,02-050,37.42404801,-122.16771738,559 nathan abbott way stanford,1,559 Nathan Abbott Way
+LAW 85,fallback,559 nathan abbott way,02-050,37.42404801,-122.16771738,559 nathan abbott way stanford,1,559 Nathan Abbott Way
+LAW 90,fallback,559 nathan abbott way,02-050,37.42404801,-122.16771738,559 nathan abbott way stanford,1,559 Nathan Abbott Way
+LAW 95,fallback,559 nathan abbott way,02-050,37.42404801,-122.16771738,559 nathan abbott way stanford,1,559 Nathan Abbott Way
+Lathrop 014,fallback,lathrop library,08-350,37.4292163,-122.167296,518 memorial way stanford,1,Lathrop Library
+Lathrop 015,fallback,lathrop library,08-350,37.4292163,-122.167296,518 memorial way stanford,1,Lathrop Library
+Lathrop 016,fallback,lathrop library,08-350,37.4292163,-122.167296,518 memorial way stanford,1,Lathrop Library
+Lathrop 017,fallback,lathrop library,08-350,37.4292163,-122.167296,518 memorial way stanford,1,Lathrop Library
+Lathrop 018,fallback,lathrop library,08-350,37.4292163,-122.167296,518 memorial way stanford,1,Lathrop Library
+Lathrop 180,fallback,lathrop library,08-350,37.4292163,-122.167296,518 memorial way stanford,1,Lathrop Library
+Lathrop 190,fallback,lathrop library,08-350,37.4292163,-122.167296,518 memorial way stanford,1,Lathrop Library
+Lathrop 191,fallback,lathrop library,08-350,37.4292163,-122.167296,518 memorial way stanford,1,Lathrop Library
+Lathrop 197,fallback,lathrop library,08-350,37.4292163,-122.167296,518 memorial way stanford,1,Lathrop Library
+Lathrop 198,fallback,lathrop library,08-350,37.4292163,-122.167296,518 memorial way stanford,1,Lathrop Library
+Lathrop 282,fallback,lathrop library,08-350,37.4292163,-122.167296,518 memorial way stanford,1,Lathrop Library
+Lathrop 290,fallback,lathrop library,08-350,37.4292163,-122.167296,518 memorial way stanford,1,Lathrop Library
+Lathrop 292,fallback,lathrop library,08-350,37.4292163,-122.167296,518 memorial way stanford,1,Lathrop Library
+Lathrop 294,fallback,lathrop library,08-350,37.4292163,-122.167296,518 memorial way stanford,1,Lathrop Library
+Lathrop 296,fallback,lathrop library,08-350,37.4292163,-122.167296,518 memorial way stanford,1,Lathrop Library
+Lathrop 298,fallback,lathrop library,08-350,37.4292163,-122.167296,518 memorial way stanford,1,Lathrop Library
+Lathrop 299,exact,lathrop 299,08-350,37.4292163,-122.167296,518 memorial way stanford,1,Lathrop 299
+"Li Ka Shing Center, rms203/204",fallback,li ka shing center,07-515,37.43186446,-122.17577807,291 campus dr stanford,1,Li Ka Shing Center
+"Li Ka Shing Center, rms205/206",fallback,li ka shing center,07-515,37.43186446,-122.17577807,291 campus dr stanford,1,Li Ka Shing Center
+"Li Ka Shing Center, rms304/305",fallback,li ka shing center,07-515,37.43186446,-122.17577807,291 campus dr stanford,1,Li Ka Shing Center
+"Li Ka Shing Center, room 101",fallback,li ka shing center,07-515,37.43186446,-122.17577807,291 campus dr stanford,1,Li Ka Shing Center
+"Li Ka Shing Center, room 102",fallback,li ka shing center,07-515,37.43186446,-122.17577807,291 campus dr stanford,1,Li Ka Shing Center
+"Li Ka Shing Center, room 120",fallback,li ka shing center,07-515,37.43186446,-122.17577807,291 campus dr stanford,1,Li Ka Shing Center
+"Li Ka Shing Center, room 130",fallback,li ka shing center,07-515,37.43186446,-122.17577807,291 campus dr stanford,1,Li Ka Shing Center
+"Li Ka Shing Center, room 208",fallback,li ka shing center,07-515,37.43186446,-122.17577807,291 campus dr stanford,1,Li Ka Shing Center
+"Li Ka Shing Center, room 209",fallback,li ka shing center,07-515,37.43186446,-122.17577807,291 campus dr stanford,1,Li Ka Shing Center
+"Li Ka Shing Center, room 306",fallback,li ka shing center,07-515,37.43186446,-122.17577807,291 campus dr stanford,1,Li Ka Shing Center
+"Li Ka Shing Center, room 308",fallback,li ka shing center,07-515,37.43186446,-122.17577807,291 campus dr stanford,1,Li Ka Shing Center
+"Li Ka Shing Center,rms101/102",fallback,li ka shing center,07-515,37.43186446,-122.17577807,291 campus dr stanford,1,Li Ka Shing Center
+Littlefield 103,fallback,littlefield center,08-360,37.4303334,-122.16752887,365 lasuen st stanford,1,Littlefield Center
+Littlefield 104,fallback,littlefield center,08-360,37.4303334,-122.16752887,365 lasuen st stanford,1,Littlefield Center
+Littlefield 107,fallback,littlefield center,08-360,37.4303334,-122.16752887,365 lasuen st stanford,1,Littlefield Center
+Lokey Stem Cell Rsch G1161,no_result,,,,,,0,
+MIP Policy Studio,no_result,,,,,,0,
+McCullough 115,fallback,mccullough,04-490,37.42747867,-122.1728969,476 lomita mall stanford,1,McCullough
+McCullough 122,fallback,mccullough,04-490,37.42747867,-122.1728969,476 lomita mall stanford,1,McCullough
+McCullough 126,fallback,mccullough,04-490,37.42747867,-122.1728969,476 lomita mall stanford,1,McCullough
+McMurtry Art Building 007,fallback,mcmurtry building,07-090,37.43254639,-122.17172275,355 roth way stanford,1,McMurtry Building
+McMurtry Art Building 011B,fallback,mcmurtry building,07-090,37.43254639,-122.17172275,355 roth way stanford,1,McMurtry Building
+McMurtry Art Building 011C,fallback,mcmurtry building,07-090,37.43254639,-122.17172275,355 roth way stanford,1,McMurtry Building
+McMurtry Art Building 016,fallback,mcmurtry building,07-090,37.43254639,-122.17172275,355 roth way stanford,1,McMurtry Building
+McMurtry Art Building 115,fallback,mcmurtry building,07-090,37.43254639,-122.17172275,355 roth way stanford,1,McMurtry Building
+McMurtry Art Building 120,fallback,mcmurtry building,07-090,37.43254639,-122.17172275,355 roth way stanford,1,McMurtry Building
+McMurtry Art Building 130,fallback,mcmurtry building,07-090,37.43254639,-122.17172275,355 roth way stanford,1,McMurtry Building
+McMurtry Art Building 220,fallback,mcmurtry building,07-090,37.43254639,-122.17172275,355 roth way stanford,1,McMurtry Building
+McMurtry Art Building 301,fallback,mcmurtry building,07-090,37.43254639,-122.17172275,355 roth way stanford,1,McMurtry Building
+McMurtry Art Building 303,fallback,mcmurtry building,07-090,37.43254639,-122.17172275,355 roth way stanford,1,McMurtry Building
+McMurtry Art Building 305,fallback,mcmurtry building,07-090,37.43254639,-122.17172275,355 roth way stanford,1,McMurtry Building
+McMurtry Art Building 307,fallback,mcmurtry building,07-090,37.43254639,-122.17172275,355 roth way stanford,1,McMurtry Building
+McMurtry Art Building 350,fallback,mcmurtry building,07-090,37.43254639,-122.17172275,355 roth way stanford,1,McMurtry Building
+McMurtry Art Building 360,fallback,mcmurtry building,07-090,37.43254639,-122.17172275,355 roth way stanford,1,McMurtry Building
+McMurtry Art Building 370,fallback,mcmurtry building,07-090,37.43254639,-122.17172275,355 roth way stanford,1,McMurtry Building
+McMurtry Art Building M120,fallback,mcmurtry building,07-090,37.43254639,-122.17172275,355 roth way stanford,1,McMurtry Building
+McMurtry Art Building Oshman,fallback,mcmurtry building,07-090,37.43254639,-122.17172275,355 roth way stanford,1,McMurtry Building
+Memaud125,no_result,,,,,,0,
+Memaud126,no_result,,,,,,0,
+Memaud204,no_result,,,,,,0,
+Mitchell Earth Sciences 452,fallback,mitchell earth sciences,04-560,37.42641692,-122.17265461,397 panama mall stanford,1,Mitchell Earth Sciences
+Mitchell Earth Sciences A25,fallback,mitchell earth sciences,04-560,37.42641692,-122.17265461,397 panama mall stanford,1,Mitchell Earth Sciences
+Mitchell Earth Sciences B4,fallback,mitchell earth sciences,04-560,37.42641692,-122.17265461,397 panama mall stanford,1,Mitchell Earth Sciences
+Mitchell Earth Sciences B67,fallback,mitchell earth sciences,04-560,37.42641692,-122.17265461,397 panama mall stanford,1,Mitchell Earth Sciences
+Mitchell Earth Sciences350/372,fallback,mitchell earth sciences,04-560,37.42641692,-122.17265461,397 panama mall stanford,1,Mitchell Earth Sciences
+NVIDIA Auditorium,exact,nvidia auditorium,04-080,37.42787956,-122.17429865,475 via ortega stanford,1,NVIDIA Auditorium
+O'Donohue Fmly Stanf Educ Farm,no_result,,,,,,0,
+Packrd101,fallback,packard electrical engineering,04-030,37.42924401,-122.17383732,350 jane stanford way stanford,1,Packard Electrical Engineering
+Potter House,no_result,,,,,,0,
+Raikes 104,fallback,raikes building,03-320,37.42562,-122.168508,507 lasuen mall stanford,1,Raikes Building
+Raikes 111,fallback,raikes building,03-320,37.42562,-122.168508,507 lasuen mall stanford,1,Raikes Building
+Raikes102,fallback,raikes building,03-320,37.42562,-122.168508,507 lasuen mall stanford,1,Raikes Building
+Red Barn Stables,exact,red barn stables,14-810,37.42469032,-122.18443078,621 fremont rd stanford,1,Red Barn Stables
+Roble Gymnasium 113,no_result,,,,,,0,
+Roble Gymnasium 115,no_result,,,,,,0,
+Roble Gymnasium 117,no_result,,,,,,0,
+Roble Gymnasium 136,no_result,,,,,,0,
+Roble Gymnasium 137,no_result,,,,,,0,
+Roble Gymnasium 139,no_result,,,,,,0,
+SAPP 201,fallback,sapp,07-200,37.43065713,-122.17143743,376 lomita dr stanford,1,SAPP
+SAPP 208,fallback,sapp,07-200,37.43065713,-122.17143743,376 lomita dr stanford,1,SAPP
+SAPP 215,fallback,sapp,07-200,37.43065713,-122.17143743,376 lomita dr stanford,1,SAPP
+SAPP 304,fallback,sapp,07-200,37.43065713,-122.17143743,376 lomita dr stanford,1,SAPP
+SAPP 306,fallback,sapp,07-200,37.43065713,-122.17143743,376 lomita dr stanford,1,SAPP
+SAPP 312,fallback,sapp,07-200,37.43065713,-122.17143743,376 lomita dr stanford,1,SAPP
+SAPP 318,fallback,sapp,07-200,37.43065713,-122.17143743,376 lomita dr stanford,1,SAPP
+SAPP 320,fallback,sapp,07-200,37.43065713,-122.17143743,376 lomita dr stanford,1,SAPP
+STLC 104,fallback,sapp center for science teaching and learning,07-200,37.43065713,-122.17143743,376 lomita dr stanford,1,Sapp Center for Science Teaching and Learning
+STLC 105,fallback,sapp center for science teaching and learning,07-200,37.43065713,-122.17143743,376 lomita dr stanford,1,Sapp Center for Science Teaching and Learning
+STLC 111,fallback,sapp center for science teaching and learning,07-200,37.43065713,-122.17143743,376 lomita dr stanford,1,Sapp Center for Science Teaching and Learning
+STLC 114,fallback,sapp center for science teaching and learning,07-200,37.43065713,-122.17143743,376 lomita dr stanford,1,Sapp Center for Science Teaching and Learning
+STLC 118,fallback,sapp center for science teaching and learning,07-200,37.43065713,-122.17143743,376 lomita dr stanford,1,Sapp Center for Science Teaching and Learning
+STLC 119,fallback,sapp center for science teaching and learning,07-200,37.43065713,-122.17143743,376 lomita dr stanford,1,Sapp Center for Science Teaching and Learning
+STLC115,exact,stlc115,07-200,37.43065713,-122.17143743,376 lomita dr stanford,1,STLC115
+Sequoia Hall 200,fallback,sequoia hall,04-530,37.42893266,-122.17219955,390 jane stanford way stanford,1,Sequoia Hall
+Shriram 052,exact,shriram 052,04-060,37.42898614,-122.17517785,443 via ortega stanford,1,Shriram 052
+Shriram 104,fallback,shriram center,04-060,37.42898614,-122.17517785,443 via ortega stanford,1,Shriram Center
+Shriram 108,exact,shriram 108,04-060,37.42898614,-122.17517785,443 via ortega stanford,1,Shriram 108
+Shriram 366,exact,shriram 366,04-060,37.42898614,-122.17517785,443 via ortega stanford,1,Shriram 366
+Shriram 368,exact,shriram 368,04-060,37.42898614,-122.17517785,443 via ortega stanford,1,Shriram 368
+Skilling 190,fallback,skilling building,04-550,37.42713104,-122.17284632,494 lomita mall stanford,1,Skilling Building
+Skilling Auditorium,exact,skilling auditorium,04-550,37.42713104,-122.17284632,494 lomita mall stanford,1,Skilling Auditorium
+SpilkerEngAppliedSci143,fallback,spilker engineering and applied sciences,04-040,37.42879024,-122.1740029,348 via pueblo mall stanford,1,Spilker Engineering and Applied Sciences
+SpilkerEngAppliedSci317,fallback,spilker engineering and applied sciences,04-040,37.42879024,-122.1740029,348 via pueblo mall stanford,1,Spilker Engineering and Applied Sciences
+Sweet303,exact,sweet303,03-420,37.4251902,-122.16667487,590 escondido mall stanford,1,Sweet303
+Sweet403,exact,sweet403,03-420,37.4251902,-122.16667487,590 escondido mall stanford,1,Sweet403
+Thornton 102,fallback,thornton center,04-720,37.4255553,-122.17370443,379 santa teresa st stanford,1,Thornton Center
+Thornton 110,fallback,thornton center,04-720,37.4255553,-122.17370443,379 santa teresa st stanford,1,Thornton Center
+Thornton 207,fallback,thornton center,04-720,37.4255553,-122.17370443,379 santa teresa st stanford,1,Thornton Center
+Thornton 208,fallback,thornton center,04-720,37.4255553,-122.17370443,379 santa teresa st stanford,1,Thornton Center
+Thornton 209,fallback,thornton center,04-720,37.4255553,-122.17370443,379 santa teresa st stanford,1,Thornton Center
+Thornton 210,fallback,thornton center,04-720,37.4255553,-122.17370443,379 santa teresa st stanford,1,Thornton Center
+Thornton 211,fallback,thornton center,04-720,37.4255553,-122.17370443,379 santa teresa st stanford,1,Thornton Center
+Turing Auditorium,exact,turing auditorium,14-160,37.42898333,-122.17752929,255 panama st stanford,1,Turing Auditorium
+West Tennis Courts,no_result,,,,,,0,
+William H. Neukom 102,fallback,william h. neukom,02-040,37.42352386,-122.16812761,555 nathan abbott way stanford,1,William H. Neukom
+William H. Neukom 104,fallback,william h. neukom,02-040,37.42352386,-122.16812761,555 nathan abbott way stanford,1,William H. Neukom
+Y2E2 101,exact,y2e2 101,04-070,37.4281062,-122.1754824,473 via ortega stanford,1,Y2E2 101
+Y2E2 111,exact,y2e2 111,04-070,37.4281062,-122.1754824,473 via ortega stanford,1,Y2E2 111
+Y2E2 184,exact,y2e2 184,04-070,37.4281062,-122.1754824,473 via ortega stanford,1,Y2E2 184
+Y2E2 266,fallback,y2e2,04-070,37.4281062,-122.1754824,473 via ortega stanford,1,Y2E2
+Y2E2 292A,fallback,y2e2,04-070,37.4281062,-122.1754824,473 via ortega stanford,1,Y2E2
+Y2E2 335,exact,y2e2 335,04-070,37.4281062,-122.1754824,473 via ortega stanford,1,Y2E2 335
+Y2E2 362,fallback,y2e2,04-070,37.4281062,-122.1754824,473 via ortega stanford,1,Y2E2

@@ -1,0 +1,254 @@
+subject_code,subject_name
+AA,Aeronautics & Astronautics
+ACCT,Accounting
+AFRICAAM,African & African American Studies
+ALP,Action Learning Programs
+AMELANG,African & Middle Eastern Languages
+AMHRLANG,Amharic
+AMSTUD,American Studies
+ANES,Anesthesia
+ANTHRO,Anthropology
+APPPHYS,Applied Physics
+ARABLANG,Arabic Language
+ARCHLGY,Archaeology
+ARMELANG,Armenian
+ARTHIST,Art History
+ARTSINST,Arts Institute
+ARTSTUDI,Art Studio
+ASLLANG,American Sign Language
+ASNAMST,Asian American Studies
+ATHLETIC,Athletics and Club Sports
+BIO,Biology
+BIOC,Biochemistry
+BIOE,Bioengineering
+BIOHOPK,Biology/Hopkins Marine
+BIOPHYS,Biophysics
+BIOS,Biosciences Interdisciplinary
+BMDS,Biomedical Data Science
+BMP,Biomedical Physics
+BUSGEN,Business General Pathways
+CATLANG,Catalan Language Courses
+CBIO,Cancer Biology
+CEE,Civil & Environmental Engineering
+CHEM,Chemistry
+CHEMENG,Chemical Engineering
+CHILATST,Chicana/o-Latina/o Studies
+CHINA,Chinese
+CHINLANG,Chinese Language
+CHPR,Community Health and Prevention Research
+CHRKELNG,Cherokee
+CLASSICS,Classics
+CME,Computational & Mathematical Engineering
+COLLEGE,"Civic, Liberal, and Global Education"
+COMM,Communication
+COMPLIT,Comparative Literature
+COMPMED,Comparative Medicine
+CS,Computer Science
+CSB,Chemical & Systems Biology
+CSRE,Comparative Studies in Race & Ethnicity
+CTL,Center for Teaching and Learning
+CTS,Cardiothoracic Surgery
+CZECLANG,Czech
+DANCE,Dance
+DATASCI,Data Science
+DBIO,Developmental Biology
+DERM,Dermatology
+DESIGN,Design
+DLCL,"Division of Literatures, Cultures, & Languages"
+DUTCHLNG,Dutch
+EALC,East Asian Languages & Cultures
+EARTHSYS,Earth Systems
+EASTASN,East Asian Studies
+EBS,Environmental Behavioral Science
+ECON,Economics
+EDUC,Education
+EE,Electrical Engineering
+EMED,Emergency Medicine
+ENERGY,Energy Science and Engineering
+ENGLISH,English
+ENGR,Engineering
+ENVRES,Environment and Resources
+EPI,Epidemiology
+EPS,Earth and Planetary Sciences
+ESF,Education as Self-Fashioning
+ESOLLANG,English for Speakers of Other Languages
+ESS,Earth System Science
+ETHICSOC,Ethics in Society
+FAMMED,Family and Community Medicine
+FEMGEN,"Feminist, Gender and Sexuality Studies"
+FILILANG,Filipino
+FILMEDIA,Film and Media Studies
+FILMPROD,Film Production
+FINANCE,Finance
+FINNLANG,Finnish
+FRENCH,French Studies
+FRENLANG,French Language
+GENE,Genetics
+GEOPHYS,Geophysics
+GEP,Global Environmental Policy
+GERLANG,German Language
+GERMAN,German Studies
+GLOBAL,Global Studies
+GREELANG,Modern Greek
+GSBGEN,GSB General & Interdisciplinary
+GSBGID,GSB Interdisciplinary
+GUJARLNG,Gujarati
+HAITLANG,Haitian Creole
+HAWALANG,Hawaiian
+HEBRLANG,Hebrew
+HINDLANG,Hindi
+HISTORY,History
+HITTLANG,Hittite
+HNGRLANG,Hungarian
+HORSE,Horse
+HPS,History & Philosophy of Science
+HRMGT,Human Resource Management
+HRP,Health Research & Policy
+HUMBIO,Human Biology
+HUMCORE,Humanities Core
+HUMRTS,Human Rights
+HUMSCI,Humanities & Sciences
+IGBOLANG,Igbo
+IIS,Institute for International Studies (FSI)
+ILAC,"Spanish, Portuguese, & Catalan Literature"
+IMMUNOL,Immunology
+INDE,Medicine Interdisciplinary
+INTLPOL,International Policy
+INTNLREL,International Relations
+INUPQLNG,Inupiaq
+ITALIAN,Italian Studies
+ITALIC,Immersion in the Arts
+ITALLANG,Italian Language
+JAPAN,Japanese
+JAPANLNG,Japanese Language
+JEWISHST,Jewish Studies
+KAZKHLNG,Kazakh
+KHMRLANG,Khmer
+KIN,Kinesiology
+KINYLANG,Kinyarwanda
+KOREA,Korean
+KORLANG,Korean Language
+LAKOTLNG,Lakota
+LATINAM,Latin American Studies
+LAW,Law
+LAWGEN,"Law, Nonprofessional"
+LEAD,Leadership Innovations
+LIFE,Lifeworks
+LINGUIST,Linguistics
+LUGALANG,Luganda
+MATH,Mathematics
+MATSCI,Materials Science & Engineer
+MCP,Molecular & Cellular Physiology
+MCS,Mathematical & Computational Science
+ME,Mechanical Engineering
+MED,Medicine
+MEDVLST,Medieval Studies
+MGTECON,Economic Analysis & Policy
+MI,Microbiology & Immunology
+MKTG,Marketing
+MLA,Master of Liberal Arts
+MS&E,Management Science & Engineering
+MTL,Modern Thought & Literature
+MUSIC,Music
+NAHUALNG,Nahuatl
+NATIVEAM,Native American Studies
+NBIO,Neurobiology
+NENS,Neurology & Neurological Sciences
+NEPR,Neurosciences Program
+NSUR,Neurosurgery
+NVJOLANG,Navajo
+OB,Organizational Behavior
+OBGYN,Obstetrics & Gynecology
+OCEANS,Oceans
+OIT,Operations Information & Technology
+OPHT,Ophthalmology
+ORALCOMM,Oral Communications
+OROMLANG,Oromo
+ORTHO,Orthopedic Surgery
+OSPAUSTL,Overseas Studies in Australia
+OSPBEIJ,Overseas Studies in Beijing
+OSPBER,Overseas Studies in Berlin
+OSPCPTWN,Overseas Studies in Cape Town
+OSPFLOR,Overseas Studies in Florence
+OSPGEN,Overseas Studies General
+OSPHONGK,Overseas Studies in Hong Kong
+OSPISTAN,Overseas Studies in Istanbul
+OSPKYOCT,Overseas Studies in Kyoto (KCJS)
+OSPKYOTO,Overseas Studies in Kyoto
+OSPMADRD,Overseas Studies in Madrid
+OSPOXFRD,Overseas Studies in Oxford
+OSPPARIS,Overseas Studies in Paris
+OSPSANTG,Overseas Studies in Santiago
+OTOHNS,Otolaryngology
+OUTDOOR,Outdoor Education
+PAS,Physician Assistant Studies
+PATH,Pathology
+PEDS,Pediatrics
+PERSLANG,Persian
+PHIL,Philosophy
+PHYSICS,Physics
+PHYSWELL,Physical Wellness
+POLECON,Political Economics
+POLISCI,Political Science
+POLSHLNG,Polish
+PORTLANG,Portuguese Language
+PSYC,Psychiatry
+PSYCH,Psychology
+PUBLPOL,Public Policy
+PUNJLANG,Punjabi
+PWR,"Writing & Rhetoric, Program in"
+QUECHLNG,Quechua
+RAD,Radiology
+RADO,Radiation Oncology
+REES,"Russian, East European, & Eurasian Studies"
+RELIGST,Religious Studies
+RESPROG,Residential Programs
+ROMALANG,Romanian
+ROTCAF,ROTC Air Force
+ROTCARMY,ROTC Army
+ROTCNAVY,ROTC Navy
+RUSSLANG,Russian
+SAMOALNG,Samoan
+SBIO,Structural Biology
+SCCM,Scientific Computing & Comput'l Math
+SERBLANG,Serbian
+SINY,Stanford in New York
+SIW,Stanford in Washington
+SLAVIC,Slavic Studies
+SLE,Structured Liberal Education
+SLVNLANG,Slovenian
+SNSKTLNG,Sanskrit
+SOAR,Online Bridge Course
+SOC,Sociology
+SOMGEN,School of Medicine General
+SPANLANG,Spanish Language
+SPECLANG,Special Language Program
+STATS,Statistics
+STEMREM,Stem Cell Biology and Regenerative Medicine
+STRAMGT,Strategic Management
+STS,"Science, Technology, & Society"
+SURG,Surgery
+SUST,Sustainability Science and Practice
+SUSTAIN,Sustainability
+SWAHLANG,Swahili
+SYMSYS,Symbolic Systems
+TAMILANG,Tamil
+TAPS,Theater and Performance Studies
+THINK,Thinking Matters
+TIBETLNG,Tibetan Language
+TIGRYLNG,Tigrinya
+TURKLANG,Turkish
+TWILANG,Twi
+UAR,Undergraduate Advising and Research
+UKRNLANG,Ukrainian
+URBANST,Urban Studies
+URDULANG,Urdu
+UROL,Urology
+UYGHLANG,Uyghur
+VIETLANG,Vietnamese
+VPTL,Teaching and Learning
+WELLNESS,Wellness Education
+YDDSHLNG,Yiddish
+YORULANG,Yoruba
+YUPKLANG,Yup'ik
+ZULULANG,Zulu

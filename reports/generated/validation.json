@@ -1,0 +1,95 @@
+{
+  "bicycle_routing": {
+    "bike_edge_segments": 89233,
+    "bike_edge_segments_before_component_filter": 91630,
+    "bike_filter_note": "Excludes steps, indoor ways, bicycle=no/private/dismount, restricted access without a bicycle override, and footway/pedestrian ways without explicit bicycle permission. Directional bicycle access follows oneway tags.",
+    "bike_graph_directed_edges": 166688,
+    "bike_graph_nodes": 84225,
+    "bike_graph_nodes_before_component_filter": 86694,
+    "bike_graph_weak_components_before_filter": 194,
+    "bike_snap_distance_limit_meters": 250.0,
+    "connected_bike_route_pairs": 5625,
+    "facilities_with_usable_bike_snap": 75,
+    "max_bike_snap_distance_meters": 75.87531353461519,
+    "median_bike_snap_meters": 35.922403329231024,
+    "total_bike_route_pairs": 5625
+  },
+  "explorecourses": {
+    "academic_year": "20252026",
+    "empty_subject_term_queries": 45,
+    "invalid_term_date_rows_excluded": 1,
+    "invalid_time_rows_excluded": 4,
+    "meeting_day_rows": 6876,
+    "pages_fetched_or_cached": 579,
+    "parsed_meeting_day_rows_before_validation": 6876,
+    "subjects_discovered": 253,
+    "terms": [
+      "Winter"
+    ],
+    "unique_sections": 27197,
+    "xml_api": {
+      "api_contract": "Queries and field mappings follow jeremyephron/explore-courses-api; the project parses the current public XML response directly.",
+      "api_duplicate_section_rows_collapsed": 0,
+      "api_schedule_day_rows": 6876,
+      "api_section_rows_before_crosslist_deduplication": 27197,
+      "api_sections_with_reported_enrollment": 27197,
+      "api_unique_sections": 27197,
+      "canonical_meeting_day_rows": 6876,
+      "enabled": true,
+      "local_meeting_day_rows_exactly_matched": 6868,
+      "local_meeting_schedule_match_rate": 0.9995633823315383,
+      "local_section_match_rate": 1.0,
+      "local_sections_matched_by_class_number": 27197,
+      "local_sections_with_api_enrollment": 27197,
+      "schedule_verification_status_counts": {
+        "class_found_schedule_changed_or_unmatched": 3,
+        "exact_schedule_match": 6868
+      },
+      "xml_queries_fetched_or_cached": 253
+    }
+  },
+  "osm_way_tag_coverage": {
+    "denominator_note": "All highway ways in the collected OSM bounding-box snapshot before walking or bicycle routing filters.",
+    "share_with_incline_tag": 0.00415112696610994,
+    "share_with_kerb_tag": 0.0003891681530728069,
+    "share_with_smoothness_tag": 0.001394519215177558,
+    "share_with_surface_tag": 0.1820982649586509,
+    "share_with_wheelchair_tag": 0.0016539646505594292,
+    "share_with_width_tag": 0.0009404897032592832,
+    "total_highway_ways": 30835,
+    "ways_with_incline_tag": 128,
+    "ways_with_kerb_tag": 12,
+    "ways_with_smoothness_tag": 43,
+    "ways_with_surface_tag": 5615,
+    "ways_with_wheelchair_tag": 51,
+    "ways_with_width_tag": 29
+  },
+  "room_lookup": {
+    "rooms_queried": 384,
+    "status_counts": {
+      "exact": 138,
+      "fallback": 221,
+      "no_result": 25
+    },
+    "usable_facilities": 75
+  },
+  "routing": {
+    "connected_route_pairs": 5625,
+    "facilities_from_room_lookup": 75,
+    "facilities_with_usable_snap": 75,
+    "indoor_or_corridor_ways_excluded": 13,
+    "max_snap_distance_meters": 60.99528626685469,
+    "median_snap_meters": 18.425772638564048,
+    "osm_elements": 156036,
+    "snap_distance_limit_meters": 250.0,
+    "total_route_pairs": 5625,
+    "walk_edge_segments": 131276,
+    "walk_edge_segments_before_component_filter": 133680,
+    "walk_graph_components_before_filter": 222,
+    "walk_graph_directed_edges": 262498,
+    "walk_graph_nodes": 114337,
+    "walk_graph_nodes_before_component_filter": 116885,
+    "walk_graph_undirected_edges": 131249,
+    "walk_graph_undirected_edges_before_component_filter": 133653
+  }
+}

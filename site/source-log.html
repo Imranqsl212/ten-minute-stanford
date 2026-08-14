@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Primary sources and audit artifacts for the Ten-Minute Stanford analysis.">
+  <meta name="theme-color" content="#8c1515">
+  <title>Source log | Ten-Minute Stanford</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body class="reference-layout">
+  <div class="reading-progress" aria-hidden="true"><span></span></div>
+  <div class="draft-banner">Publication prototype <span aria-hidden="true">&middot;</span> Source transparency</div>
+
+  <header class="site-header compact-header">
+    <div class="utility-bar">
+      <span>Independent analysis</span>
+      <span>Winter 2026 snapshot</span>
+    </div>
+    <a class="masthead" href="index.html">The Ten-Minute Stanford</a>
+    <nav class="section-nav" aria-label="Project pages">
+      <a href="index.html">Story</a>
+      <a href="methodology.html">Methodology</a>
+      <a class="active" href="source-log.html">Sources</a>
+      <a href="data/analysis_summary.json">Data</a>
+    </nav>
+  </header>
+
+  <main class="reference-main">
+    <article class="reference-page">
+      <header class="reference-header">
+        <p class="eyebrow">Provenance and attribution</p>
+        <h1>Source log</h1>
+        <p class="dek">Every reported number traces to a public source, a cached retrieval record and an auditable generated file.</p>
+      </header>
+
+      <section>
+        <h2>How to read the evidence</h2>
+        <div class="source-grid">
+          <article class="source-card">
+            <span>Official Stanford source</span>
+            <h3>Raw facts and policy</h3>
+            <p>ExploreCourses responses, Campus Map results, Bulletin guidance, Transportation rules and the Campus Access Guide come from Stanford-operated domains. Only this category supports claims about Stanford policy, guidance or official systems.</p>
+          </article>
+          <article class="source-card">
+            <span>External open data</span>
+            <h3>Route-network input</h3>
+            <p>OpenStreetMap supplies the saved route-network snapshot and documentation for its tags and license. It is not an official Stanford source.</p>
+          </article>
+          <article class="source-card">
+            <span>Third-party reference</span>
+            <h3>API request pattern</h3>
+            <p>The mentor-recommended GitHub package is not an official Stanford publication. It documents the XML request pattern and field names; it does not support Stanford policy claims or numerical results.</p>
+          </article>
+          <article class="source-card">
+            <span>Editorial context</span>
+            <h3>History, not current policy</h3>
+            <p>Stanford Daily links and the historical Google Sheet supply attributed prior reporting and an AY 2021-22 schedule artifact. They are not current policy, analytical inputs or evidence of Winter 2026 student outcomes.</p>
+          </article>
+          <article class="source-card">
+            <span>Derived result</span>
+            <h3>Our calculations</h3>
+            <p>Counts such as 27,197 sections, 283,079 possible pairs and the component-pair and subject-area percentages are not Stanford statistics. They are reproducible outputs linked to the checked-in tables, validation report and claim ledger.</p>
+          </article>
+          <article class="source-card">
+            <span>Author-conducted reporting</span>
+            <h3>27 student responses</h3>
+            <p>People the authors identify as Stanford students supplied illustrative experiences, consequences and route comments. The <a href="https://docs.google.com/spreadsheets/d/1gF9X8H8e44hamMNEyIAbUJVcV6Bubre1K2IJJMwd5ZI/edit?gid=1824059912#gid=1824059912">linked sheet</a> exported 26 rows; one earlier response absent from that export is retained in the normalized reporting file. This convenience sample is not an official Stanford source or a campus-wide estimate. The published <a href="data/student_survey_summary.csv">survey summary</a> contains the audited aggregate counts.</p>
+          </article>
+        </div>
+        <p>The route and schedule analysis has three public-data inputs: Stanford ExploreCourses responses, Stanford Campus Map responses and the saved OpenStreetMap snapshot. The 27-response survey is separate author-conducted reporting and is not an input to the route model. GitHub code, Stanford Daily pages and the historical schedule sheet supply no numerical result.</p>
+      </section>
+
+      <section>
+        <h2>Primary data</h2>
+        <div class="source-grid">
+          <article class="source-card">
+            <span>Schedule</span>
+            <h3><a href="https://explorecourses.stanford.edu/">Stanford ExploreCourses</a></h3>
+            <p>Winter 2026 class numbers, components, meeting dates, weekdays, times, room labels, enrollment and capacity came from Stanford's public XML responses. The <a href="data/source_manifest.json">source manifest</a> lists all 253 exact request URLs and hashes; this <a href="https://explorecourses.stanford.edu/search?view=xml-20200810&amp;filter-coursestatus-Active=on&amp;q=AA&amp;filter-departmentcode-AA=on&amp;filter-term-Winter=on&amp;academicYear=20252026">AA response</a> is one live endpoint example. Request construction follows the third-party mentor-recommended <a href="https://github.com/jeremyephron/explore-courses-api/blob/master/explorecourses/course_connection.py">CourseConnection implementation</a>; its <a href="https://github.com/jeremyephron/explore-courses-api/blob/master/explorecourses/classes.py">XML classes</a> served as a field reference.</p>
+          </article>
+          <article class="source-card">
+            <span>Coordinates</span>
+            <h3><a href="https://campus-map.stanford.edu/">Stanford Campus Map</a></h3>
+            <p>Facility IDs, room and building search labels, addresses and coordinates. Stanford's <a href="https://campus-map.stanford.edu/faq/FAQ.html">Campus Map FAQ</a> describes the map as maintained by Land, Buildings &amp; Real Estate.</p>
+          </article>
+          <article class="source-card">
+            <span>Route networks</span>
+            <h3><a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a></h3>
+            <p>Highway-tagged ways and nodes were retrieved through the <a href="https://wiki.openstreetmap.org/wiki/Overpass_API">Overpass API</a> and filtered separately into walking and directional bicycle networks. The response reports an OSM database timestamp of <code>2026-08-03T10:23:14Z</code>. OSM separately documents the <a href="https://wiki.openstreetmap.org/wiki/Key:wheelchair"><code>wheelchair</code></a> and <a href="https://wiki.openstreetmap.org/wiki/Key:incline"><code>incline</code></a> tags used in the accessibility-coverage check.</p>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <h2>Snapshot timing</h2>
+        <dl class="timeline-list">
+          <div><dt>10:24 UTC</dt><dd>OpenStreetMap walking-network snapshot retrieved on Aug. 3, 2026.</dd></div>
+          <div><dt>10:24–10:48 UTC</dt><dd>Stanford Campus Map room searches collected.</dd></div>
+          <div><dt>10:38–10:43 UTC</dt><dd>ExploreCourses Winter pages collected.</dd></div>
+          <div><dt>05:02–05:05 UTC</dt><dd>Public ExploreCourses XML responses collected on Aug. 5, 2026.</dd></div>
+        </dl>
+        <p>The verified local snapshot contains 580 ExploreCourses HTML responses, 253 ExploreCourses XML responses, 444 Campus Map responses and one OpenStreetMap response, for 1,278 active raw responses in total. Every active response has a source URL, retrieval time and SHA-256 digest recorded in the <a href="data/source_manifest.json">source manifest</a>. The <a href="data/validation.json">validation report</a> records the section, meeting, route-network and OSM tag-coverage counts derived from those responses. Raw response bodies are omitted from Git because of size. The collector can repeat the requests, but a later collection cannot recover the historical Aug. 3 and Aug. 5 bodies if a source changes.</p>
+        <p>The accessibility-coverage check uses all 30,835 highway ways in the saved OSM snapshot as its denominator. Only 51 ways (0.17%) have a <code>wheelchair</code> tag and 128 (0.42%) have an <code>incline</code> tag. Missing tags do not mean inaccessible or flat; they mean the snapshot cannot support a defensible campus-wide wheelchair-time model. The exact counts and rates are in the <a href="data/validation.json">validation report</a> and <a href="data/claim_audit.json">claim ledger</a>.</p>
+      </section>
+
+      <section>
+        <h2>Context and framing</h2>
+        <ul class="linked-list">
+          <li><a href="https://explorecourses.stanford.edu/about">About ExploreCourses</a> describes schedule coverage and the stated daily refresh cadence.</li>
+          <li><a href="https://advising.stanford.edu/current-students/advising-student-handbook/course-catalog">Stanford Academic Advising's course catalog guide</a> defines <code>LEC</code>, <code>DIS</code> and other class components.</li>
+          <li><a href="https://studentservices.stanford.edu/my-academics/enroll-classes/enrollment-troubleshooting">Stanford Student Services' enrollment guide</a> explains combined cross-listed sections, shared times and places, and total enrollment.</li>
+          <li><a href="https://siris.stanford.edu/sites/g/files/sbiybj16456/files/media/file/common-terms-in-siris-student-analytics.pdf">Stanford SIRIS Common Terms</a> defines class components, cross-listed classes and subject codes, including curricular-category exceptions.</li>
+          <li><a href="https://bulletin.stanford.edu/pages/oCRJSOUvJspMtKMq0G4L">Stanford Bulletin Unit of Credit guidance</a> states that a class is assumed to end ten minutes early to allow movement to the next class.</li>
+          <li><a href="https://admit.stanford.edu/advice">Stanford Undergraduate Admission tips</a> notes the common ten-minute class-change interval.</li>
+          <li><a href="https://bulletin.stanford.edu/academic-polices/courses/standard-meeting-patterns">Stanford Bulletin standard meeting patterns</a> describes common meeting times and their role in reducing schedule conflicts; its current grid is marked effective Autumn 2024. It also states that classroom assignment considers efficient use and room characteristics and sets a 75% enrollment-to-capacity threshold; it does not identify consecutive-student travel distance as an assignment objective.</li>
+          <li><a href="https://transportation.stanford.edu/getting-stanford/bike/education/comply-bike-laws">Stanford bicycle laws</a> state the 10 mph Pedestrian Zone maximum and list riding restrictions.</li>
+          <li><a href="https://transportation.stanford.edu/sites/g/files/sbiybj27281/files/media/file/bikeways-map.pdf">Stanford's Bikeways Map</a> provides official campus bicycle-route context.</li>
+          <li><a href="https://maps.stanford.edu/ada/">Stanford Campus Access Guide</a> provides building-specific accessible entrance information.</li>
+          <li><a href="https://police.stanford.edu/suggested-travel-routes.html">Stanford Suggested Travel Routes</a> provides official pedestrian and bicycle route guidance.</li>
+          <li><a href="https://wiki.openstreetmap.org/wiki/Key:wheelchair">OpenStreetMap wheelchair-tag documentation</a> states that wheelchair access has no default value and points to additional physical-way tags relevant to wheelchair routing.</li>
+          <li><a href="https://wiki.openstreetmap.org/wiki/Key:incline">OpenStreetMap incline-tag documentation</a> defines the tag used to record a way's grade, slope or incline.</li>
+          <li><a href="https://stanforddaily.com/category/data94305/">The Stanford Daily Data section</a> supplies editorial-format comparison only; it does not support an analytical or Stanford factual claim.</li>
+          <li><a href="https://stanforddaily.com/2021/09/14/overlapping-class-meeting-times-leave-students-stressed/">Prior Daily reporting on overlapping class times</a> supplies attributed historical context on the pre-pandemic 10-minute commuting break, the AY 2021-22 shift to 15-minute breaks and student experiences with partial schedule overlaps. It does not establish current policy or current student travel outcomes.</li>
+          <li><a href="https://docs.google.com/spreadsheets/d/1Gxv03c2yyypmCF1Hot5VJ9f3Wi5LADMyjLsmiABhNsQ/edit?gid=1166637319#gid=1166637319">The AY 2021-22 meeting-pattern spreadsheet</a> is a historical Google Sheet linked from the Daily story, which reported that the scheduling documents were provided by a University spokesperson. Its visible <code>Opt 4</code> grid includes 60-minute starts at 8:30, 9:45 and 11:00 and 90-minute starts at 9:45 and 11:30, examples that display 15-minute intervals. It contains no current courses, rooms, co-enrollment or travel observations and is not treated as current official policy.</li>
+          <li><a href="https://stanforddaily.com/submitting-to-the-daily/">The Daily's submission page</a> supplies publication-process context only.</li>
+        </ul>
+        <p>The original context set was checked on Aug. 4, 2026; API, bicycle, access and historical schedule sources were checked on Aug. 5. Component, enrollment and SIRIS terminology sources were checked on Aug. 7. The student survey sheet was exported and checked on Aug. 12. Both Bulletin pages returned HTTP 200 during the final direct check, and their exact supporting text was present in the live HTML. The <a href="data/claim_audit.json">claim ledger</a> records the source URL, supporting claim, check date and verification status for every context source.</p>
+      </section>
+
+      <section class="download-panel">
+        <p class="eyebrow">Published audit files</p>
+        <h2>Inspect the outputs</h2>
+        <div class="method-links">
+          <a href="data/analysis_summary.json">Reported statistics</a>
+          <a href="data/validation.json">Validation counts</a>
+          <a href="data/publication_audit.json">Publication consistency audit</a>
+          <a href="data/claim_audit.json">Claim ledger</a>
+          <a href="data/source_manifest.json">1,278-source manifest</a>
+          <a href="data/speed_summary.csv">Walking scenarios</a>
+          <a href="data/bicycle_speed_summary.csv">Bicycle scenarios</a>
+          <a href="data/passing_period_scenarios.csv">Passing-period scenarios</a>
+          <a href="data/top_constrained_routes.csv">Key routes</a>
+          <a href="data/time_slot_summary.csv">Actual time slots</a>
+          <a href="data/weekday_time_slot_summary.csv">Weekday slots</a>
+          <a href="data/component_time_summary.csv">Lecture and discussion times</a>
+          <a href="data/component_day_summary.csv">Lecture and discussion weekdays</a>
+          <a href="data/component_transition_summary.csv">Lecture and discussion transitions</a>
+          <a href="data/department_location_summary.csv">Subject-area locations</a>
+          <a href="data/subject_transition_feasibility.csv">Subject-area transition feasibility</a>
+          <a href="data/high_enrollment_transitions.csv">Large-enrollment screen</a>
+          <a href="data/student_survey_summary.csv">27-response survey summary</a>
+          <a href="data/course_transition_cases.csv">Four course cases</a>
+          <a href="data/course_transition_examples.csv">Course examples</a>
+        </div>
+      </section>
+
+      <section>
+        <h2>Attribution</h2>
+        <p>Graphics cite Stanford ExploreCourses, Stanford Campus Map and OpenStreetMap. Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a> (ODbL). Analysis and graphics are by Imran Zakirov and Alisher Sabitov. Per-source check dates appear in the claim ledger.</p>
+      </section>
+
+      <footer class="reference-footer">
+        <a href="index.html">Back to the story</a>
+        <a href="methodology.html">Read the methodology</a>
+      </footer>
+    </article>
+  </main>
+</body>
+</html>

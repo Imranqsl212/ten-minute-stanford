@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use this project, please cite it using the metadata below."
+title: "The Ten-Minute Stanford"
+type: software
+authors:
+  - family-names: Zakirov
+    given-names: Imran
+  - family-names: Sabitov
+    given-names: Alisher
+version: 0.1.0
+date-released: 2026-08-03
+license: MIT
+abstract: >-
+  A reproducible data-journalism analysis of possible ten-minute transitions
+  between physical class meetings in Stanford's Winter 2026 schedule.
+keywords:
+  - data journalism
+  - Stanford University
+  - pedestrian routing
+  - data visualization
+  - OpenStreetMap

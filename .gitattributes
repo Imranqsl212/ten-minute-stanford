@@ -1,0 +1,4 @@
+data/processed/** linguist-generated=true
+reports/generated/** linguist-generated=true
+*.csv diff=csv
+

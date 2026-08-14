@@ -1,0 +1,1291 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="The result is a description of potential combinations of meetings in the schedule, not of the trips students make."
+    />
+    <meta name="theme-color" content="#8c1515" />
+    <meta name="author" content="Imran Zakirov and Alisher Sabitov" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="The ten-minute test" />
+    <meta
+      property="og:description"
+      content="The result is a description of potential combinations of meetings in the schedule, not of the trips students make."
+    />
+    <meta property="og:image" content="social-preview.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="social-preview.png" />
+    <title>The ten-minute test | Stanford schedule analysis</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css?v=20260812-1" />
+    <script src="script.js?v=20260812-1" defer></script>
+  </head>
+  <body>
+    <div class="reading-progress" aria-hidden="true"><span></span></div>
+
+    <header class="site-header">
+      <div class="utility-bar">
+        <span>Reporting and analysis prototype</span>
+        <span>Data workshop final project</span>
+      </div>
+      <a
+        class="masthead"
+        href="https://stanforddaily.com/"
+        aria-label="The Stanford Daily home"
+      >
+        The Stanford Daily
+      </a>
+      <nav class="section-nav" aria-label="Sections">
+        <a href="https://stanforddaily.com/category/news/">News</a>
+        <a href="https://stanforddaily.com/category/academics/">Academics</a>
+        <a class="active" href="https://stanforddaily.com/category/data94305/"
+          >Data</a
+        >
+        <a href="https://stanforddaily.com/category/sports/">Sports</a>
+        <a href="https://stanforddaily.com/category/arts-life/"
+          >Arts &amp; Life</a
+        >
+        <a href="https://stanforddaily.com/category/opinions/">Opinions</a>
+      </nav>
+    </header>
+
+    <main>
+      <article id="edited-article">
+        <header class="article-header reveal story-header">
+          <a class="kicker" href="https://stanforddaily.com/category/data94305/"
+            >Data</a
+          >
+          <h1 data-source-line>The ten-minute test</h1>
+          <p class="dek" data-source-line>
+            Most modeled walks fit. The routes that do not show how quickly
+            Stanford's ten-minute passing period can disappear.
+          </p>
+          <div class="byline-row">
+            <div>
+              <p>By <strong>Imran Zakirov and Alisher Sabitov</strong></p>
+              <p class="timestamp">
+                Aug. 3, 2026 <span aria-hidden="true">&middot;</span>workshop
+                draft
+              </p>
+            </div>
+            <div class="share-links" aria-label="Article links">
+              <a href="#methods">Methods</a>
+              <a href="data/analysis_summary.json">Data</a>
+            </div>
+          </div>
+        </header>
+
+        <div class="story-grid article-copy-grid story-intro" id="edited-article-copy">
+          <div class="story-body">
+            <p class="lead reveal" data-source-line>
+              Stanford's
+              <a href="https://bulletin.stanford.edu/pages/oCRJSOUvJspMtKMq0G4L"
+                >Unit of Credit guidance</a
+              >
+              assumes that a class ends ten minutes early to allow students to
+              move to the next class. Every back-to-back class gets the same
+              passing period on paper. Campus geography decides how much of it
+              survives on the ground.
+            </p>
+
+            <p class="reveal" data-source-line>
+              We compared
+              <a href="https://explorecourses.stanford.edu/">ExploreCourses</a>
+              XML class times in the Winter 2026 quarter with
+              <a href="https://campus-map.stanford.edu/">Stanford Campus Map</a>
+              coordinates and used
+              <a href="https://www.openstreetmap.org/copyright"
+                >OpenStreetMap</a
+              >
+              data to calculate shortest walking-network routes. We then tested
+              every possible pair of meetings on the same weekday
+              when one meeting begins exactly 10 minutes after the other ends.
+            </p>
+
+            <p class="reveal" data-source-line>
+              The typical modeled route clears the test. At 3 mph,
+              <a
+                class="evidence-link"
+                href="data/speed_summary.csv"
+                title="Derived result: walking speed sensitivity table"
+                >82.5%</a
+              >
+              of those possible transitions had an estimated route time of 10
+              minutes or less, and the median was 6.2 minutes.
+              At the 90th percentile, however,
+              <a
+                class="evidence-link"
+                href="data/speed_summary.csv"
+                title="Derived result: walking speed sensitivity table"
+                >the route took 12.1 minutes, already beyond the next class's
+                start time.</a
+              >
+            </p>
+
+            <p class="reveal data-note" data-source-line>
+              That 17.5% is not a student lateness rate. The XML
+              snapshot contained
+              <a
+                class="evidence-link"
+                href="data/claim_audit.json"
+                title="Derived count checked against the ExploreCourses XML snapshot"
+                >27,197 Winter section records</a
+              >
+              and
+              <a
+                class="evidence-link"
+                href="data/claim_audit.json"
+                title="Verified availability of XML enrollment and capacity fields"
+                >reported enrollment and capacity for every section,</a
+              >
+              but it does not indicate which classes students take together.
+              The result describes potential combinations of meetings in the
+              schedule, not the trips students make.
+            </p>
+          </div>
+        </div>
+
+        <section class="hero-data reveal story-summary" aria-label="Verified analysis summary">
+          <div class="hero-number">
+            <span><a class="evidence-link" href="data/speed_summary.csv">83%</a></span>
+            <p>
+              of possible adjacent meeting routes fit within ten minutes at 3 mph
+            </p>
+          </div>
+          <div class="hero-context">
+            <p>
+              Most modeled routes fit. The hard part is how quickly the margin
+              disappears beyond the typical trip.
+            </p>
+            <dl>
+              <div>
+                <dt><a class="evidence-link" href="data/speed_summary.csv">6.2 min</a></dt>
+                <dd>median route, comfortably inside</dd>
+              </div>
+              <div>
+                <dt><a class="evidence-link" href="data/speed_summary.csv">12.1 min</a></dt>
+                <dd>90th percentile, past the bell</dd>
+              </div>
+              <div>
+                <dt><a class="evidence-link" href="data/claim_audit.json">97.0%</a></dt>
+                <dd>room-match coverage</dd>
+              </div>
+            </dl>
+          </div>
+        </section>
+
+        <section
+          class="takeaway-panel story-takeaways reveal"
+          aria-labelledby="takeaways-title"
+        >
+          <div class="takeaway-heading">
+            <p class="eyebrow">Bottom line</p>
+            <h2 id="takeaways-title">What the numbers actually say</h2>
+          </div>
+          <div class="takeaway-grid">
+            <article>
+              <span>01</span>
+              <h3>Typical is not universal.</h3>
+              <p>
+                The median modeled walk is 6.2 minutes. At the 90th percentile,
+                it is 12.1 minutes.
+              </p>
+            </article>
+            <article>
+              <span>02</span>
+              <h3>Buildings consume the margin.</h3>
+              <p>
+                Reserve two minutes to exit and enter, and the fit rate falls
+                from 82.5% to 69.0%.
+              </p>
+            </article>
+            <article>
+              <span>03</span>
+              <h3>This tests a schedule, not students.</h3>
+              <p>
+                Without co-enrollment data, the pairs are possibilities, not
+                observed trips or late arrivals.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <div class="story-grid article-copy-grid story-speed">
+          <div class="story-body">
+
+            <h2 class="reveal" data-source-line>
+              Ten minutes is not ten minutes of walking
+            </h2>
+
+            <p class="reveal" data-source-line>
+              <strong class="section-thesis"
+                >The headline moves with the walking-speed assumption.</strong
+              >
+              At 2 mph,
+              <a
+                class="evidence-link"
+                href="data/speed_summary.csv"
+                title="Derived result: walking speed sensitivity table"
+                >56.2%</a
+              >
+              of possible transitions had an estimated route time of 10 minutes
+              or less. At 4 mph, the share increased to
+              <a
+                class="evidence-link"
+                href="data/speed_summary.csv"
+                title="Derived result: walking speed sensitivity table"
+                >94.1%.</a
+              >
+            </p>
+
+            <p class="reveal data-note" data-source-line>
+              These are sensitivity tests, not descriptions of slow, typical or
+              fast walkers. The model is not meant to be an actual
+              representation of the mobility of any person.
+            </p>
+
+            <p class="reveal" data-source-line>
+              <strong class="section-thesis"
+                >More important, the clock starts before a student is
+                outside.</strong
+              >
+              In a
+              scenario that reserves two minutes for leaving and entering
+              buildings, the share drops to
+              <a
+                class="evidence-link"
+                href="data/speed_summary.csv"
+                title="Derived result with a two-minute building allowance"
+                >69.0%</a
+              >
+              at 3 mph because only eight minutes remain for the modeled route.
+            </p>
+          </div>
+        </div>
+
+        <figure class="wide-figure story-figure story-speed-figure reveal">
+          <img
+            src="assets/figures/feasibility_by_speed.png"
+            alt="At 2, 3 and 4 mph, the share of possible meeting transitions within ten minutes is 56, 83 and 94 percent; with two minutes reserved for buildings it is 42, 69 and 85 percent."
+          />
+          <figcaption>
+            <strong>Time available changes the conclusion.</strong> Speeds and the
+            two-minute building allowance are scenarios, not measured student
+            groups. <a href="data/speed_summary.csv">Inspect the scenario table</a>.
+            Sources: Stanford ExploreCourses, Stanford Campus Map and
+            <a href="https://www.openstreetmap.org/copyright"
+              >OpenStreetMap contributors</a
+            >.
+          </figcaption>
+        </figure>
+
+        <div class="story-grid article-copy-grid story-slots">
+          <div class="story-body">
+
+            <h2 class="reveal" data-source-line>
+              The schedule has rush hours
+            </h2>
+
+            <p class="reveal" data-source-line>
+              <strong class="section-thesis"
+                >The busiest passing period had the most possible routes, not
+                the best fit.</strong
+              >
+              The published schedule contains
+              <a
+                class="evidence-link"
+                href="data/time_slot_summary.csv"
+                title="Derived result: distinct end-to-start passing periods"
+                >25 distinct ten-minute end-to-start time slots,</a
+              >
+              or
+              <a
+                class="evidence-link"
+                href="data/weekday_time_slot_summary.csv"
+                title="Derived result: weekday-specific passing periods"
+                >92 combinations when weekdays are counted separately.</a
+              >
+              <a
+                class="evidence-link"
+                href="data/time_slot_summary.csv"
+                title="Derived result: passing-period table"
+                >At 1:20 p.m. to 1:30 p.m., there were 77,333 possible pairs
+                and 81.9% fit at 3 mph. The 10:20 a.m. to 10:30 a.m. slot had
+                53,781 possible pairs and a higher modeled fit rate of 86.1%.</a
+              >
+            </p>
+
+            <p class="reveal data-note" data-source-line>
+              These totals still count possible meeting combinations, not
+              students. Reported enrollment can show how many section seats are
+              scheduled around a time slot, but it cannot show how many students
+              need a particular building-to-building route.
+            </p>
+          </div>
+        </div>
+
+        <figure class="wide-figure story-figure story-slots-figure reveal">
+          <img
+            src="assets/figures/time_slot_feasibility.png"
+            alt="Walking feasibility for the twelve busiest actual ten-minute passing periods in the Winter 2026 schedule."
+          />
+          <figcaption>
+            <strong>Course times create different route mixes.</strong> The bars
+            use actual published end and start times. Pair counts are schedule
+            combinations, not co-enrolled students.
+            <a href="data/time_slot_summary.csv">Inspect the slot table</a>.
+          </figcaption>
+        </figure>
+
+        <div class="story-grid article-copy-grid story-components">
+          <div class="story-body">
+            <h2 class="reveal" data-source-line>
+              Lectures and discussions run on different clocks
+            </h2>
+
+            <p class="reveal" data-source-line>
+              <strong class="section-thesis"
+                >Lectures and discussions occupy different parts of the
+                timetable.</strong
+              >
+              <a
+                href="https://advising.stanford.edu/current-students/advising-student-handbook/course-catalog"
+                >Stanford defines LEC as a lecture course and DIS as the
+                discussion-section component of a lecture course.</a
+              >
+              In the Winter snapshot, the median published start was noon across
+              <a class="evidence-link" href="data/component_time_summary.csv"
+                >2,035 eligible LEC meeting-day rows</a
+              >
+              and 1:30 p.m. across
+              <a class="evidence-link" href="data/component_time_summary.csv"
+                >911 DIS rows.</a
+              >
+            </p>
+
+            <p class="reveal" data-source-line>
+              Discussion rows also tilted later in the day and week:
+              <a class="evidence-link" href="data/component_time_summary.csv"
+                >47.0% began at 2:30 p.m. or later, compared with 24.2% of lecture
+                rows;</a
+              >
+              <a class="evidence-link" href="data/component_day_summary.csv"
+                >65.9% fell on Thursday or Friday, compared with 31.8% of lecture
+                rows.</a
+              >
+              These are section-listing meeting-day rows, so a class scheduled on
+              two weekdays contributes two rows. They describe the published
+              timetable, not attendance or unique students.
+            </p>
+
+            <p class="reveal" data-source-line>
+              <strong class="section-thesis"
+                >The route mix shifts with that timetable.</strong
+              >
+              Among
+              <a class="evidence-link" href="data/component_transition_summary.csv"
+                >62,525 possible pairs in which both meetings were coded LEC or
+                DIS, 78.0% of LEC-to-LEC pairs fit within ten modeled minutes at
+                3 mph.</a
+              >
+              The corresponding shares were 82.7% for LEC-to-DIS, 83.0% for
+              DIS-to-LEC and 89.7% for DIS-to-DIS pairs. These percentages
+              compare schedule-compatible meetings, not the schedules of students
+              who move between lectures and sections.
+            </p>
+          </div>
+        </div>
+
+        <figure class="wide-figure story-figure story-components-figure reveal">
+          <picture>
+            <source
+              media="(max-width: 700px)"
+              srcset="assets/figures/component_schedule_patterns_mobile.png"
+            />
+            <img
+              src="assets/figures/component_schedule_patterns.png"
+              alt="Three panels compare lecture and discussion timing by start time and weekday, then show the share of four possible component-to-component pair types within ten modeled minutes."
+            />
+          </picture>
+          <figcaption>
+            <strong>Component timing changes the route mix.</strong> The third
+            panel connects the schedule pattern to walking feasibility for 62,525
+            possible LEC/DIS meeting pairs. Inspect the
+            <a href="data/component_time_summary.csv">time table</a> and
+            <a href="data/component_day_summary.csv">weekday table</a>, then the
+            <a href="data/component_transition_summary.csv">transition table</a>.
+            Sources: Stanford ExploreCourses, Stanford Campus Map and
+            OpenStreetMap contributors.
+          </figcaption>
+        </figure>
+
+        <div class="story-grid article-copy-grid story-subjects">
+          <div class="story-body">
+            <h2 class="reveal" data-source-line>
+              Subject areas have different campus footprints
+            </h2>
+
+            <p class="reveal" data-source-line>
+              <strong class="section-thesis"
+                >The map raises two different questions: where a subject
+                teaches, and where a compatible next class might be.</strong
+              >
+              The ExploreCourses index listed
+              <a class="evidence-link" href="data/department_location_summary.csv"
+                >253 subject codes.</a
+              >
+              <a
+                href="https://siris.stanford.edu/sites/g/files/sbiybj16456/files/media/file/common-terms-in-siris-student-analytics.pdf"
+                >Stanford's SIRIS documentation says that a subject usually
+                represents a domain of study but can also identify a curricular
+                category,</a
+              >
+              so this analysis calls them subject areas rather than assuming that
+              every code is a formal department.
+            </p>
+
+            <p class="reveal" data-source-line>
+              Among the 15 subject areas with the most mapped meeting-day rows,
+              <a class="evidence-link" href="data/department_location_summary.csv"
+                >Law placed 96.1% of its rows at the facility labeled Law and
+                History placed 68.8% at Building 200.</a
+              >
+              Computer Science was more dispersed: Thornton Center, its most-used
+              mapped facility, accounted for 14.6%. English's top facility,
+              Building 460, accounted for 13.4%. Cross-listed listings remain
+              under each published subject code, and the 178 eligible rows with
+              unresolved room labels are absent from this comparison.
+            </p>
+
+            <p class="reveal" data-source-line>
+              <strong class="section-thesis"
+                >Concentration does not guarantee a short next trip.</strong
+              >
+              Among the same 15 subject areas,
+              <a class="evidence-link" href="data/subject_transition_feasibility.csv"
+                >7.3% of possible outgoing pairs from History meetings exceeded
+                ten modeled minutes at 3 mph, compared with 21.6% from Computer
+                Science and 35.7% from Music.</a
+              >
+              Campus concentration and outgoing route risk are different
+              measures: the next compatible meeting may be outside the area where
+              a subject holds most of its own classes.
+            </p>
+          </div>
+        </div>
+
+        <figure class="wide-figure story-figure story-subjects-figure reveal">
+          <picture>
+            <source
+              media="(max-width: 700px)"
+              srcset="assets/figures/department_location_concentration_mobile.png"
+            />
+            <img
+              src="assets/figures/department_location_concentration.png"
+              alt="Two-panel bars compare each of the fifteen largest mapped subject areas' concentration at its most-used facility with the share of possible outgoing meeting pairs over ten modeled minutes."
+            />
+          </picture>
+          <figcaption>
+            <strong>Footprint and route risk are not the same measure.</strong>
+            The left panel identifies each subject area's most-used mapped
+            facility; the right tests possible routes from those meetings.
+            <a href="data/department_location_summary.csv"
+              >Inspect every subject-facility row</a
+            >, then the
+            <a href="data/subject_transition_feasibility.csv"
+              >incoming and outgoing transition table</a
+            >. Sources: Stanford ExploreCourses, Stanford Campus Map and
+            OpenStreetMap contributors.
+          </figcaption>
+        </figure>
+
+        <div class="story-grid article-copy-grid story-enrollment">
+          <div class="story-body">
+            <h2 class="reveal" data-source-line>
+              Large classes are not always close together
+            </h2>
+
+            <p class="reveal" data-source-line>
+              <strong class="section-thesis"
+                >Size is no guarantee of a short handoff.</strong
+              >
+              For a transparent large-class screen, we grouped identical
+              course-time-building combinations across weekdays and kept
+              different-building combinations in which both meetings reported at
+              least 100 enrolled.
+              <a
+                href="https://studentservices.stanford.edu/my-academics/enroll-classes/enrollment-troubleshooting"
+                >Stanford Student Services says cross-listed classes are typically
+                combined at the same time and place;</a
+              >
+              in this screen, records sharing one physical meeting were combined.
+              This produced
+              <a class="evidence-link" href="data/high_enrollment_transitions.csv"
+                >187 possible combinations; 42, or 22.5%, exceeded ten modeled
+                minutes at 3 mph.</a
+              >
+            </p>
+
+            <p class="reveal route-example route-example-fits" data-source-line>
+              The largest combination by the smaller enrollment fit comfortably:
+              a
+              366-enrollment CS 124 / LINGUIST 180 / LINGUIST 280 meeting in
+              Hewlett Teaching Center to a 546-enrollment CS 224N / LINGUIST 284 /
+              SYMSYS 195N meeting in Huang Engineering Center, with a modeled
+              route of 4.0 minutes.
+            </p>
+
+            <p class="reveal route-example route-example-misses" data-source-line>
+              Two other large combinations missed the ten-minute mark. CME 364A /
+              EE 364A in Lathrop Library to CS 205L in Huang took 10.6 minutes.
+              CS 106A in Hewlett to CS 22A / INTLPOL 200 / SYMSYS 122 in Zambrano
+              Hall took 12.8 minutes.
+            </p>
+
+            <p class="reveal data-note" data-source-line>
+              The smaller enrollment is only a screen showing that both meetings
+              are large. It is not a co-enrollment count, and the 187 combinations
+              do not show that any student took both courses.
+            </p>
+          </div>
+        </div>
+
+        <figure class="wide-figure story-figure story-enrollment-figure reveal">
+          <img
+            src="assets/figures/high_enrollment_transitions.png"
+            alt="A scatterplot shows the smaller reported enrollment and modeled walking time for 187 possible pairs of meetings that each report at least 100 enrolled."
+          />
+          <figcaption>
+            <strong>Large does not always mean close.</strong> Each point is one
+            unique possible course-time-building combination; red points exceed
+            ten minutes at 3 mph. The horizontal position uses the smaller of two
+            reported enrollments, not enrollment overlap.
+            <a href="data/high_enrollment_transitions.csv">Inspect all 187 pairs</a>.
+            Source: Stanford ExploreCourses.
+          </figcaption>
+        </figure>
+
+        <section
+          class="transition-cases story-course-cases reveal"
+          aria-labelledby="course-cases-title"
+        >
+          <div class="transition-cases-copy">
+            <p class="eyebrow">Four published pairs</p>
+            <h2 id="course-cases-title" data-source-line>
+              Four routes, one ten-minute gap
+            </h2>
+            <p data-source-line>
+              Aggregate percentages hide the difference between a comfortable
+              walk and an impossible one. The examples below use published Winter
+              2026 meetings on the same weekday whose active dates overlap. In
+              each case, the first meeting ends exactly ten minutes before the
+              second begins. A student enrolled in both sections would need to
+              make the building-to-building transition, but ExploreCourses does
+              not show whether any student actually took both.
+            </p>
+          </div>
+
+          <div class="transition-case-grid">
+            <article class="transition-case case-fits">
+              <div class="case-status">
+                <span>Near the median</span>
+                <strong>Fits in the model</strong>
+              </div>
+              <div class="case-course">
+                <span>Ends Fri. at 11:20 a.m.</span>
+                <h3>GEOPHYS 280</h3>
+                <p>Mitchell Earth Sciences</p>
+              </div>
+              <div class="case-handoff" aria-label="Ten-minute passing period">
+                <span>10 min</span>
+              </div>
+              <div class="case-course destination-course">
+                <span>Begins Fri. at 11:30 a.m.</span>
+                <h3>TURKLANG 2A</h3>
+                <p>Building 240</p>
+              </div>
+              <dl>
+                <div><dt>497 m</dt><dd>modeled route</dd></div>
+                <div><dt>6.2 min</dt><dd>walk at 3 mph</dd></div>
+                <div><dt>+3.8 min</dt><dd>modeled margin</dd></div>
+                <div><dt>2.9 min</dt><dd>bike at 8 mph</dd></div>
+              </dl>
+            </article>
+
+            <article class="transition-case case-tight">
+              <div class="case-status">
+                <span>Near the limit</span>
+                <strong>Only 0.5 min spare</strong>
+              </div>
+              <div class="case-course">
+                <span>Ends Fri. at 11:20 a.m.</span>
+                <h3>STRAMGT 354</h3>
+                <p>GSB Gunn</p>
+              </div>
+              <div class="case-handoff" aria-label="Ten-minute passing period">
+                <span>10 min</span>
+              </div>
+              <div class="case-course destination-course">
+                <span>Begins Fri. at 11:30 a.m.</span>
+                <h3>MATH 131P</h3>
+                <p>Building 420</p>
+              </div>
+              <dl>
+                <div><dt>765 m</dt><dd>modeled route</dd></div>
+                <div><dt>9.5 min</dt><dd>walk at 3 mph</dd></div>
+                <div><dt>+0.5 min</dt><dd>modeled margin</dd></div>
+                <div><dt>3.9 min</dt><dd>bike at 8 mph</dd></div>
+              </dl>
+            </article>
+
+            <article class="transition-case case-misses">
+              <div class="case-status">
+                <span>Above the limit</span>
+                <strong>2.0 min over</strong>
+              </div>
+              <div class="case-course">
+                <span>Ends Mon. at 9:50 a.m.</span>
+                <h3>COMPLIT 248B</h3>
+                <p>Building 70</p>
+              </div>
+              <div class="case-handoff" aria-label="Ten-minute passing period">
+                <span>10 min</span>
+              </div>
+              <div class="case-course destination-course">
+                <span>Begins Mon. at 10:00 a.m.</span>
+                <h3>OB 331</h3>
+                <p>Zambrano Hall</p>
+              </div>
+              <dl>
+                <div><dt>966 m</dt><dd>modeled route</dd></div>
+                <div><dt>12.0 min</dt><dd>walk at 3 mph</dd></div>
+                <div><dt>-2.0 min</dt><dd>modeled margin</dd></div>
+                <div><dt>6.9 min</dt><dd>bike at 8 mph</dd></div>
+              </dl>
+            </article>
+
+            <article class="transition-case case-misses">
+              <div class="case-status">
+                <span>Longest modeled example</span>
+                <strong>18.3 min over</strong>
+              </div>
+              <div class="case-course">
+                <span>Ends Wed. at 12:20 p.m.</span>
+                <h3>HORSE 10</h3>
+                <p>Red Barn Stables</p>
+              </div>
+              <div class="case-handoff" aria-label="Ten-minute passing period">
+                <span>10 min</span>
+              </div>
+              <div class="case-course destination-course">
+                <span>Begins Wed. at 12:30 p.m.</span>
+                <h3>BIO 71 / ESS 71</h3>
+                <p>Encina West</p>
+              </div>
+              <dl>
+                <div><dt>2,278 m</dt><dd>modeled route</dd></div>
+                <div><dt>28.3 min</dt><dd>walk at 3 mph</dd></div>
+                <div><dt>-18.3 min</dt><dd>modeled margin</dd></div>
+                <div><dt>10.8 min</dt><dd>bike at 8 mph</dd></div>
+              </dl>
+            </article>
+          </div>
+
+          <p class="transition-cases-note">
+            Examples were selected by a fixed rule near the overall median, near
+            9.5 minutes, near 12 minutes and at the longest modeled route time.
+            They illustrate the range rather than the frequency of student trips.
+            <a href="data/course_transition_cases.csv">Inspect every field</a>.
+          </p>
+        </section>
+
+        <section
+          class="survey-panel story-survey reveal"
+          aria-labelledby="student-survey-title"
+        >
+          <div class="survey-copy">
+            <p class="eyebrow">Student voices</p>
+            <h2 id="student-survey-title" data-source-line>
+              What 27 Stanford students have added
+            </h2>
+            <p data-source-line>
+              The route model ends with an estimated travel time. The survey
+              reveals what this time can displace.
+              <a class="evidence-link" href="data/student_survey_summary.csv"
+                >Fourteen of 27 respondents said distance had made them late at
+                least once, and six more reported a close call.</a
+              >
+              Combined, 20 participants (74%) reported being late or close to
+              being late.
+            </p>
+            <p data-source-line>
+              The more telling answers came from the 23 people who were given
+              additional questions.
+              <a class="evidence-link" href="data/student_survey_summary.csv"
+                >Eleven cited a specific consequence beyond arrival time:
+                missing class content or an announcement (six), distance
+                affecting a course choice (two), or missing office hours, a
+                study group or lunch (three).</a
+              >
+              A schedule can impose a cost even when a student arrives without
+              being marked late.
+            </p>
+            <p data-source-line>
+              The mode of travel influenced the experience. Twenty-one people
+              selected walking, 11 selected biking, and five selected an
+              e-scooter; respondents could select more than one mode. They
+              named routes involving Red Barn, Maples, Manzanita, the Medical
+              School, west-side residences, Main Quad, Engineering and
+              McMurtry. Others mentioned rain, construction, crowded crossings
+              or a class ending late as the difference between a manageable
+              transition and a late arrival.
+            </p>
+            <p class="survey-caveat" data-source-line>
+              The lesson for students is to double-check the buildings, not
+              just the times, before scheduling classes back to back. This
+              <a
+                href="https://docs.google.com/spreadsheets/d/1gF9X8H8e44hamMNEyIAbUJVcV6Bubre1K2IJJMwd5ZI/edit?gid=1824059912#gid=1824059912"
+                >survey</a
+              >
+              is a convenience sample, not a representative sample of Stanford
+              students. Respondents' identities, course pairs and travel times
+              were not independently verified, and the responses do not
+              estimate how common the problem is across campus; these numbers
+              refer only to the 27 responses.
+            </p>
+          </div>
+
+          <aside class="survey-snapshot" aria-label="27-response survey snapshot">
+            <a class="survey-tally" href="data/student_survey_summary.csv">
+              <strong>20 of 27</strong>
+              <span>reported lateness or a close call</span>
+            </a>
+            <p class="survey-impact-label">What travel displaced</p>
+            <div class="survey-impact-grid">
+              <div><strong>6</strong><span>missed content or an announcement</span></div>
+              <div><strong>3</strong><span>skipped an adjacent activity</span></div>
+              <div><strong>2</strong><span>changed a course choice</span></div>
+            </div>
+            <p class="survey-mode-summary">
+              <span><strong>21</strong> walking</span>
+              <span><strong>11</strong> biking</span>
+              <span><strong>5</strong> e-scooter</span>
+            </p>
+          </aside>
+        </section>
+
+        <div class="story-grid article-copy-grid story-planning">
+          <div class="story-body">
+            <h2 class="reveal" data-source-line>
+              Was the schedule designed for this?
+            </h2>
+
+            <p class="reveal" data-source-line>
+              <strong class="section-thesis"
+                >The data can test the published schedule's outcome, but not
+                Stanford's intent.</strong
+              >
+              Stanford says its
+              <a
+                href="https://bulletin.stanford.edu/academic-polices/courses/standard-meeting-patterns"
+                >standard meeting patterns</a
+              >
+              are intended to reduce course conflicts. The page's current grid
+              is marked effective Autumn 2024. The same policy says classroom
+              space is assigned for efficient use and room characteristics,
+              including a minimum enrollment threshold relative to capacity.
+            </p>
+
+            <p class="reveal" data-source-line>
+              Those public rules do not say that rooms are assigned to minimize
+              the distance between each student's consecutive classes. The results
+              therefore describe how the published schedule performs under
+              possible pairings; they do not establish whether Stanford planned
+              these routes. Testing that question would require anonymized
+              co-enrollment data and the constraints used when rooms were assigned.
+            </p>
+          </div>
+        </div>
+
+        <section
+          class="history-panel story-history reveal"
+          id="fifteen-minute-history"
+          aria-labelledby="history-title"
+        >
+          <div class="history-copy">
+            <p class="eyebrow">Schedule history</p>
+            <h2 id="history-title" data-source-line>
+              Stanford has used a longer passing period before
+            </h2>
+
+            <p data-source-line>
+              <a
+                href="https://stanforddaily.com/2021/09/14/overlapping-class-meeting-times-leave-students-stressed/"
+                >Prior reporting by The Stanford Daily</a
+              >
+              says Stanford previously used 50- and 80-minute classes with
+              10-minute breaks. For the return to in-person instruction in 2021,
+              the University used 60- and 90-minute slots with 15-minute breaks;
+              a University spokesperson said the longer interval was intended to
+              reduce hallway density. The linked
+              <a
+                href="https://docs.google.com/spreadsheets/d/1Gxv03c2yyypmCF1Hot5VJ9f3Wi5LADMyjLsmiABhNsQ/edit?gid=1166637319#gid=1166637319"
+                >AY 2021-22 meeting-pattern spreadsheet</a
+              >
+              displays that 15-minute cadence.
+            </p>
+
+            <p data-source-line>
+              <strong class="section-thesis"
+                >Five extra minutes sharply shrink the long tail in this
+                model.</strong
+              >
+              Applied to the same 283,079 potential Winter 2026 pairs at 3 mph, a
+              <a
+                class="evidence-link"
+                href="data/passing_period_scenarios.csv"
+                title="Derived result: passing-period counterfactuals"
+                >15-minute route allowance raises the modeled fit rate from
+                82.5% to 97.3%.</a
+              >
+              When two minutes are reserved for leaving and entering buildings,
+              <a
+                class="evidence-link"
+                href="data/passing_period_scenarios.csv"
+                title="Derived result: passing-period counterfactuals with building allowance"
+                >the comparison is 69.0% with a 10-minute period and 93.1% with
+                a 15-minute period.</a
+              >
+            </p>
+          </div>
+
+          <div class="history-comparison" aria-label="Ten- and fifteen-minute scenario comparison">
+            <article class="history-card current-period">
+              <span>Winter 2026 analyzed gap</span>
+              <strong>10 min</strong>
+              <dl>
+                <div><dt>82.5%</dt><dd>route only at 3 mph</dd></div>
+                <div><dt>69.0%</dt><dd>with 2 min for buildings</dd></div>
+              </dl>
+            </article>
+            <article class="history-card historical-period">
+              <span>Winter 2026 pairs, historical budget</span>
+              <strong>15 min</strong>
+              <dl>
+                <div><dt>97.3%</dt><dd>route only at 3 mph</dd></div>
+                <div><dt>93.1%</dt><dd>with 2 min for buildings</dd></div>
+              </dl>
+            </article>
+          </div>
+
+          <p class="history-caveat" data-source-line>
+            This is a historical comparison, not current policy: the percentages
+            apply a 15-minute budget to Winter 2026 pairs. The historical
+            spreadsheet contains meeting patterns, not courses, rooms,
+            co-enrollment or observed trips.
+          </p>
+        </section>
+
+        <div class="story-grid article-copy-grid story-bicycle">
+          <div class="story-body">
+
+            <h2 class="reveal" data-source-line>
+              A bicycle changes the model
+            </h2>
+
+            <p class="reveal" data-source-line>
+              <strong class="section-thesis"
+                >In the model, a bicycle nearly eliminates the ten-minute
+                misses.</strong
+              >
+              We also built a
+              <a
+                class="evidence-link"
+                href="data/validation.json"
+                title="Derived network validation counts and filter definition"
+                >directional bicycle network that excludes steps and follows
+                mapped bicycle access and one-way tags.</a
+              >
+              At an assumed 8 mph,
+              <a
+                class="evidence-link"
+                href="data/bicycle_speed_summary.csv"
+                title="Derived result: bicycle speed sensitivity table"
+                >99.9% of possible pairs fit within ten route minutes, and the
+                90th percentile was 5.4 minutes. With two minutes reserved for
+                bike handling and building transitions, 99.4% fit.</a
+              >
+            </p>
+
+            <p class="reveal data-note" data-source-line>
+              The 8 mph speed and two-minute allowance are sensitivity
+              assumptions, not measured student behavior. Stanford sets a
+              <a
+                href="https://transportation.stanford.edu/getting-stanford/bike/education/comply-bike-laws"
+                title="Official Stanford Transportation bicycle rules"
+                >10 mph maximum bicycle speed in the central Pedestrian Zone.</a
+              >
+              The
+              model does not include finding a bike, parking it, or locations
+              where a rider may need to dismount.
+            </p>
+          </div>
+        </div>
+
+        <figure class="wide-figure story-figure story-bicycle-figure reveal">
+          <img
+            src="assets/figures/walking_bicycle_comparison.png"
+            alt="Comparison of the share of potential meeting pairs fitting within ten minutes when walking at 3 mph or bicycling at 8 mph."
+          />
+          <figcaption>
+            <strong>Bicycle access changes modeled reach.</strong> The bike graph
+            follows mapped access and one-way tags but does not include parking,
+            dismounting or time needed to reach a bike.
+            <a href="data/bicycle_speed_summary.csv">Inspect the bicycle scenarios</a>.
+          </figcaption>
+        </figure>
+
+        <div class="story-grid article-copy-grid story-campus">
+          <div class="story-body">
+
+            <h2 class="reveal" data-source-line>
+              Campus is not one compact block
+            </h2>
+
+            <p class="reveal" data-source-line>
+              <strong class="section-thesis"
+                >Most routes in the model were short. The story is the long
+                tail, which traversed several different sections of campus.</strong
+              >
+              At 3 mph, the
+              <a
+                class="evidence-link"
+                href="data/top_constrained_routes.csv"
+                title="Derived route examples"
+                >estimated route from Lathrop Library to Thornton Center took
+                12.9 minutes. The route from Building 200 to Cordura Hall took
+                14.1 minutes, and the route from Building 260 to the McMurtry
+                Building took approximately 12 minutes.</a
+              >
+            </p>
+
+            <p class="reveal data-note" data-source-line>
+              These are estimates, not door-to-door stopwatch measurements.
+              Facility points are connected to the network with straight links
+              that are not path-verified and can cross barriers. The estimates
+              do not account for elevators, hallway crowds, construction delays
+              or time lost when an instructor ends class late.
+            </p>
+          </div>
+        </div>
+
+        <div class="story-grid article-copy-grid story-counting">
+          <div class="story-body">
+
+            <h2 class="reveal" data-source-line>
+              The model counts meetings, not students
+            </h2>
+
+            <p class="reveal technical-note" data-source-line>
+              <strong class="section-thesis"
+                >We excluded unresolved rooms instead of guessing.</strong
+              >
+              <a
+                class="evidence-link"
+                href="data/claim_audit.json"
+                title="Derived and audited room-matching counts"
+                >A Campus Map matching process resolved 5,848 of the 6,026
+                eligible schedule-listing rows to 75 facilities. The remaining
+                178 rows represented 25 unresolved room labels.</a
+              >
+              <a
+                class="evidence-link"
+                href="data/claim_audit.json"
+                title="Derived and audited cross-listing counts"
+                >Collapsing 1,394 cross-listed duplicate listings left 4,454
+                physical meeting-day rows.</a
+              >
+            </p>
+
+            <p class="reveal technical-note" data-source-line>
+              <a
+                class="evidence-link"
+                href="data/claim_audit.json"
+                title="Derived denominator and route-coverage audit"
+                >Those rows produced 283,079 possible consecutive meeting
+                pairs.</a
+              >
+              Each pair is weighted equally because ExploreCourses does not
+              reveal co-enrollment; this is a schedule model, not a count of
+              students. The
+              <a href="methodology.html">methodology</a> documents the full
+              matching, deduplication and routing rules.
+            </p>
+          </div>
+        </div>
+
+      <section
+        class="route-lab reveal story-route"
+        id="route-checker"
+        data-source="data/route_explorer.json"
+      >
+        <header class="route-lab-header">
+          <div>
+            <p class="eyebrow">Try the schedule</p>
+            <h2>Can you make it?</h2>
+          </div>
+          <p>
+            Choose two mapped class locations and a travel mode. The route,
+            distance and estimated time update immediately.
+          </p>
+        </header>
+
+        <div class="route-lab-grid">
+          <div class="route-controls">
+            <div class="route-selectors">
+              <label for="route-origin">
+                <span>From</span>
+                <select id="route-origin" disabled>
+                  <option>Loading facilities&hellip;</option>
+                </select>
+              </label>
+              <button
+                class="swap-route"
+                id="swap-route"
+                type="button"
+                aria-label="Swap origin and destination"
+                disabled
+              >
+                <span aria-hidden="true">&updownarrow;</span>
+              </button>
+              <label for="route-destination">
+                <span>To</span>
+                <select id="route-destination" disabled>
+                  <option>Loading facilities&hellip;</option>
+                </select>
+              </label>
+            </div>
+
+            <fieldset class="mode-control" disabled>
+              <legend>Travel mode</legend>
+              <div class="segmented-control" id="mode-control">
+                <button
+                  class="active"
+                  type="button"
+                  data-mode="walk"
+                  aria-pressed="true"
+                >
+                  Walking
+                </button>
+                <button type="button" data-mode="bike">Bicycle</button>
+              </div>
+            </fieldset>
+
+            <fieldset class="speed-control" disabled>
+              <legend id="speed-control-label">Walking speed</legend>
+              <div class="segmented-control" id="speed-control">
+                <button type="button" data-speed="2">2 mph</button>
+                <button
+                  class="active"
+                  type="button"
+                  data-speed="3"
+                  aria-pressed="true"
+                >
+                  3 mph
+                </button>
+                <button type="button" data-speed="4">4 mph</button>
+              </div>
+            </fieldset>
+
+            <label class="overhead-control" for="building-overhead">
+              <input id="building-overhead" type="checkbox" disabled />
+              <span id="overhead-label"
+                ><strong>Reserve two minutes</strong> for leaving and entering
+                buildings</span>
+            </label>
+
+            <div class="route-result" aria-live="polite">
+              <p id="route-result-context">Loading route model&hellip;</p>
+              <strong id="route-result-time">&mdash;</strong>
+              <p id="route-result-verdict">
+                The interactive will appear when its data load.
+              </p>
+              <dl>
+                <div>
+                  <dt id="route-distance">&mdash;</dt>
+                  <dd>route distance</dd>
+                </div>
+                <div>
+                  <dt id="route-margin">&mdash;</dt>
+                  <dd>time margin</dd>
+                </div>
+              </dl>
+            </div>
+
+            <p class="route-status" id="route-status" aria-live="polite">
+              Waiting for route data.
+            </p>
+          </div>
+
+          <div class="route-map-panel">
+            <svg
+              id="route-map"
+              viewBox="0 0 1000 620"
+              role="img"
+              aria-labelledby="route-map-title route-map-description"
+            >
+              <title id="route-map-title">Selected Stanford class route</title>
+              <desc id="route-map-description">
+                A geographic plot of the selected route and nearby mapped
+                class locations.
+              </desc>
+              <rect class="map-paper" width="1000" height="620"></rect>
+              <g id="map-facilities"></g>
+              <path id="map-route-shadow" class="map-route-shadow"></path>
+              <path id="map-route" class="map-route"></path>
+              <g id="map-endpoints"></g>
+            </svg>
+            <div class="map-legend" aria-hidden="true">
+              <span><i class="origin-key"></i> Start</span>
+              <span><i class="destination-key"></i> Destination</span>
+              <span><i class="facility-key"></i> Other class location</span>
+            </div>
+            <p class="map-attribution">
+              Map data &copy;
+              <a href="https://www.openstreetmap.org/copyright"
+                >OpenStreetMap contributors</a
+              >
+              (ODbL).
+            </p>
+          </div>
+        </div>
+
+        <div class="policy-simulator" id="passing-period-scenarios">
+          <div class="policy-copy">
+            <p class="eyebrow">Policy thought experiment</p>
+            <h3>Same routes. More time.</h3>
+            <p>
+              The 12-minute case is hypothetical. The 15-minute case compares
+              the same Winter 2026 pairs with the longer passing period shown in
+              the AY 2021-22 meeting grid. Neither describes current Stanford
+              policy.
+            </p>
+          </div>
+          <div class="scenario-grid" id="scenario-grid" aria-live="polite">
+            <p>Loading passing-period scenarios&hellip;</p>
+          </div>
+        </div>
+
+        <footer class="route-lab-footer">
+          <p>
+            Estimates connect facility coordinates to routes on a tag-filtered
+            walking or bicycle network. Straight snap connectors are not
+            path-verified, and bicycle estimates exclude parking and walking a
+            bike. These are not door-to-door measurements or accessible-route
+            guidance.
+          </p>
+          <a href="data/route_explorer.json">Inspect the route payload</a>
+          <a href="data/passing_period_scenarios.csv">Inspect time scenarios</a>
+          <a href="methodology.html">Read the methodology</a>
+        </footer>
+      </section>
+
+      <figure class="wide-figure reveal story-cdf">
+        <img
+          src="assets/figures/route_time_cdf.png"
+          alt="Cumulative distribution of modeled walking times at 3 mph, with 83 percent at or below ten minutes."
+        />
+        <figcaption>
+          <strong>The tail passes the bell.</strong> At 3 mph, 17.5% of routed
+          possible pairings exceed ten modeled route minutes.
+        </figcaption>
+      </figure>
+
+      <figure class="full-bleed-figure reveal story-campus-map">
+        <img
+          src="assets/figures/campus_transition_risk.png"
+          alt="Map of mapped Stanford class locations, colored by the share of possible next meetings whose route exceeds ten minutes."
+        />
+        <figcaption>
+          <strong>Starting point matters.</strong> Color shows the share of
+          possible next-meeting routes above ten minutes at 3 mph. This is not
+          an accessibility map. Map data &copy;
+          <a href="https://www.openstreetmap.org/copyright"
+            >OpenStreetMap contributors</a
+          >
+          (ODbL).
+        </figcaption>
+      </figure>
+
+      <section class="methods methods-compact reveal story-methods" id="methods">
+        <p class="eyebrow">Reporting record</p>
+        <h2 data-source-line>Sources and methods</h2>
+        <div class="source-summary">
+          <p data-source-line>
+            Core evidence comes from
+            <a href="https://bulletin.stanford.edu/pages/oCRJSOUvJspMtKMq0G4L"
+              >Stanford's Unit of Credit guidance,</a
+            >
+            <a href="https://explorecourses.stanford.edu/"
+              >Stanford ExploreCourses,</a
+            >
+            <a href="https://campus-map.stanford.edu/">Stanford Campus Map</a>
+            and
+            <a href="https://www.openstreetmap.org/copyright">OpenStreetMap.</a>
+            <a
+              href="https://advising.stanford.edu/current-students/advising-student-handbook/course-catalog"
+              >Stanford Academic Advising supplies the component definitions,</a
+            >
+            <a
+              href="https://studentservices.stanford.edu/my-academics/enroll-classes/enrollment-troubleshooting"
+              >Student Services explains combined cross-listed sections,</a
+            >
+            and
+            <a
+              href="https://siris.stanford.edu/sites/g/files/sbiybj16456/files/media/file/common-terms-in-siris-student-analytics.pdf"
+              >SIRIS documents the meaning of subject codes.</a
+            >
+            The student observations come from the
+            <a href="data/student_survey_summary.csv"
+              >27-response convenience survey conducted for this project.</a
+            >
+          </p>
+          <p data-source-line>
+            Historical context comes from
+            <a
+              href="https://stanforddaily.com/2021/09/14/overlapping-class-meeting-times-leave-students-stressed/"
+              >The Stanford Daily's reporting on overlapping class times</a
+            >
+            and the linked
+            <a
+              href="https://docs.google.com/spreadsheets/d/1Gxv03c2yyypmCF1Hot5VJ9f3Wi5LADMyjLsmiABhNsQ/edit?gid=1166637319#gid=1166637319"
+              >AY 2021-22 meeting-pattern spreadsheet.</a
+            >
+          </p>
+          <p data-source-line>
+            The complete <a href="methodology.html">methodology,</a>
+            <a href="source-log.html">source log</a> and
+            <a href="data/claim_audit.json">machine-readable claim audit</a>
+            document every source, assumption and derived value.
+          </p>
+        </div>
+
+        <h3 class="attribution-heading" data-source-line>
+          Data and map attribution
+        </h3>
+        <p class="attribution-note" data-source-line>
+          Source: Stanford ExploreCourses and Stanford Campus Map. Map data
+          &copy;
+          <a href="https://www.openstreetmap.org/copyright"
+            >OpenStreetMap contributors</a
+          >
+          under the Open Data Commons Open Database License (ODbL).
+        </p>
+      </section>
+      </article>
+    </main>
+  </body>
+</html>

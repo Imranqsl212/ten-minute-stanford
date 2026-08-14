@@ -1,0 +1,9 @@
+{
+  "element_count": 156036,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+    "timestamp_osm_base": "2026-08-03T10:23:14Z"
+  },
+  "query": "[out:json][timeout:180];\n(\n  way[\"highway\"](37.395,-122.22,37.475,-122.12);\n);\nout body;\n>;\nout skel qt;"
+}

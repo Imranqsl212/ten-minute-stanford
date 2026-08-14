@@ -1,0 +1,171 @@
+{
+  "academic_year": "20252026",
+  "api_sections_with_reported_enrollment": 27197,
+  "api_unique_sections": 27197,
+  "bicycle_speed_results": [
+    {
+      "bicycle_speed_mph": 6.0,
+      "median_route_minutes": 4.028622800492566,
+      "p90_route_minutes": 7.196922662641575,
+      "share_within_10_minutes": 0.9893245348471628,
+      "share_within_10_minutes_with_2min_handling": 0.945630018475408
+    },
+    {
+      "bicycle_speed_mph": 8.0,
+      "median_route_minutes": 3.0214671003694242,
+      "p90_route_minutes": 5.397691996981181,
+      "share_within_10_minutes": 0.9994595148350813,
+      "share_within_10_minutes_with_2min_handling": 0.9938886317953646
+    },
+    {
+      "bicycle_speed_mph": 10.0,
+      "median_route_minutes": 2.41717368029554,
+      "p90_route_minutes": 4.318153597584946,
+      "share_within_10_minutes": 0.9999964674172227,
+      "share_within_10_minutes_with_2min_handling": 0.9994595148350813
+    }
+  ],
+  "candidate_adjacent_meeting_pairs_before_routing": 283079,
+  "component_transition_results": [
+    {
+      "destination_component": "LEC",
+      "median_route_minutes_3mph": 6.616727736038164,
+      "origin_component": "LEC",
+      "p90_route_minutes_3mph": 12.39638664746277,
+      "pairs_over_10min_3mph": 6672,
+      "potential_meeting_pairs": 30328,
+      "share_over_10min_3mph": 0.21999472434713796,
+      "share_within_10min_3mph": 0.780005275652862
+    },
+    {
+      "destination_component": "DIS",
+      "median_route_minutes_3mph": 6.418187436051881,
+      "origin_component": "LEC",
+      "p90_route_minutes_3mph": 11.936397552911973,
+      "pairs_over_10min_3mph": 1891,
+      "potential_meeting_pairs": 10924,
+      "share_over_10min_3mph": 0.17310508971072866,
+      "share_within_10min_3mph": 0.8268949102892713
+    },
+    {
+      "destination_component": "LEC",
+      "median_route_minutes_3mph": 6.5074066848076155,
+      "origin_component": "DIS",
+      "p90_route_minutes_3mph": 11.716092650031893,
+      "pairs_over_10min_3mph": 1539,
+      "potential_meeting_pairs": 9035,
+      "share_over_10min_3mph": 0.1703375760929718,
+      "share_within_10min_3mph": 0.8296624239070283
+    },
+    {
+      "destination_component": "DIS",
+      "median_route_minutes_3mph": 5.815791395112964,
+      "origin_component": "DIS",
+      "p90_route_minutes_3mph": 10.081736187124362,
+      "pairs_over_10min_3mph": 1255,
+      "potential_meeting_pairs": 12238,
+      "share_over_10min_3mph": 0.10254943618238274,
+      "share_within_10min_3mph": 0.8974505638176172
+    }
+  ],
+  "cross_listing_rows_collapsed": 1394,
+  "discussion_component_meeting_day_rows": 911,
+  "discussion_median_start_minutes": 810.0,
+  "discussion_share_on_thursday_or_friday": 0.6586169045005489,
+  "discussion_share_starting_at_or_after_230pm": 0.4698133918770582,
+  "distinct_passing_period_time_slots": 25,
+  "distinct_weekday_time_slots": 92,
+  "eight_mph_bicycle_median_route_minutes": 3.0214671003694242,
+  "eight_mph_bicycle_p90_route_minutes": 5.397691996981181,
+  "eight_mph_bicycle_share_within_10_minutes": 0.9994595148350813,
+  "eight_mph_bicycle_share_within_10_minutes_with_2min_handling": 0.9938886317953646,
+  "eligible_physical_meeting_day_rows": 6026,
+  "eligible_rows_with_reported_enrollment": 6026,
+  "enrollment_reporting_rate": 1.0,
+  "enrollment_weighted_mapping_rate": 0.9742334250808827,
+  "frequent_route_threshold_pairs": 46,
+  "invalid_term_date_rows_excluded": 0,
+  "invalid_time_rows_excluded": 0,
+  "large_enrollment_pairs_over_10min_3mph": 42,
+  "large_enrollment_screen_threshold": 100,
+  "large_enrollment_share_over_10min_3mph": 0.22459893048128343,
+  "large_enrollment_unique_different_building_pairs": 187,
+  "lecture_component_meeting_day_rows": 2035,
+  "lecture_discussion_transition_pairs": 62525,
+  "lecture_median_start_minutes": 720.0,
+  "lecture_share_on_thursday_or_friday": 0.3179361179361179,
+  "lecture_share_starting_at_or_after_230pm": 0.24226044226044227,
+  "mapped_physical_meeting_day_rows": 4454,
+  "mapped_section_listing_day_rows": 5848,
+  "meeting_mapping_rate": 0.970461334218387,
+  "mobile_html_meeting_rows_exactly_matching_api": 6868,
+  "mobile_html_meeting_schedule_match_rate": 0.9995633823315383,
+  "mobile_html_term_date_anomalies": 1,
+  "mobile_html_time_parse_anomalies": 4,
+  "pair_date_rows_before_same_class_exclusion": 284226,
+  "pair_routing_coverage": 1.0,
+  "parsed_meeting_day_rows_before_validation": 6876,
+  "potential_adjacent_meeting_pairs": 283079,
+  "recurring_pair_rows_collapsed": 1146,
+  "room_match_status_counts": {
+    "exact": 138,
+    "fallback": 221,
+    "no_result": 25
+  },
+  "same_building_pair_share": 0.04953740828531965,
+  "same_class_number_pair_rows_excluded": 1,
+  "source_meeting_day_rows": 6876,
+  "student_survey_close_call": 6,
+  "student_survey_course_choice_effect": 2,
+  "student_survey_expanded_followup_responses": 23,
+  "student_survey_late_or_close_call": 20,
+  "student_survey_linked_sheet_responses": 26,
+  "student_survey_missed_class_content": 6,
+  "student_survey_never_late": 7,
+  "student_survey_prior_retained_responses": 1,
+  "student_survey_reported_concrete_consequence": 11,
+  "student_survey_reported_exact_ten_minute_gap": 5,
+  "student_survey_reported_late": 14,
+  "student_survey_responses": 27,
+  "student_survey_selected_biking": 11,
+  "student_survey_selected_e_scooter": 5,
+  "student_survey_selected_walking": 21,
+  "student_survey_skipped_adjacent_activity": 3,
+  "student_survey_transition_may_exceed_10min": 19,
+  "subject_areas_with_transition_estimates": 161,
+  "subject_catalog_entries": 253,
+  "terms": [
+    "Winter"
+  ],
+  "three_mph_median_route_minutes": 6.1765084445648055,
+  "three_mph_p90_route_minutes": 12.06140977266739,
+  "three_mph_share_within_10_minutes": 0.8250559031224499,
+  "three_mph_share_within_10_minutes_with_2min_overhead": 0.6904185757332759,
+  "unique_building_pairs": 4739,
+  "unique_mapped_facilities": 75,
+  "unique_mapped_section_listings": 3597,
+  "unit_of_analysis": "Potential ordered pairs of unique scheduled physical room-time meetings on the same weekday with exactly ten minutes between published times. Cross-listed records sharing a room, date range and time are counted once; repeated date blocks for the same ordered class-number pair, facility pair, weekday and time count once; rows pairing a class number with itself are excluded.",
+  "walking_speed_results": [
+    {
+      "median_route_minutes": 9.264762666847208,
+      "p90_route_minutes": 18.092114659001087,
+      "share_within_10_minutes": 0.5623518523097792,
+      "share_within_10_minutes_with_2min_overhead": 0.4187452972491778,
+      "walking_speed_mph": 2.0
+    },
+    {
+      "median_route_minutes": 6.1765084445648055,
+      "p90_route_minutes": 12.06140977266739,
+      "share_within_10_minutes": 0.8250559031224499,
+      "share_within_10_minutes_with_2min_overhead": 0.6904185757332759,
+      "walking_speed_mph": 3.0
+    },
+    {
+      "median_route_minutes": 4.632381333423604,
+      "p90_route_minutes": 9.046057329500544,
+      "share_within_10_minutes": 0.9405113060311786,
+      "share_within_10_minutes_with_2min_overhead": 0.854503513153572,
+      "walking_speed_mph": 4.0
+    }
+  ]
+}

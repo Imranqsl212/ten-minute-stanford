@@ -1,0 +1,23 @@
+# Local environments and caches
+.DS_Store
+.venv/
+.cache/
+.pytest_cache/
+.ruff_cache/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.coverage
+htmlcov/
+
+# Generated deployment artifact
+_site/
+dist/
+
+# Internal planning notes are not part of the public repository.
+STANFORD_DAILY_PUBLICATION_STRATEGY.md
+MESSAGE_TO_MENTOR.md
+
+# Raw web snapshots are reproducible but too large for the repository.
+data/raw/*
+!data/raw/.gitkeep

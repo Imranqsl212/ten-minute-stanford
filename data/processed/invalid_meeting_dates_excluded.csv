@@ -1,0 +1,2 @@
+academic_year,term,subject_query,course_number,course_title,class_number,section_number,grading,component,session,modality,enrolled,capacity,cancelled,source_url,meeting_index,date_start,date_end,day,start_time,end_time,start_minutes,end_minutes,room
+20252026,Winter,EDUC,EDUC 228G,Becoming Literate in School III,29972,01,Letter (ABCD/NP),SEM,,In Person,,,False,https://explorecourses.stanford.edu/m_search?q=EDUC&filter-catalognumber-EDUC=on&filter-term-Winter=on&academicYear=20252026&page=2,1,2025-01-14,2026-03-13,Mon,3:15 PM,6:15 PM,915,1095,Raikes 111

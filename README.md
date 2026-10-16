@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="site/social-preview.png" alt="Ten minutes between classes: 83 percent of potential routes fit at three miles per hour" width="100%">
+  <img src="site/social-preview.png" alt="Ten minutes between classes: 84 percent of potential routes fit at three miles per hour" width="100%">
 </p>
 
 <h1 align="center">The Ten-Minute Stanford</h1>
@@ -23,7 +23,7 @@ Winter 2026 meeting times and section enrollment from the public [ExploreCourses
 
 |          At 3 mph           | With a 2-minute building allowance | 90th-percentile route |
 | :-------------------------: | :--------------------------------: | :-------------------: |
-| **82.5%** within 10 minutes |    **69.0%** within 10 minutes     |   **12.1 minutes**    |
+| **84.4%** within 10 minutes |    **70.6%** within 10 minutes     |   **11.6 minutes**    |
 
 These are project-derived estimates across **283,079 potential ordered meeting pairs**, not official Stanford statistics or observed student trips. ExploreCourses reports section size but not co-enrollment, so class sizes cannot identify actual student transitions.
 
@@ -38,12 +38,12 @@ meeting-day rows** and directly tests **62,525 possible LEC/DIS transitions**.
 It maps where the largest subject areas hold coursework, reports incoming and
 outgoing route feasibility for 161 subject areas, and screens **187 possible
 different-building combinations** in which both meetings report at least 100
-enrolled. Forty-two of those large-meeting combinations exceed ten modeled
+enrolled. Fifteen of those large-meeting combinations exceed ten modeled
 minutes at 3 mph; none of these comparisons is a co-enrollment estimate.
 
 The same Winter 2026 pair set is also tested as a policy counterfactual. At 3
-mph, a 15-minute allowance raises the modeled fit share from **82.5% to 97.3%**;
-with two minutes reserved for buildings, it changes from **69.0% to 93.1%**.
+mph, a 15-minute allowance raises the modeled fit share from **84.4% to 97.5%**;
+with two minutes reserved for buildings, it changes from **70.6% to 94.3%**.
 Fifteen minutes is historically grounded in the AY 2021-22 meeting pattern
 reported by [The Stanford Daily](https://stanforddaily.com/2021/09/14/overlapping-class-meeting-times-leave-students-stressed/)
 and shown in its linked [schedule spreadsheet](https://docs.google.com/spreadsheets/d/1Gxv03c2yyypmCF1Hot5VJ9f3Wi5LADMyjLsmiABhNsQ/edit?gid=1166637319#gid=1166637319),

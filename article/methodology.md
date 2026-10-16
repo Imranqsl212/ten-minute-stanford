@@ -16,7 +16,8 @@ The project does not estimate actual student trips, co-enrollment or lateness.
   ExploreCourses says its course and class data are refreshed daily and no more
   than 24 hours old, although Axess is the latest source for students.
 - Stanford Campus Map room searches were collected on Aug. 3, 2026, from 10:24
-  to 10:48 UTC.
+  to 10:48 UTC. The Computing and Data Science building lookup used to correct
+  CoDa classroom locations was retrieved on Oct. 16, 2026, at 14:41:38 UTC.
 - The OpenStreetMap walking-network snapshot was collected through Overpass on
   Aug. 3, 2026, at 10:24 UTC. The response identifies the underlying OSM
   database state as `2026-08-03T10:23:14Z`.
@@ -84,6 +85,18 @@ building names, for example `Lathrop 294` to `Lathrop Library` and `LAW 280A` to
 the Law School address at 559 Nathan Abbott Way. The lookup table preserves the
 original room, query used, match label, status, facility ID and coordinates.
 
+On Oct. 16, 2026, we corrected an erroneous fallback that had assigned the
+room labels `CODAB60`, `CODAB80` and `CODAB90` to Cordura Hall. Stanford's
+[Campus Map result for Computing and Data Science](https://campus-map.stanford.edu/report-cm.cfm?criteria=Computing+and+Data+Science&orig_srch=Computing+and+Data+Science&matches=1&hidden=)
+identifies CoDa as facility `07-430` at 389 Jane Stanford Way, with coordinates
+37.429924, -122.171780. We rebuilt both route matrices and every dependent
+statistic using that location. The Winter 2026 schedule, saved OSM network,
+meeting counts and pair denominator remained unchanged. The previously
+misidentified Building 200-to-CoDa route now takes 7.2 modeled minutes at
+3 mph, rather than the 14.1 minutes calculated using Cordura Hall's location.
+The original inputs and correction provenance are retained in
+`reports/corrections/coda-2026-10-16/`.
+
 The 25 unresolved labels account for 178 rows, or 3.0% of otherwise eligible
 section-listing meeting-day rows. Some labels may be inferable from other
 Stanford pages, but the active Campus Map query snapshot did not return an
@@ -108,7 +121,7 @@ segments as undirected.
 The retained data initially formed 222 components with 116,885 nodes and
 133,653 unique undirected graph edges. Routing used the largest connected
 component: 114,337 nodes and 131,249 unique edges. All 75 facility points snapped to this
-component within 61.0 meters; the median snap distance was 18.4 meters. For each
+component within 61.0 meters; the median snap distance was 19.0 meters. For each
 ordered facility pair, Dijkstra's algorithm found the shortest network
 distance. Straight-line distances from each facility point to its nearest graph
 node were added at both ends. These connectors are not path-verified and may
@@ -132,7 +145,7 @@ routes are directional.
 Before component filtering, the bicycle graph contained 86,694 nodes and 91,630
 edge segments in 194 weakly connected components. Routing used the largest
 component with 84,225 nodes and 166,688 directed edges. All 75 facilities
-snapped within 75.9 meters, with a 35.9-meter median. All 5,625 directed facility
+snapped within 75.9 meters, with a 36.1-meter median. All 5,625 directed facility
 pairs were connected.
 
 Facility points are not bike racks. The model does not include retrieving or
@@ -274,7 +287,7 @@ The screen starts from the same routed possible meeting pairs as the main
 analysis. It keeps different-building combinations for which both physical
 meetings report at least 100 enrolled, then collapses identical
 course-time-building combinations that recur on multiple weekdays. The result
-is 187 unique combinations; 42 exceed ten modeled minutes at 3 mph. The smaller
+is 187 unique combinations; 15 exceed ten modeled minutes at 3 mph. The smaller
 of the two reported enrollment values is shown only to demonstrate that both
 meetings pass the threshold. It is not a co-enrollment estimate, a traffic count
 or evidence that any student took both meetings.
@@ -295,9 +308,9 @@ also imperfectly represented, because vertical and indoor movement can take
 more than the allowance.
 
 The same pair denominator was also tested with 12- and 15-minute time budgets.
-At 3 mph, 82.5% of pairs fit within 10 route minutes, 89.9% within 12 and 97.3%
+At 3 mph, 84.4% of pairs fit within 10 route minutes, 91.4% within 12 and 97.5%
 within 15. With two minutes reserved for buildings, the corresponding shares
-are 69.0%, 82.5% and 93.1%. The 12-minute case is hypothetical. The 15-minute
+are 70.6%, 84.4% and 94.3%. The 12-minute case is hypothetical. The 15-minute
 case is a historical comparison with the AY 2021-22 meeting pattern documented
 in prior Daily reporting and its linked schedule sheet; it is not a current
 policy claim or an analysis of 2021 course locations.

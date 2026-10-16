@@ -67,12 +67,13 @@
         <p>The analysis queried 384 unique room labels against Stanford Campus Map. It retained 138 exact matches and 221 audited fallback matches; 25 labels covering 178 otherwise eligible rows remained unresolved and were not assigned guessed coordinates.</p>
         <p>Cross-listed courses can create several administrative records for one physical class. Records sharing room, facility, weekday, start and end time, start date and end date were counted once. This collapsed 1,394 duplicate listings and left 4,454 mapped physical meeting-day rows.</p>
         <p>Results are aggregated at the Campus Map facility level. Bishop Auditorium and multiple Lathrop room labels, for example, resolve to facility <code>08-350</code> and are reported under its official building label, Lathrop Library.</p>
+        <p>A location correction on Oct. 16, 2026 assigns <code>CODAB60</code>, <code>CODAB80</code> and <code>CODAB90</code> to Computing and Data Science (CoDa), facility <code>07-430</code> at 389 Jane Stanford Way, rather than Cordura Hall. A new <a href="data/source_manifest.json">Stanford Campus Map response</a> supplies the corrected coordinates. All route estimates, tables and figures were recalculated using the original Winter 2026 schedule and saved OSM network.</p>
       </section>
 
       <section>
         <h2>3. Walking network</h2>
         <p>An OpenStreetMap snapshot retrieved through Overpass supplied ways whose OSM access tags permit walking. It reports an OSM database timestamp of <code>2026-08-03T10:23:14Z</code>. Ways tagged indoor or as corridors were excluded. <code>foot=no</code> and <code>foot=private</code> were excluded; <code>access=no</code> and <code>access=private</code> were excluded unless <code>foot</code> explicitly allowed walking. Retained segments were treated as undirected.</p>
-        <p>The retained network initially contained 116,885 nodes and 133,653 unique undirected graph edges across 222 components. Routing used the largest connected component, with 114,337 nodes and 131,249 unique edges, to prevent facilities from snapping to tiny disconnected fragments. All 75 facility coordinates were snapped to this component; the median snap distance was 18.4 meters and the maximum was 61.0 meters. Dijkstra's algorithm then calculated the shortest route for every ordered facility pair. Straight-line distances from each facility point to its nearest network node were added, but those connectors are not path-verified and may cross barriers.</p>
+        <p>The retained network initially contained 116,885 nodes and 133,653 unique undirected graph edges across 222 components. Routing used the largest connected component, with 114,337 nodes and 131,249 unique edges, to prevent facilities from snapping to tiny disconnected fragments. All 75 facility coordinates were snapped to this component; the median snap distance was 19.0 meters and the maximum was 61.0 meters. Dijkstra's algorithm then calculated the shortest route for every ordered facility pair. Straight-line distances from each facility point to its nearest network node were added, but those connectors are not path-verified and may cross barriers.</p>
         <aside class="data-callout muted-callout">
           <strong>This is not an accessibility map.</strong>
           <p>Neither graph was validated for wheelchair travel or accessible entrances, elevators, indoor paths, construction or crowding. Of <a href="data/validation.json">30,835 highway ways in the saved OSM snapshot, 51 (0.17%) have a <code>wheelchair</code> tag and 128 (0.42%) have an <code>incline</code> tag</a>. OSM documents <a href="https://wiki.openstreetmap.org/wiki/Key:wheelchair">wheelchair access</a> and <a href="https://wiki.openstreetmap.org/wiki/Key:incline">incline</a> as explicit tags; an absent tag is not evidence that a way is inaccessible or flat. No wheelchair time is reported. Use Stanford's <a href="https://maps.stanford.edu/ada/">Campus Access Guide</a> for building-specific information.</p>
@@ -107,7 +108,7 @@
 
         <h3>Large-enrollment screen</h3>
         <p><a href="https://studentservices.stanford.edu/my-academics/enroll-classes/enrollment-troubleshooting">Stanford Student Services says cross-listed classes are typically combined at the same time and place</a>. Records grouped into one physical meeting retain their combined course labels and summed reported section enrollment.</p>
-        <p>The screen keeps different-building combinations in which both meetings report at least 100 enrolled, then collapses identical course-time-building combinations recurring across weekdays. It produced <a href="data/high_enrollment_transitions.csv">187 combinations, of which 42 exceed ten modeled minutes at 3 mph</a>. The smaller enrollment demonstrates only that both meetings clear the threshold; it is not co-enrollment, traffic or proof that anyone took both.</p>
+        <p>The screen keeps different-building combinations in which both meetings report at least 100 enrolled, then collapses identical course-time-building combinations recurring across weekdays. It produced <a href="data/high_enrollment_transitions.csv">187 combinations, of which 15 exceed ten modeled minutes at 3 mph</a>. The smaller enrollment demonstrates only that both meetings clear the threshold; it is not co-enrollment, traffic or proof that anyone took both.</p>
       </section>
 
       <section>
@@ -126,9 +127,9 @@
               <tr><th>Walking scenario</th><th>Route only</th><th>With 2-minute building allowance</th></tr>
             </thead>
             <tbody>
-              <tr><td>2 mph</td><td>56.2%</td><td>41.9%</td></tr>
-              <tr><td>3 mph</td><td>82.5%</td><td>69.0%</td></tr>
-              <tr><td>4 mph</td><td>94.1%</td><td>85.5%</td></tr>
+              <tr><td>2 mph</td><td>57.3%</td><td>42.4%</td></tr>
+              <tr><td>3 mph</td><td>84.4%</td><td>70.6%</td></tr>
+              <tr><td>4 mph</td><td>95.2%</td><td>87.3%</td></tr>
             </tbody>
           </table>
         </div>
@@ -139,9 +140,9 @@
               <tr><th>Passing-period budget at 3 mph</th><th>Route only</th><th>With 2-minute building allowance</th></tr>
             </thead>
             <tbody>
-              <tr><td>10 minutes</td><td>82.5%</td><td>69.0%</td></tr>
-              <tr><td>12 minutes</td><td>89.9%</td><td>82.5%</td></tr>
-              <tr><td>15 minutes</td><td>97.3%</td><td>93.1%</td></tr>
+              <tr><td>10 minutes</td><td>84.4%</td><td>70.6%</td></tr>
+              <tr><td>12 minutes</td><td>91.4%</td><td>84.4%</td></tr>
+              <tr><td>15 minutes</td><td>97.5%</td><td>94.3%</td></tr>
             </tbody>
           </table>
         </div>

@@ -2594,6 +2594,20 @@
       "source_url": "https://campus-map.stanford.edu/report-cm.cfm?criteria=Y2E2+111&orig_srch=Y2E2+111&matches=1&hidden="
     },
     {
+      "bytes": 1695,
+      "cache_path": "data/raw/campus_map/6360ed6367bf8dfa29e8dd97970a26f348fc833d.html",
+      "request_params": {
+        "criteria": "Computing and Data Science",
+        "hidden": "",
+        "matches": "1",
+        "orig_srch": "Computing and Data Science"
+      },
+      "retrieved_at_utc": "2026-10-16T14:41:38Z",
+      "sha256": "66c82654838d6b6b01a75fbfcf8b64f6ef4e6b05bce0f778fa48cc224864b3a1",
+      "source": "Stanford Campus Map",
+      "source_url": "https://campus-map.stanford.edu/report-cm.cfm?criteria=Computing+and+Data+Science&orig_srch=Computing+and+Data+Science&matches=1&hidden="
+    },
+    {
       "bytes": 1062,
       "cache_path": "data/raw/campus_map/63857f0c8bd377d81c431752f20b0647867dd66e.html",
       "request_params": {
@@ -4076,20 +4090,6 @@
       "sha256": "2142b2a62b11d9748411a5f6cdbaf1f736cf22676c65c3f4d65b40781627731e",
       "source": "Stanford Campus Map",
       "source_url": "https://campus-map.stanford.edu/report-cm.cfm?criteria=Knoll+103&orig_srch=Knoll+103&matches=1&hidden="
-    },
-    {
-      "bytes": 1675,
-      "cache_path": "data/raw/campus_map/a15035787733e00820a4c886bef0f596a3584936.html",
-      "request_params": {
-        "criteria": "Cordura Hall",
-        "hidden": "",
-        "matches": "1",
-        "orig_srch": "Cordura Hall"
-      },
-      "retrieved_at_utc": "2026-08-03T10:43:52Z",
-      "sha256": "4f6e6d71a8f1c74ca5d413f867d5e17523fb9fcf9865f4103a8f354f274f581a",
-      "source": "Stanford Campus Map",
-      "source_url": "https://campus-map.stanford.edu/report-cm.cfm?criteria=Cordura+Hall&orig_srch=Cordura+Hall&matches=1&hidden="
     },
     {
       "bytes": 1062,
@@ -18972,7 +18972,7 @@
       "source_url": "https://overpass-api.de/api/interpreter"
     }
   ],
-  "latest_retrieval_utc": "2026-08-05T05:05:36Z",
+  "latest_retrieval_utc": "2026-10-16T14:41:38Z",
   "mobile_schedule_rows_reparsed": 6871,
   "mobile_section_rows_reparsed": 27197,
   "raw_source_verification": "complete",

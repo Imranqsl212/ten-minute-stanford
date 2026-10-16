@@ -26,7 +26,7 @@ ROOM_PREFIX_ALIASES = {
     "barnum": "Barnum Center",
     "braun": "Braun Music Center",
     "ccsr": "Center for Clinical Sciences Research",
-    "coda": "Cordura Hall",
+    "coda": "Computing and Data Science",
     "dink": "Dinkelspiel Auditorium",
     "edwrds": "Edwards Building",
     "econ": "Landau Building",
@@ -64,6 +64,13 @@ ROOM_PREFIX_ALIASES = {
 def normalize_room(value: str) -> str:
     value = value.casefold().replace("&amp;", "&")
     return re.sub(r"[^a-z0-9]+", "", value)
+
+
+def _decode_js_hex_escapes(value: str) -> str:
+    """Decode hex escapes in Campus Map's onclick string arguments."""
+    return re.sub(
+        r"\\x([0-9a-fA-F]{2})", lambda match: chr(int(match.group(1), 16)), value
+    )
 
 
 def is_queryable_room(room: str) -> bool:
@@ -125,10 +132,10 @@ def parse_room_search(html: str, query: str) -> dict[str, Any]:
         label = label_node.get_text(" ", strip=True) if label_node else ""
         candidate = {
             "label": label,
-            "facility_id": match.group("facility"),
+            "facility_id": _decode_js_hex_escapes(match.group("facility")),
             "latitude": float(match.group("lat")),
             "longitude": float(match.group("lon")),
-            "address": match.group("address"),
+            "address": _decode_js_hex_escapes(match.group("address")),
         }
         candidates.append(candidate)
 

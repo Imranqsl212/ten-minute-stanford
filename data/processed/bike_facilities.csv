@@ -57,6 +57,7 @@ facility_id,latitude,longitude,address,official_label,representative_room,room_c
 07-309,37.43268048,-122.17623231,300 n pasteur dr palo alto,edwards building,E.D. Stone Edwards Bldg R358,2,1330035284,37.4330277,-122.1760948,40.47327267432622,True
 07-340,37.43134094,-122.17436685,318 campus dr stanford,clark center,Clark Center S361,1,12042859800,37.4312892,-122.1739045,41.22800941308237,True
 07-420,37.43001364,-122.1724925,371 jane stanford way stanford,gilbert biological science,Gilbert Biological Science 117,1,6883032631,37.4295944,-122.1725655,47.060958807823084,True
+07-430,37.429924,-122.17178,389 jane stanford way stanford,computing and data science,CODAB60,3,5060846017,37.4298691,-122.171215,50.261457360597404,True
 07-450,37.43011014,-122.17341616,353 jane stanford way stanford,gates computer science,Gates B1,4,5060846126,37.4297874,-122.1734557,36.056533682356076,True
 07-515,37.43186446,-122.17577807,291 campus dr stanford,li ka shing center,"Li Ka Shing Center, rms203/204",12,1707946804,37.4314214,-122.1757531,49.31540285218116,True
 07-530,37.43204161,-122.17645796,279 campus dr stanford,beckman center,Beckman Center B060,2,1758054003,37.4323147,-122.1759472,54.369053889451365,True
@@ -71,6 +72,5 @@ facility_id,latitude,longitude,address,official_label,representative_room,room_c
 08-350,37.4292163,-122.167296,518 memorial way stanford,lathrop library,Bishop Auditorium,19,65427080,37.4297543,-122.16774,71.52511057252521,True
 08-360,37.4303334,-122.16752887,365 lasuen st stanford,littlefield center,Littlefield 103,3,6519762789,37.4303505,-122.1675399,2.1363563052143917,True
 08-365,37.43003917,-122.16694598,521 memorial way stanford,knight building,"Knight Building, Room K18",1,275515667,37.4297719,-122.1666385,40.253817110931834,True
-14-070,37.43048734,-122.17877394,210 panama st stanford,cordura hall,CODAB60,3,5676637999,37.4306703,-122.1788339,21.02187677369833,True
 14-160,37.42898333,-122.17752929,255 panama st stanford,turing auditorium,Turing Auditorium,1,2572526535,37.4290638,-122.1779883,41.50688289146708,True
 14-810,37.42469032,-122.18443078,621 fremont rd stanford,red barn stables,Red Barn Stables,1,7471896733,37.4249558,-122.1842063,35.55813134129471,True

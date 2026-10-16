@@ -1,14 +1,20 @@
+import json
+from pathlib import Path
+
 from ten_minute_stanford.audit import audit_publication
 
 
 def test_publication_audit_recomputes_checked_in_claims() -> None:
     report = audit_publication(check_raw=False, write=False)
+    root = Path(__file__).resolve().parents[1]
+    summary = json.loads((root / "reports/generated/analysis_summary.json").read_text())
+    facility_count = summary["unique_mapped_facilities"]
 
     assert report["status"] == "pass"
     assert report["checks"]["publication_files_checked"] == 9
-    assert report["checks"]["route_matrix_rows"] == 75**2
-    assert report["checks"]["route_distances_separately_verified"] == 75**2
-    assert report["checks"]["bicycle_route_distances_separately_verified"] == 75**2
+    assert report["checks"]["route_matrix_rows"] == facility_count**2
+    assert report["checks"]["route_distances_separately_verified"] == facility_count**2
+    assert report["checks"]["bicycle_route_distances_separately_verified"] == facility_count**2
     assert report["checks"]["external_context_sources_checked"] == 25
     assert report["checks"]["external_source_class_counts"] == {
         "editorial_context": 4,

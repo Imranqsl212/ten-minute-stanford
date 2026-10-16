@@ -12,35 +12,35 @@ Stanford's [Unit of Credit guidance](https://bulletin.stanford.edu/pages/oCRJSOU
 
 We compared [ExploreCourses](https://explorecourses.stanford.edu/) XML class times in the Winter 2026 quarter with [Stanford Campus Map](https://campus-map.stanford.edu/) coordinates and used [OpenStreetMap](https://www.openstreetmap.org/copyright) data to calculate shortest walking-network routes. We then tested every possible pair of meetings on the same weekday when one meeting begins exactly 10 minutes after the other ends.
 
-The typical modeled route clears the test. At 3 mph, [82.5%](https://imranqsl212.github.io/ten-minute-stanford/data/speed_summary.csv) of those possible transitions had an estimated route time of 10 minutes or less, and the median was 6.2 minutes. At the 90th percentile, however, [the route took 12.1 minutes, already beyond the next class's start time.](https://imranqsl212.github.io/ten-minute-stanford/data/speed_summary.csv)
+The typical modeled route clears the test. At 3 mph, [84.4%](https://imranqsl212.github.io/ten-minute-stanford/data/speed_summary.csv) of those possible transitions had an estimated route time of 10 minutes or less, and the median was 6.1 minutes. At the 90th percentile, however, [the route took 11.6 minutes, already beyond the next class's start time.](https://imranqsl212.github.io/ten-minute-stanford/data/speed_summary.csv)
 
-That 17.5% is not a student lateness rate. The XML snapshot contained [27,197 Winter section records](https://imranqsl212.github.io/ten-minute-stanford/data/claim_audit.json) and [reported enrollment and capacity for every section,](https://imranqsl212.github.io/ten-minute-stanford/data/claim_audit.json) but it does not indicate which classes students take together. The result describes potential combinations of meetings in the schedule, not the trips students make.
+That 15.6% is not a student lateness rate. The XML snapshot contained [27,197 Winter section records](https://imranqsl212.github.io/ten-minute-stanford/data/claim_audit.json) and [reported enrollment and capacity for every section,](https://imranqsl212.github.io/ten-minute-stanford/data/claim_audit.json) but it does not indicate which classes students take together. The result describes potential combinations of meetings in the schedule, not the trips students make.
 
 LABEL: Bottom line
 
 ## What the numbers actually say
 
-CALLOUT: Typical is not universal. [83%](https://imranqsl212.github.io/ten-minute-stanford/data/speed_summary.csv) of possible routes fit at 3 mph; the median is [6.2 minutes](https://imranqsl212.github.io/ten-minute-stanford/data/speed_summary.csv), while the 90th percentile is [12.1 minutes.](https://imranqsl212.github.io/ten-minute-stanford/data/speed_summary.csv)
+CALLOUT: Typical is not universal. [84%](https://imranqsl212.github.io/ten-minute-stanford/data/speed_summary.csv) of possible routes fit at 3 mph; the median is [6.1 minutes](https://imranqsl212.github.io/ten-minute-stanford/data/speed_summary.csv), while the 90th percentile is [11.6 minutes.](https://imranqsl212.github.io/ten-minute-stanford/data/speed_summary.csv)
 
-CALLOUT: Buildings consume the margin. Reserve two minutes to exit and enter, and the fit rate falls from 82.5% to 69.0%.
+CALLOUT: Buildings consume the margin. Reserve two minutes to exit and enter, and the fit rate falls from 84.4% to 70.6%.
 
 CALLOUT: This tests a schedule, not students. Room matching covered [97.0%](https://imranqsl212.github.io/ten-minute-stanford/data/claim_audit.json) of eligible listing rows; without co-enrollment data, the pairs are possibilities, not observed trips or late arrivals.
 
 ## Ten minutes is not ten minutes of walking
 
-The headline moves with the walking-speed assumption. At 2 mph, [56.2%](https://imranqsl212.github.io/ten-minute-stanford/data/speed_summary.csv) of possible transitions had an estimated route time of 10 minutes or less. At 4 mph, the share increased to [94.1%.](https://imranqsl212.github.io/ten-minute-stanford/data/speed_summary.csv)
+The headline moves with the walking-speed assumption. At 2 mph, [57.3%](https://imranqsl212.github.io/ten-minute-stanford/data/speed_summary.csv) of possible transitions had an estimated route time of 10 minutes or less. At 4 mph, the share increased to [95.2%.](https://imranqsl212.github.io/ten-minute-stanford/data/speed_summary.csv)
 
 These are sensitivity tests, not descriptions of slow, typical or fast walkers. The model is not meant to be an actual representation of the mobility of any person.
 
-More important, the clock starts before a student is outside. In a scenario that reserves two minutes for leaving and entering buildings, the share drops to [69.0%](https://imranqsl212.github.io/ten-minute-stanford/data/speed_summary.csv) at 3 mph because only eight minutes remain for the modeled route.
+More important, the clock starts before a student is outside. In a scenario that reserves two minutes for leaving and entering buildings, the share drops to [70.6%](https://imranqsl212.github.io/ten-minute-stanford/data/speed_summary.csv) at 3 mph because only eight minutes remain for the modeled route.
 
-![At 2, 3 and 4 mph, the share of possible meeting transitions within ten minutes is 56, 83 and 94 percent; with two minutes reserved for buildings it is 42, 69 and 85 percent.](../reports/generated/figures/feasibility_by_speed.png)
+![At 2, 3 and 4 mph, the share of possible meeting transitions within ten minutes is 57, 84 and 95 percent; with two minutes reserved for buildings it is 42, 71 and 87 percent.](../reports/generated/figures/feasibility_by_speed.png)
 
 CAPTION: Time available changes the conclusion. Speeds and the two-minute building allowance are scenarios, not measured student groups. [Inspect the scenario table.](https://imranqsl212.github.io/ten-minute-stanford/data/speed_summary.csv) Sources: Stanford ExploreCourses, Stanford Campus Map and [OpenStreetMap contributors](https://www.openstreetmap.org/copyright).
 
 ## The schedule has rush hours
 
-The busiest passing period had the most possible routes, not the best fit. The published schedule contains [25 distinct ten-minute end-to-start time slots,](https://imranqsl212.github.io/ten-minute-stanford/data/time_slot_summary.csv) or [92 combinations when weekdays are counted separately.](https://imranqsl212.github.io/ten-minute-stanford/data/weekday_time_slot_summary.csv) [At 1:20 p.m. to 1:30 p.m., there were 77,333 possible pairs and 81.9% fit at 3 mph. The 10:20 a.m. to 10:30 a.m. slot had 53,781 possible pairs and a higher modeled fit rate of 86.1%.](https://imranqsl212.github.io/ten-minute-stanford/data/time_slot_summary.csv)
+The busiest passing period had the most possible routes, not the best fit. The published schedule contains [25 distinct ten-minute end-to-start time slots,](https://imranqsl212.github.io/ten-minute-stanford/data/time_slot_summary.csv) or [92 combinations when weekdays are counted separately.](https://imranqsl212.github.io/ten-minute-stanford/data/weekday_time_slot_summary.csv) [At 1:20 p.m. to 1:30 p.m., there were 77,333 possible pairs and 83.6% fit at 3 mph. The 10:20 a.m. to 10:30 a.m. slot had 53,781 possible pairs and a higher modeled fit rate of 88.1%.](https://imranqsl212.github.io/ten-minute-stanford/data/time_slot_summary.csv)
 
 These totals still count possible meeting combinations, not students. Reported enrollment can show how many section seats are scheduled around a time slot, but it cannot show how many students need a particular building-to-building route.
 
@@ -54,7 +54,7 @@ Lectures and discussions occupy different parts of the timetable. [Stanford defi
 
 Discussion rows also tilted later in the day and week: [47.0% began at 2:30 p.m. or later, compared with 24.2% of lecture rows;](https://imranqsl212.github.io/ten-minute-stanford/data/component_time_summary.csv) [65.9% fell on Thursday or Friday, compared with 31.8% of lecture rows.](https://imranqsl212.github.io/ten-minute-stanford/data/component_day_summary.csv) These are section-listing meeting-day rows, so a class scheduled on two weekdays contributes two rows. They describe the published timetable, not attendance or unique students.
 
-The route mix shifts with that timetable. Among [62,525 possible pairs in which both meetings were coded LEC or DIS, 78.0% of LEC-to-LEC pairs fit within ten modeled minutes at 3 mph.](https://imranqsl212.github.io/ten-minute-stanford/data/component_transition_summary.csv) The corresponding shares were 82.7% for LEC-to-DIS, 83.0% for DIS-to-LEC and 89.7% for DIS-to-DIS pairs. These percentages compare schedule-compatible meetings, not the schedules of students who move between lectures and sections.
+The route mix shifts with that timetable. Among [62,525 possible pairs in which both meetings were coded LEC or DIS, 83.1% of LEC-to-LEC pairs fit within ten modeled minutes at 3 mph.](https://imranqsl212.github.io/ten-minute-stanford/data/component_transition_summary.csv) The corresponding shares were 85.6% for LEC-to-DIS, 86.6% for DIS-to-LEC and 89.7% for DIS-to-DIS pairs. These percentages compare schedule-compatible meetings, not the schedules of students who move between lectures and sections.
 
 ![Three panels compare lecture and discussion timing by start time and weekday, then show the share of four possible component-to-component pair types within ten modeled minutes.](../reports/generated/figures/component_schedule_patterns.png)
 
@@ -66,7 +66,7 @@ The map raises two different questions: where a subject teaches, and where a com
 
 Among the 15 subject areas with the most mapped meeting-day rows, [Law placed 96.1% of its rows at the facility labeled Law and History placed 68.8% at Building 200.](https://imranqsl212.github.io/ten-minute-stanford/data/department_location_summary.csv) Computer Science was more dispersed: Thornton Center, its most-used mapped facility, accounted for 14.6%. English's top facility, Building 460, accounted for 13.4%. Cross-listed listings remain under each published subject code, and the 178 eligible rows with unresolved room labels are absent from this comparison.
 
-Concentration does not guarantee a short next trip. Among the same 15 subject areas, [7.3% of possible outgoing pairs from History meetings exceeded ten modeled minutes at 3 mph, compared with 21.6% from Computer Science and 35.7% from Music.](https://imranqsl212.github.io/ten-minute-stanford/data/subject_transition_feasibility.csv) Campus concentration and outgoing route risk are different measures: the next compatible meeting may be outside the area where a subject holds most of its own classes.
+Concentration does not guarantee a short next trip. Among the same 15 subject areas, [5.5% of possible outgoing pairs from History meetings exceeded ten modeled minutes at 3 mph, compared with 15.6% from Computer Science and 35.7% from Music.](https://imranqsl212.github.io/ten-minute-stanford/data/subject_transition_feasibility.csv) Campus concentration and outgoing route risk are different measures: the next compatible meeting may be outside the area where a subject holds most of its own classes.
 
 ![Two-panel bars compare each of the fifteen largest mapped subject areas' concentration at its most-used facility with the share of possible outgoing meeting pairs over ten modeled minutes.](../reports/generated/figures/department_location_concentration.png)
 
@@ -74,7 +74,7 @@ CAPTION: Footprint and route risk are not the same measure. The left panel ident
 
 ## Large classes are not always close together
 
-Size is no guarantee of a short handoff. For a transparent large-class screen, we grouped identical course-time-building combinations across weekdays and kept different-building combinations in which both meetings reported at least 100 enrolled. [Stanford Student Services says cross-listed classes are typically combined at the same time and place;](https://studentservices.stanford.edu/my-academics/enroll-classes/enrollment-troubleshooting) in this screen, records sharing one physical meeting were combined. This produced [187 possible combinations; 42, or 22.5%, exceeded ten modeled minutes at 3 mph.](https://imranqsl212.github.io/ten-minute-stanford/data/high_enrollment_transitions.csv)
+Size is no guarantee of a short handoff. For a transparent large-class screen, we grouped identical course-time-building combinations across weekdays and kept different-building combinations in which both meetings reported at least 100 enrolled. [Stanford Student Services says cross-listed classes are typically combined at the same time and place;](https://studentservices.stanford.edu/my-academics/enroll-classes/enrollment-troubleshooting) in this screen, records sharing one physical meeting were combined. This produced [187 possible combinations; 15, or 8.0%, exceeded ten modeled minutes at 3 mph.](https://imranqsl212.github.io/ten-minute-stanford/data/high_enrollment_transitions.csv)
 
 The largest combination by the smaller enrollment fit comfortably: a 366-enrollment CS 124 / LINGUIST 180 / LINGUIST 280 meeting in Hewlett Teaching Center to a 546-enrollment CS 224N / LINGUIST 284 / SYMSYS 195N meeting in Huang Engineering Center, with a modeled route of 4.0 minutes.
 
@@ -96,27 +96,27 @@ Aggregate percentages hide the difference between a comfortable walk and an impo
 
 Fits in the model
 
-Ends Fri. at 11:20 a.m.
+Ends Fri. at 9:20 a.m.
 
-GEOPHYS 280
+CHINLANG 22
 
-Mitchell Earth Sciences
+Building 260
 
 10 min
 
-Begins Fri. at 11:30 a.m.
+Begins Fri. at 9:30 a.m.
 
-TURKLANG 2A
+MATH 21
 
-Building 240
+McCullough
 
-497 m modeled route
+490 m modeled route
 
-6.2 min walk at 3 mph
+6.1 min walk at 3 mph
 
-+3.8 min modeled margin
++3.9 min modeled margin
 
-2.9 min bike at 8 mph
+4.8 min bike at 8 mph
 
 ### Near the limit
 
@@ -226,29 +226,29 @@ LABEL: Schedule history
 
 [Prior reporting by The Stanford Daily](https://stanforddaily.com/2021/09/14/overlapping-class-meeting-times-leave-students-stressed/) says Stanford previously used 50- and 80-minute classes with 10-minute breaks. For the return to in-person instruction in 2021, the University used 60- and 90-minute slots with 15-minute breaks; a University spokesperson said the longer interval was intended to reduce hallway density. The linked [AY 2021-22 meeting-pattern spreadsheet](https://docs.google.com/spreadsheets/d/1Gxv03c2yyypmCF1Hot5VJ9f3Wi5LADMyjLsmiABhNsQ/edit?gid=1166637319#gid=1166637319) displays that 15-minute cadence.
 
-Five extra minutes sharply shrink the long tail in this model. Applied to the same 283,079 potential Winter 2026 pairs at 3 mph, a [15-minute route allowance raises the modeled fit rate from 82.5% to 97.3%.](https://imranqsl212.github.io/ten-minute-stanford/data/passing_period_scenarios.csv) When two minutes are reserved for leaving and entering buildings, [the comparison is 69.0% with a 10-minute period and 93.1% with a 15-minute period.](https://imranqsl212.github.io/ten-minute-stanford/data/passing_period_scenarios.csv)
+Five extra minutes sharply shrink the long tail in this model. Applied to the same 283,079 potential Winter 2026 pairs at 3 mph, a [15-minute route allowance raises the modeled fit rate from 84.4% to 97.5%.](https://imranqsl212.github.io/ten-minute-stanford/data/passing_period_scenarios.csv) When two minutes are reserved for leaving and entering buildings, [the comparison is 70.6% with a 10-minute period and 94.3% with a 15-minute period.](https://imranqsl212.github.io/ten-minute-stanford/data/passing_period_scenarios.csv)
 
 ### Winter 2026 analyzed gap
 
 10 min
 
-82.5% route only at 3 mph
+84.4% route only at 3 mph
 
-69.0% with 2 min for buildings
+70.6% with 2 min for buildings
 
 ### Winter 2026 pairs, historical budget
 
 15 min
 
-97.3% route only at 3 mph
+97.5% route only at 3 mph
 
-93.1% with 2 min for buildings
+94.3% with 2 min for buildings
 
 This is a historical comparison, not current policy: the percentages apply a 15-minute budget to Winter 2026 pairs. The historical spreadsheet contains meeting patterns, not courses, rooms, co-enrollment or observed trips.
 
 ## A bicycle changes the model
 
-In the model, a bicycle nearly eliminates the ten-minute misses. We also built a [directional bicycle network that excludes steps and follows mapped bicycle access and one-way tags.](https://imranqsl212.github.io/ten-minute-stanford/data/validation.json) At an assumed 8 mph, [99.9% of possible pairs fit within ten route minutes, and the 90th percentile was 5.4 minutes. With two minutes reserved for bike handling and building transitions, 99.4% fit.](https://imranqsl212.github.io/ten-minute-stanford/data/bicycle_speed_summary.csv)
+In the model, a bicycle nearly eliminates the ten-minute misses. We also built a [directional bicycle network that excludes steps and follows mapped bicycle access and one-way tags.](https://imranqsl212.github.io/ten-minute-stanford/data/validation.json) At an assumed 8 mph, [99.9% of possible pairs fit within ten route minutes, and the 90th percentile was 5.3 minutes. With two minutes reserved for bike handling and building transitions, 99.4% fit.](https://imranqsl212.github.io/ten-minute-stanford/data/bicycle_speed_summary.csv)
 
 The 8 mph speed and two-minute allowance are sensitivity assumptions, not measured student behavior. Stanford sets a [10 mph maximum bicycle speed in the central Pedestrian Zone.](https://transportation.stanford.edu/getting-stanford/bike/education/comply-bike-laws) The model does not include finding a bike, parking it, or locations where a rider may need to dismount.
 
@@ -258,13 +258,13 @@ CAPTION: Bicycle access changes modeled reach. The bike graph follows mapped acc
 
 ## Campus is not one compact block
 
-Most routes in the model were short. The story is the long tail, which traversed several different sections of campus. At 3 mph, the [estimated route from Lathrop Library to Thornton Center took 12.9 minutes. The route from Building 200 to Cordura Hall took 14.1 minutes, and the route from Building 260 to the McMurtry Building took approximately 12 minutes.](https://imranqsl212.github.io/ten-minute-stanford/data/top_constrained_routes.csv)
+Most routes in the model were short. The story is the long tail, which traversed several different sections of campus. At 3 mph, the [estimated route from Lathrop Library to Thornton Center took 12.9 minutes. The route from the McMurtry Building to CEMEX Auditorium in Zambrano Hall took 13.8 minutes, and the route from Building 260 to the McMurtry Building took approximately 12 minutes.](https://imranqsl212.github.io/ten-minute-stanford/data/claim_audit.json)
 
 These are estimates, not door-to-door stopwatch measurements. Facility points are connected to the network with straight links that are not path-verified and can cross barriers. The estimates do not account for elevators, hallway crowds, construction delays or time lost when an instructor ends class late.
 
-![Cumulative distribution of modeled walking times at 3 mph, with 83 percent at or below ten minutes.](../reports/generated/figures/route_time_cdf.png)
+![Cumulative distribution of modeled walking times at 3 mph, with 84 percent at or below ten minutes.](../reports/generated/figures/route_time_cdf.png)
 
-CAPTION: The tail passes the bell. At 3 mph, 17.5% of routed possible pairings exceed ten modeled route minutes.
+CAPTION: The tail passes the bell. At 3 mph, 15.6% of routed possible pairings exceed ten modeled route minutes.
 
 ![Map of mapped Stanford class locations, colored by the share of possible next meetings whose route exceeds ten minutes.](../reports/generated/figures/campus_transition_risk.png)
 

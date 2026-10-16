@@ -101,8 +101,10 @@
           <div><dt>10:24–10:48 UTC</dt><dd>Stanford Campus Map room searches collected.</dd></div>
           <div><dt>10:38–10:43 UTC</dt><dd>ExploreCourses Winter pages collected.</dd></div>
           <div><dt>05:02–05:05 UTC</dt><dd>Public ExploreCourses XML responses collected on Aug. 5, 2026.</dd></div>
+          <div><dt>14:41 UTC</dt><dd>Computing and Data Science location retrieved from Stanford Campus Map on Oct. 16, 2026 to correct three CoDa room mappings previously assigned to Cordura Hall.</dd></div>
         </dl>
         <p>The verified local snapshot contains 580 ExploreCourses HTML responses, 253 ExploreCourses XML responses, 444 Campus Map responses and one OpenStreetMap response, for 1,278 active raw responses in total. Every active response has a source URL, retrieval time and SHA-256 digest recorded in the <a href="data/source_manifest.json">source manifest</a>. The <a href="data/validation.json">validation report</a> records the section, meeting, route-network and OSM tag-coverage counts derived from those responses. Raw response bodies are omitted from Git because of size. The collector can repeat the requests, but a later collection cannot recover the historical Aug. 3 and Aug. 5 bodies if a source changes.</p>
+        <p>The Oct. 16 correction replaces the unused Cordura fallback response with the CoDa response in the active manifest; the raw-response count stays the same. The route calculations retain the original schedule and OSM snapshots, so changes in the published statistics reflect the location correction.</p>
         <p>The accessibility-coverage check uses all 30,835 highway ways in the saved OSM snapshot as its denominator. Only 51 ways (0.17%) have a <code>wheelchair</code> tag and 128 (0.42%) have an <code>incline</code> tag. Missing tags do not mean inaccessible or flat; they mean the snapshot cannot support a defensible campus-wide wheelchair-time model. The exact counts and rates are in the <a href="data/validation.json">validation report</a> and <a href="data/claim_audit.json">claim ledger</a>.</p>
       </section>
 

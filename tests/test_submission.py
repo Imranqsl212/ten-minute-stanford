@@ -87,10 +87,13 @@ def test_submission_includes_student_survey_and_limitation() -> None:
 
 def test_submission_includes_the_editorial_takeaways() -> None:
     text = _visible_markdown(DRAFT.read_text(encoding="utf-8"))
+    summary = json.loads((ROOT / "reports/generated/analysis_summary.json").read_text())
 
     assert "What the numbers actually say" in text
     assert "Typical is not universal" in text
-    assert "82.5% to 69.0%" in text
+    share = summary["three_mph_share_within_10_minutes"]
+    overhead_share = summary["three_mph_share_within_10_minutes_with_2min_overhead"]
+    assert f"{share:.1%} to {overhead_share:.1%}" in text
     assert "not observed trips or late arrivals" in text
 
 

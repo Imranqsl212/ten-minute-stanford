@@ -31,22 +31,22 @@
       "results": [
         {
           "bicycle_speed_mph": 6.0,
-          "median_route_minutes": 4.028622800492566,
-          "p90_route_minutes": 7.196922662641575,
-          "share_within_10_minutes": 0.9893245348471628,
-          "share_within_10_minutes_with_2min_handling": 0.945630018475408
+          "median_route_minutes": 3.9488763488264804,
+          "p90_route_minutes": 7.038329311560371,
+          "share_within_10_minutes": 0.9905185478258719,
+          "share_within_10_minutes_with_2min_handling": 0.9500492795297426
         },
         {
           "bicycle_speed_mph": 8.0,
-          "median_route_minutes": 3.0214671003694242,
-          "p90_route_minutes": 5.397691996981181,
+          "median_route_minutes": 2.96165726161986,
+          "p90_route_minutes": 5.2787469836702785,
           "share_within_10_minutes": 0.9994595148350813,
-          "share_within_10_minutes_with_2min_handling": 0.9938886317953646
+          "share_within_10_minutes_with_2min_handling": 0.9940864564308903
         },
         {
           "bicycle_speed_mph": 10.0,
-          "median_route_minutes": 2.41717368029554,
-          "p90_route_minutes": 4.318153597584946,
+          "median_route_minutes": 2.3693258092958884,
+          "p90_route_minutes": 4.222997586936223,
           "share_within_10_minutes": 0.9999964674172227,
           "share_within_10_minutes_with_2min_handling": 0.9994595148350813
         }
@@ -76,33 +76,33 @@
       "results": [
         {
           "destination_component": "LEC",
-          "median_route_minutes_3mph": 6.616727736038164,
+          "median_route_minutes_3mph": 6.379502852366763,
           "origin_component": "LEC",
-          "p90_route_minutes_3mph": 12.39638664746277,
-          "pairs_over_10min_3mph": 6672,
+          "p90_route_minutes_3mph": 11.525762898885175,
+          "pairs_over_10min_3mph": 5124,
           "potential_meeting_pairs": 30328,
-          "share_over_10min_3mph": 0.21999472434713796,
-          "share_within_10min_3mph": 0.780005275652862
+          "share_over_10min_3mph": 0.16895278290688473,
+          "share_within_10min_3mph": 0.8310472170931152
         },
         {
           "destination_component": "DIS",
-          "median_route_minutes_3mph": 6.418187436051881,
+          "median_route_minutes_3mph": 6.346523163234099,
           "origin_component": "LEC",
-          "p90_route_minutes_3mph": 11.936397552911973,
-          "pairs_over_10min_3mph": 1891,
+          "p90_route_minutes_3mph": 11.037923664303065,
+          "pairs_over_10min_3mph": 1571,
           "potential_meeting_pairs": 10924,
-          "share_over_10min_3mph": 0.17310508971072866,
-          "share_within_10min_3mph": 0.8268949102892713
+          "share_over_10min_3mph": 0.14381179055291102,
+          "share_within_10min_3mph": 0.856188209447089
         },
         {
           "destination_component": "LEC",
-          "median_route_minutes_3mph": 6.5074066848076155,
+          "median_route_minutes_3mph": 6.303474730441234,
           "origin_component": "DIS",
-          "p90_route_minutes_3mph": 11.716092650031893,
-          "pairs_over_10min_3mph": 1539,
+          "p90_route_minutes_3mph": 10.573746896670082,
+          "pairs_over_10min_3mph": 1210,
           "potential_meeting_pairs": 9035,
-          "share_over_10min_3mph": 0.1703375760929718,
-          "share_within_10min_3mph": 0.8296624239070283
+          "share_over_10min_3mph": 0.13392363032650803,
+          "share_within_10min_3mph": 0.866076369673492
         },
         {
           "destination_component": "DIS",
@@ -128,14 +128,14 @@
       "section_rows_with_reported_enrollment": 27197
     },
     "large_enrollment_screen": {
-      "combinations_over_10min_at_3mph": 42,
+      "combinations_over_10min_at_3mph": 15,
       "evidence": [
         "reports/generated/tables/high_enrollment_transitions.csv",
         "data/processed/meetings.csv"
       ],
       "is_co_enrollment_measure": false,
       "minimum_reported_enrollment_in_each_meeting": 100,
-      "share_over_10min_at_3mph": 0.22459893048128343,
+      "share_over_10min_at_3mph": 0.08021390374331551,
       "unique_different_building_combinations": 187,
       "weekday_recurrences_are_collapsed": true
     },
@@ -185,49 +185,49 @@
         {
           "available_route_minutes": 10,
           "building_overhead_minutes": 0,
-          "feasible_pairs": 233556,
+          "feasible_pairs": 239027,
           "passing_period_minutes": 10,
-          "share_feasible": 0.8250559031224499,
+          "share_feasible": 0.8443826634967624,
           "total_pairs": 283079
         },
         {
           "available_route_minutes": 8,
           "building_overhead_minutes": 2,
-          "feasible_pairs": 195443,
+          "feasible_pairs": 199895,
           "passing_period_minutes": 10,
-          "share_feasible": 0.6904185757332759,
+          "share_feasible": 0.7061456342575747,
           "total_pairs": 283079
         },
         {
           "available_route_minutes": 12,
           "building_overhead_minutes": 0,
-          "feasible_pairs": 254580,
+          "feasible_pairs": 258774,
           "passing_period_minutes": 12,
-          "share_feasible": 0.8993249234312684,
+          "share_feasible": 0.9141405755990376,
           "total_pairs": 283079
         },
         {
           "available_route_minutes": 10,
           "building_overhead_minutes": 2,
-          "feasible_pairs": 233556,
+          "feasible_pairs": 239027,
           "passing_period_minutes": 12,
-          "share_feasible": 0.8250559031224499,
+          "share_feasible": 0.8443826634967624,
           "total_pairs": 283079
         },
         {
           "available_route_minutes": 15,
           "building_overhead_minutes": 0,
-          "feasible_pairs": 275341,
+          "feasible_pairs": 276128,
           "passing_period_minutes": 15,
-          "share_feasible": 0.972664874469671,
+          "share_feasible": 0.9754450171153636,
           "total_pairs": 283079
         },
         {
           "available_route_minutes": 13,
           "building_overhead_minutes": 2,
-          "feasible_pairs": 263451,
+          "feasible_pairs": 266809,
           "passing_period_minutes": 15,
-          "share_feasible": 0.9306624652482168,
+          "share_feasible": 0.9425248782142088,
           "total_pairs": 283079
         }
       ],
@@ -247,14 +247,14 @@
         "route_minutes_3mph": 12.893312033989874
       },
       {
-        "destination_facility_id": "14-070",
-        "destination_label": "Cordura Hall",
+        "destination_facility_id": "08-050C",
+        "destination_label": "Zambrano Hall",
         "evidence": "reports/generated/tables/building_pair_summary.csv",
-        "origin_facility_id": "01-200",
-        "origin_label": "Building 200",
-        "potential_meeting_pairs": 361,
-        "route_distance_meters": 1136.4856180343268,
-        "route_minutes_3mph": 14.12358846877146
+        "origin_facility_id": "07-090",
+        "origin_label": "McMurtry Building",
+        "potential_meeting_pairs": 4,
+        "route_distance_meters": 1113.1172636725114,
+        "route_minutes_3mph": 13.833180024562944
       },
       {
         "destination_facility_id": "07-090",
@@ -292,7 +292,7 @@
       ],
       "facilities_snapped": 75,
       "maximum_snap_meters": 60.99528626685469,
-      "median_snap_meters": 18.425772638564048,
+      "median_snap_meters": 18.959334596872356,
       "nodes_before_largest_component_filter": 116885,
       "openstreetmap_elements": 156036,
       "ordered_route_matrix_rows": 5625,
@@ -384,28 +384,28 @@
       "evidence": "reports/generated/tables/subject_transition_feasibility.csv",
       "largest_15_subject_results": [
         {
-          "incoming_pairs_over_10min_3mph": 6067,
-          "incoming_share_over_10min_3mph": 0.221544641226949,
-          "outgoing_pairs_over_10min_3mph": 4090,
-          "outgoing_share_over_10min_3mph": 0.2162762413410184,
+          "incoming_pairs_over_10min_3mph": 4253,
+          "incoming_share_over_10min_3mph": 0.1553039985393463,
+          "outgoing_pairs_over_10min_3mph": 2958,
+          "outgoing_share_over_10min_3mph": 0.156416900216805,
           "potential_incoming_pairs": 27385,
           "potential_outgoing_pairs": 18911,
           "subject_code": "CS"
         },
         {
-          "incoming_pairs_over_10min_3mph": 768,
-          "incoming_share_over_10min_3mph": 0.0740883658113061,
-          "outgoing_pairs_over_10min_3mph": 647,
-          "outgoing_share_over_10min_3mph": 0.0725987432675044,
+          "incoming_pairs_over_10min_3mph": 612,
+          "incoming_share_over_10min_3mph": 0.0590391665058846,
+          "outgoing_pairs_over_10min_3mph": 489,
+          "outgoing_share_over_10min_3mph": 0.0548698384201077,
           "potential_incoming_pairs": 10366,
           "potential_outgoing_pairs": 8912,
           "subject_code": "HISTORY"
         },
         {
-          "incoming_pairs_over_10min_3mph": 1182,
-          "incoming_share_over_10min_3mph": 0.0896609269513767,
-          "outgoing_pairs_over_10min_3mph": 1460,
-          "outgoing_share_over_10min_3mph": 0.0867859478095464,
+          "incoming_pairs_over_10min_3mph": 1073,
+          "incoming_share_over_10min_3mph": 0.0813927027232041,
+          "outgoing_pairs_over_10min_3mph": 1263,
+          "outgoing_share_over_10min_3mph": 0.0750757890982583,
           "potential_incoming_pairs": 13183,
           "potential_outgoing_pairs": 16823,
           "subject_code": "MATH"
@@ -420,100 +420,100 @@
           "subject_code": "LAW"
         },
         {
-          "incoming_pairs_over_10min_3mph": 1658,
-          "incoming_share_over_10min_3mph": 0.1825790111221231,
-          "outgoing_pairs_over_10min_3mph": 1928,
-          "outgoing_share_over_10min_3mph": 0.2042372881355932,
+          "incoming_pairs_over_10min_3mph": 1609,
+          "incoming_share_over_10min_3mph": 0.1771831296112763,
+          "outgoing_pairs_over_10min_3mph": 1861,
+          "outgoing_share_over_10min_3mph": 0.1971398305084745,
           "potential_incoming_pairs": 9081,
           "potential_outgoing_pairs": 9440,
           "subject_code": "ECON"
         },
         {
-          "incoming_pairs_over_10min_3mph": 1567,
-          "incoming_share_over_10min_3mph": 0.1296648738105089,
-          "outgoing_pairs_over_10min_3mph": 1708,
-          "outgoing_share_over_10min_3mph": 0.1534867002156721,
+          "incoming_pairs_over_10min_3mph": 1419,
+          "incoming_share_over_10min_3mph": 0.1174182871328092,
+          "outgoing_pairs_over_10min_3mph": 1535,
+          "outgoing_share_over_10min_3mph": 0.13794033069734,
           "potential_incoming_pairs": 12085,
           "potential_outgoing_pairs": 11128,
           "subject_code": "COLLEGE"
         },
         {
-          "incoming_pairs_over_10min_3mph": 825,
-          "incoming_share_over_10min_3mph": 0.092665393687521,
-          "outgoing_pairs_over_10min_3mph": 1113,
-          "outgoing_share_over_10min_3mph": 0.1021288309781611,
+          "incoming_pairs_over_10min_3mph": 744,
+          "incoming_share_over_10min_3mph": 0.0835673368527462,
+          "outgoing_pairs_over_10min_3mph": 985,
+          "outgoing_share_over_10min_3mph": 0.0903835566158928,
           "potential_incoming_pairs": 8903,
           "potential_outgoing_pairs": 10898,
           "subject_code": "SPANLANG"
         },
         {
-          "incoming_pairs_over_10min_3mph": 1082,
-          "incoming_share_over_10min_3mph": 0.1424246413057786,
-          "outgoing_pairs_over_10min_3mph": 1528,
-          "outgoing_share_over_10min_3mph": 0.1672504378283713,
+          "incoming_pairs_over_10min_3mph": 1011,
+          "incoming_share_over_10min_3mph": 0.1330788469132552,
+          "outgoing_pairs_over_10min_3mph": 1415,
+          "outgoing_share_over_10min_3mph": 0.1548817863397548,
           "potential_incoming_pairs": 7597,
           "potential_outgoing_pairs": 9136,
           "subject_code": "BIO"
         },
         {
-          "incoming_pairs_over_10min_3mph": 1285,
-          "incoming_share_over_10min_3mph": 0.1113035946297098,
-          "outgoing_pairs_over_10min_3mph": 915,
-          "outgoing_share_over_10min_3mph": 0.1263637619113382,
+          "incoming_pairs_over_10min_3mph": 1119,
+          "incoming_share_over_10min_3mph": 0.0969250757903854,
+          "outgoing_pairs_over_10min_3mph": 809,
+          "outgoing_share_over_10min_3mph": 0.1117248998757077,
           "potential_incoming_pairs": 11545,
           "potential_outgoing_pairs": 7241,
           "subject_code": "ENGLISH"
         },
         {
-          "incoming_pairs_over_10min_3mph": 704,
-          "incoming_share_over_10min_3mph": 0.0841601912731619,
-          "outgoing_pairs_over_10min_3mph": 918,
-          "outgoing_share_over_10min_3mph": 0.0742418115649009,
+          "incoming_pairs_over_10min_3mph": 667,
+          "incoming_share_over_10min_3mph": 0.0797369994022713,
+          "outgoing_pairs_over_10min_3mph": 786,
+          "outgoing_share_over_10min_3mph": 0.063566518398706,
           "potential_incoming_pairs": 8365,
           "potential_outgoing_pairs": 12365,
           "subject_code": "PWR"
         },
         {
-          "incoming_pairs_over_10min_3mph": 928,
-          "incoming_share_over_10min_3mph": 0.114497223935842,
-          "outgoing_pairs_over_10min_3mph": 871,
-          "outgoing_share_over_10min_3mph": 0.1067009677814529,
+          "incoming_pairs_over_10min_3mph": 689,
+          "incoming_share_over_10min_3mph": 0.085009253547193,
+          "outgoing_pairs_over_10min_3mph": 691,
+          "outgoing_share_over_10min_3mph": 0.0846502511331618,
           "potential_incoming_pairs": 8105,
           "potential_outgoing_pairs": 8163,
           "subject_code": "PSYCH"
         },
         {
-          "incoming_pairs_over_10min_3mph": 804,
-          "incoming_share_over_10min_3mph": 0.1135112240576027,
-          "outgoing_pairs_over_10min_3mph": 665,
-          "outgoing_share_over_10min_3mph": 0.1190050107372942,
+          "incoming_pairs_over_10min_3mph": 598,
+          "incoming_share_over_10min_3mph": 0.0844275024707045,
+          "outgoing_pairs_over_10min_3mph": 510,
+          "outgoing_share_over_10min_3mph": 0.0912670007158196,
           "potential_incoming_pairs": 7083,
           "potential_outgoing_pairs": 5588,
           "subject_code": "PHIL"
         },
         {
-          "incoming_pairs_over_10min_3mph": 1354,
-          "incoming_share_over_10min_3mph": 0.1912969765470472,
-          "outgoing_pairs_over_10min_3mph": 1246,
-          "outgoing_share_over_10min_3mph": 0.2109718929901795,
+          "incoming_pairs_over_10min_3mph": 1175,
+          "incoming_share_over_10min_3mph": 0.1660073467081096,
+          "outgoing_pairs_over_10min_3mph": 1113,
+          "outgoing_share_over_10min_3mph": 0.1884524212665086,
           "potential_incoming_pairs": 7078,
           "potential_outgoing_pairs": 5906,
           "subject_code": "POLISCI"
         },
         {
-          "incoming_pairs_over_10min_3mph": 2878,
-          "incoming_share_over_10min_3mph": 0.3485949612403101,
-          "outgoing_pairs_over_10min_3mph": 2043,
-          "outgoing_share_over_10min_3mph": 0.3574177746675997,
+          "incoming_pairs_over_10min_3mph": 2872,
+          "incoming_share_over_10min_3mph": 0.3478682170542636,
+          "outgoing_pairs_over_10min_3mph": 2038,
+          "outgoing_share_over_10min_3mph": 0.3565430370888733,
           "potential_incoming_pairs": 8256,
           "potential_outgoing_pairs": 5716,
           "subject_code": "MUSIC"
         },
         {
-          "incoming_pairs_over_10min_3mph": 901,
-          "incoming_share_over_10min_3mph": 0.189405087239857,
-          "outgoing_pairs_over_10min_3mph": 1183,
-          "outgoing_share_over_10min_3mph": 0.2100497159090909,
+          "incoming_pairs_over_10min_3mph": 820,
+          "incoming_share_over_10min_3mph": 0.1723775488753416,
+          "outgoing_pairs_over_10min_3mph": 1125,
+          "outgoing_share_over_10min_3mph": 0.1997514204545454,
           "potential_incoming_pairs": 4757,
           "potential_outgoing_pairs": 5632,
           "subject_code": "EDUC"
@@ -541,24 +541,24 @@
       ],
       "results": [
         {
-          "median_route_minutes": 9.264762666847208,
-          "p90_route_minutes": 18.092114659001087,
-          "share_within_10_minutes": 0.5623518523097792,
-          "share_within_10_minutes_with_2min_overhead": 0.4187452972491778,
+          "median_route_minutes": 9.128860344695118,
+          "p90_route_minutes": 17.378670090827487,
+          "share_within_10_minutes": 0.5730661758731661,
+          "share_within_10_minutes_with_2min_overhead": 0.42371210863398556,
           "walking_speed_mph": 2.0
         },
         {
-          "median_route_minutes": 6.1765084445648055,
-          "p90_route_minutes": 12.06140977266739,
-          "share_within_10_minutes": 0.8250559031224499,
-          "share_within_10_minutes_with_2min_overhead": 0.6904185757332759,
+          "median_route_minutes": 6.0859068964634115,
+          "p90_route_minutes": 11.585780060551658,
+          "share_within_10_minutes": 0.8443826634967624,
+          "share_within_10_minutes_with_2min_overhead": 0.7061456342575747,
           "walking_speed_mph": 3.0
         },
         {
-          "median_route_minutes": 4.632381333423604,
-          "p90_route_minutes": 9.046057329500544,
-          "share_within_10_minutes": 0.9405113060311786,
-          "share_within_10_minutes_with_2min_overhead": 0.854503513153572,
+          "median_route_minutes": 4.564430172347559,
+          "p90_route_minutes": 8.689335045413744,
+          "share_within_10_minutes": 0.9517943754217021,
+          "share_within_10_minutes_with_2min_overhead": 0.8733887006807287,
           "walking_speed_mph": 4.0
         }
       ],

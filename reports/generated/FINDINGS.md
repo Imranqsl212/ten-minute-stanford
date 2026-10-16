@@ -16,10 +16,10 @@
 
 ## Main result
 
-At 3 mph and with no allowance for leaving or entering a building, 82.5% of the
+At 3 mph and with no allowance for leaving or entering a building, 84.4% of the
 potential physical-meeting pairings have an estimated walking-network route of
 ten minutes or less. With a two-minute building overhead, that share falls to
-69.0%.
+70.6%.
 
 These are schedule pairings, not observed student trips. The XML API reports section
 enrollment, but public data do not reveal co-enrollment, route choice, mobility needs,
@@ -30,7 +30,7 @@ At an assumed 8 mph, 99.9% of the same potential pairs fit within ten
 bicycle-route minutes. With a two-minute handling allowance, the share is
 99.4%. These are sensitivity assumptions, not measured bicycle trips.
 
-In the large-enrollment screen, 42
+In the large-enrollment screen, 15
 of 187 unique
 different-building combinations exceed ten modeled walking minutes at 3 mph.
 The threshold shows that both meetings are large; it does not measure
@@ -58,7 +58,7 @@ Building 160, Lathrop Library, Building 200, Building 260, Sapp Center.
 - Lathrop Library to Thornton Center: 12.9 estimated minutes; 795 potential meeting pairings.
 - Building 260 to McMurtry Building: 12.0 estimated minutes; 781 potential meeting pairings.
 - Sapp Center to Thornton Center: 10.2 estimated minutes; 530 potential meeting pairings.
-- Building 160 to Cordura Hall: 13.0 estimated minutes; 481 potential meeting pairings.
+- Thornton Center to Sapp Center: 10.2 estimated minutes; 473 potential meeting pairings.
 
 ## Editorial interpretation
 

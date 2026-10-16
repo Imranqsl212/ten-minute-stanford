@@ -48,9 +48,9 @@
     "mapped_physical_meeting_day_rows": 4454,
     "mapped_section_listing_day_rows": 5848,
     "potential_adjacent_meeting_pairs": 283079,
-    "three_mph_median_route_minutes": 6.1765084445648055,
-    "three_mph_p90_route_minutes": 12.06140977266739,
-    "three_mph_share_within_10_minutes": 0.8250559031224499
+    "three_mph_median_route_minutes": 6.0859068964634115,
+    "three_mph_p90_route_minutes": 11.585780060551658,
+    "three_mph_share_within_10_minutes": 0.8443826634967624
   },
   "raw_sources_verified": true,
   "schema_version": 2,

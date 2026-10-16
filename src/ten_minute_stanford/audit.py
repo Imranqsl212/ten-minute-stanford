@@ -50,6 +50,11 @@ from .osm import (
 SOURCE_MANIFEST_PATH = REPORT_DIR / "source_manifest.json"
 PUBLICATION_AUDIT_PATH = REPORT_DIR / "publication_audit.json"
 CLAIM_AUDIT_PATH = REPORT_DIR / "claim_audit.json"
+REPORTED_ROUTE_EXAMPLES = (
+    ("08-350", "04-720"),
+    ("07-090", "08-050C"),
+    ("01-260", "07-090"),
+)
 
 
 class AuditError(RuntimeError):
@@ -1352,15 +1357,15 @@ def _check_publication_files(
     busiest_slot_share = f"{float(busiest_slot['walk_share_within_10min_3mph']):.1%}"
     morning_slot_pairs = f"{int(morning_slot_row['potential_meeting_pairs']):,}"
     morning_slot_share = f"{float(morning_slot_row['walk_share_within_10min_3mph']):.1%}"
-    route_example_snippets = (
-        "Lathrop Library",
-        "Thornton Center",
-        "12.9",
-        "Building 200",
-        "Cordura Hall",
-        "14.1",
-        "Building 260",
-        "McMurtry Building",
+    pair_table = pd.read_csv(REPORT_DIR / "tables" / "building_pair_summary.csv")
+    route_example_snippets = tuple(
+        value
+        for row in _reported_route_examples(pair_table)
+        for value in (
+            str(row["origin_label"]),
+            str(row["destination_label"]),
+            f"{float(row['walk_minutes_3_0mph']):.1f}".removesuffix(".0"),
+        )
     )
     course_cases = pd.read_csv(REPORT_DIR / "tables" / "course_transition_cases.csv")
     course_case_snippets = tuple(
@@ -1441,12 +1446,7 @@ def _check_publication_files(
             large_enrollment_pairs,
             large_enrollment_over_ten,
             large_enrollment_over_ten_share,
-            "Lathrop Library",
-            "Thornton Center",
-            "12.9",
-            "Cordura Hall",
-            "14.1",
-            "McMurtry Building",
+            *route_example_snippets,
             *survey_article_snippets,
         ),
         PROJECT_ROOT / "article" / "methodology.md": (
@@ -1580,7 +1580,7 @@ def _check_publication_files(
         "277,764",
         "84.0%",
         "70.3%",
-        "57.3%",
+        "57.3%",  # Also a valid current result after the CoDa correction; see below.
         "42.8%",
         "94.7%",
         "86.9%",
@@ -1617,6 +1617,11 @@ def _check_publication_files(
         "indexed copies",
     )
     publication_texts: dict[Path, str] = {}
+    current_claims = {
+        " ".join(snippet.split())
+        for required in required_by_file.values()
+        for snippet in required
+    }
     for path, required in required_by_file.items():
         _require(path.exists(), f"Publication file is missing: {path.relative_to(PROJECT_ROOT)}")
         text = path.read_text(encoding="utf-8")
@@ -1628,6 +1633,11 @@ def _check_publication_files(
                 f"Current claim {snippet!r} missing from {path.relative_to(PROJECT_ROOT)}",
             )
         for snippet in stale_claims:
+            # Rounded results can recur after a data correction. A value required
+            # by the current generated tables is not stale merely because an
+            # earlier analysis happened to report that same rounded number.
+            if snippet in current_claims:
+                continue
             _require(
                 snippet not in text,
                 f"Stale claim {snippet!r} remains in {path.relative_to(PROJECT_ROOT)}",
@@ -1666,19 +1676,9 @@ def _check_publication_files(
     return len(set(required_by_file) | set(attribution_files))
 
 
-def _build_claim_audit(
-    summary: dict[str, object],
-    validation: dict[str, object],
-    source_manifest: dict[str, object],
-    external_context: dict[str, object],
-    pair_table: pd.DataFrame,
-) -> dict[str, object]:
-    route_examples = []
-    for origin_id, destination_id in (
-        ("08-350", "04-720"),
-        ("01-200", "14-070"),
-        ("01-260", "07-090"),
-    ):
+def _reported_route_examples(pair_table: pd.DataFrame) -> list[pd.Series]:
+    examples = []
+    for origin_id, destination_id in REPORTED_ROUTE_EXAMPLES:
         match = pair_table[
             pair_table["origin_facility_id"].astype(str).eq(origin_id)
             & pair_table["destination_facility_id"].astype(str).eq(destination_id)
@@ -1687,12 +1687,24 @@ def _build_claim_audit(
             len(match) == 1,
             f"Expected route example {origin_id} -> {destination_id} is missing",
         )
-        row = match.iloc[0]
+        examples.append(match.iloc[0])
+    return examples
+
+
+def _build_claim_audit(
+    summary: dict[str, object],
+    validation: dict[str, object],
+    source_manifest: dict[str, object],
+    external_context: dict[str, object],
+    pair_table: pd.DataFrame,
+) -> dict[str, object]:
+    route_examples = []
+    for row in _reported_route_examples(pair_table):
         route_examples.append(
             {
-                "origin_facility_id": origin_id,
+                "origin_facility_id": str(row["origin_facility_id"]),
                 "origin_label": str(row["origin_label"]),
-                "destination_facility_id": destination_id,
+                "destination_facility_id": str(row["destination_facility_id"]),
                 "destination_label": str(row["destination_label"]),
                 "route_distance_meters": float(row["route_distance_meters"]),
                 "route_minutes_3mph": float(row["walk_minutes_3_0mph"]),

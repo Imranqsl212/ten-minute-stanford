@@ -10,8 +10,8 @@ facility_id,facility_label,scheduled_meeting_day_rows,represented_section_listin
 07-090,McMurtry Building,119,166,119,1626.0
 04-510,Hewlett Teaching Center,94,147,94,8955.0
 08-050A,Faculty Office Building,85,101,85,1844.0
-02-210,Braun Music Center,79,92,79,612.0
 01-320,Building 320,79,133,79,2432.0
+02-210,Braun Music Center,79,92,79,612.0
 01-050,Building 50,74,87,74,476.0
 01-460,Building 460,70,92,70,510.0
 08-050E,McClelland Building,69,81,69,3042.0
@@ -25,7 +25,7 @@ facility_id,facility_label,scheduled_meeting_day_rows,represented_section_listin
 01-120,Building 120,55,64,55,367.0
 08-360,Littlefield Center,55,79,55,826.0
 08-290,Landau Building,54,58,54,599.0
-14-070,Cordura Hall,53,75,53,3413.0
+07-430,Computing And Data Science,53,75,53,3413.0
 08-050F,Class Of 1968 Building,51,59,51,2119.0
 04-640,AOERC,51,51,51,875.0
 01-030,Building 30,45,45,45,532.0
@@ -56,10 +56,10 @@ facility_id,facility_label,scheduled_meeting_day_rows,represented_section_listin
 08-050C,Zambrano Hall,16,29,16,1647.0
 03-420,Sweet303,16,18,16,210.0
 05-300,Knoll,16,18,16,202.0
-01-040,Building 40,15,22,15,139.0
 02-200,Dinkelspiel Auditorium,15,16,15,281.0
 04-530,Sequoia Hall,15,19,15,268.0
 01-070,Building 70,15,17,15,72.0
+01-040,Building 40,15,22,15,139.0
 06-010,Encina Center,14,21,14,160.0
 07-420,Gilbert Biological Science,13,15,13,125.0
 07-309,Edwards Building,11,12,11,88.0
@@ -67,9 +67,9 @@ facility_id,facility_label,scheduled_meeting_day_rows,represented_section_listin
 04-030,Packard Electrical Engineering,8,17,8,320.0
 02-500,Building 500,8,24,8,75.0
 04-040,Spilker Engineering And Applied Sciences,8,18,8,108.0
+03-050,Barnum Center,6,13,6,174.0
 02-040,William H. Neukom,6,7,6,61.0
 03-001,Art Gallery,6,8,6,37.0
-03-050,Barnum Center,6,13,6,174.0
 06-040,Encina Commons,5,7,5,52.0
 07-340,Clark Center,4,12,4,120.0
 02-550,Building 550,1,2,1,10.0

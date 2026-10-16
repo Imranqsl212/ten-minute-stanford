@@ -66,6 +66,12 @@ pages do not supply any numerical result.
   codes, including the warning that a subject can be a curricular category.
 - [Stanford Campus Map](https://campus-map.stanford.edu/): official facility
   IDs, room/building search labels, addresses and coordinates.
+- [Stanford Campus Map: Computing and Data Science](https://campus-map.stanford.edu/report-cm.cfm?criteria=Computing+and+Data+Science&orig_srch=Computing+and+Data+Science&matches=1&hidden=):
+  retrieved Oct. 16, 2026, at 14:41:38 UTC to correct the `CODAB60`, `CODAB80`
+  and `CODAB90` room labels, previously assigned to Cordura Hall. The result
+  identifies facility `07-430` at 389 Jane Stanford Way, coordinates
+  37.429924, -122.171780. Both routing matrices and dependent statistics were
+  recalculated without changing the Winter 2026 schedule or saved OSM network.
 - [Stanford Campus Map FAQ](https://campus-map.stanford.edu/faq/FAQ.html):
   confirms that the map is maintained by Stanford LBRE and supports searches
   by building, room, facility ID and address.
@@ -157,6 +163,8 @@ verification statuses are recorded in `reports/generated/claim_audit.json`.
 - `data/processed/explorecourses_api_schedule_verification.csv`: exact HTML-to-XML
   schedule comparison.
 - `data/processed/room_lookup.csv`: every room matching decision and fallback.
+- `reports/corrections/coda-2026-10-16/`: the original analysis inputs and
+  outputs, corrected CoDa lookup provenance and correction verification.
 - `reports/generated/validation.json`: collection, geocoding and network counts.
 - `reports/generated/analysis_summary.json`: final reported statistics.
 - `reports/generated/tables/speed_summary.csv`: walking speed and building-time

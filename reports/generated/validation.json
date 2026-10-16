@@ -11,7 +11,7 @@
     "connected_bike_route_pairs": 5625,
     "facilities_with_usable_bike_snap": 75,
     "max_bike_snap_distance_meters": 75.87531353461519,
-    "median_bike_snap_meters": 35.922403329231024,
+    "median_bike_snap_meters": 36.056533682356076,
     "total_bike_route_pairs": 5625
   },
   "explorecourses": {
@@ -79,7 +79,7 @@
     "facilities_with_usable_snap": 75,
     "indoor_or_corridor_ways_excluded": 13,
     "max_snap_distance_meters": 60.99528626685469,
-    "median_snap_meters": 18.425772638564048,
+    "median_snap_meters": 18.959334596872356,
     "osm_elements": 156036,
     "snap_distance_limit_meters": 250.0,
     "total_route_pairs": 5625,

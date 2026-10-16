@@ -55,9 +55,12 @@ def test_interactive_payload_matches_published_analysis() -> None:
         ROOT / "reports/generated/tables/building_pair_summary.csv"
     )
 
-    assert payload["metadata"]["facility_count"] == 75
-    assert payload["metadata"]["route_count"]["walking_undirected"] == 2850
-    assert payload["metadata"]["route_count"]["bicycle_directed"] == 5625
+    facility_count = summary["unique_mapped_facilities"]
+    assert payload["metadata"]["facility_count"] == facility_count
+    assert payload["metadata"]["route_count"]["walking_undirected"] == (
+        facility_count * (facility_count + 1) // 2
+    )
+    assert payload["metadata"]["route_count"]["bicycle_directed"] == facility_count**2
     assert payload["metadata"]["terms"] == summary["terms"]
     assert (
         payload["metadata"]["potential_adjacent_meeting_pairs"]

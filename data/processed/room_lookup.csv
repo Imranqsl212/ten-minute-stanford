@@ -168,9 +168,9 @@ CCSR 0236,fallback,center for clinical sciences research,07-590,37.43230097,-122
 CCSR 0245,fallback,center for clinical sciences research,07-590,37.43230097,-122.1775376,269 campus dr stanford,1,Center for Clinical Sciences Research
 CCSR 4107,fallback,center for clinical sciences research,07-590,37.43230097,-122.1775376,269 campus dr stanford,1,Center for Clinical Sciences Research
 CCSR 4205,fallback,center for clinical sciences research,07-590,37.43230097,-122.1775376,269 campus dr stanford,1,Center for Clinical Sciences Research
-CODAB60,fallback,cordura hall,14-070,37.43048734,-122.17877394,210 panama st stanford,1,Cordura Hall
-CODAB80,fallback,cordura hall,14-070,37.43048734,-122.17877394,210 panama st stanford,1,Cordura Hall
-CODAB90,fallback,cordura hall,14-070,37.43048734,-122.17877394,210 panama st stanford,1,Cordura Hall
+CODAB60,fallback,computing and data science,07-430,37.429924,-122.17178,389 jane stanford way stanford,1,Computing and Data Science
+CODAB80,fallback,computing and data science,07-430,37.429924,-122.17178,389 jane stanford way stanford,1,Computing and Data Science
+CODAB90,fallback,computing and data science,07-430,37.429924,-122.17178,389 jane stanford way stanford,1,Computing and Data Science
 Campbell Recital Hall,exact,campbell recital hall,02-210,37.42374459,-122.16943027,541 lasuen mall stanford,1,Campbell Recital Hall
 Cemex Auditorium,exact,cemex auditorium,08-050C,37.42854991,-122.16278488,641 knight way stanford,1,Cemex Auditorium
 Chemistry Gazebo,no_result,,,,,,0,

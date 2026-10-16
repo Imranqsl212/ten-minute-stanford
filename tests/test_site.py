@@ -88,6 +88,7 @@ def test_site_headline_numbers_match_analysis_summary(built_site: Path) -> None:
 
 def test_site_surfaces_conclusions_before_the_detailed_analysis(built_site: Path) -> None:
     soup = BeautifulSoup((built_site / "index.html").read_text(), "html.parser")
+    summary = json.loads((ROOT / "reports/generated/analysis_summary.json").read_text())
     takeaways = soup.select(".story-takeaways .takeaway-grid article")
 
     assert len(takeaways) == 3
@@ -95,7 +96,9 @@ def test_site_surfaces_conclusions_before_the_detailed_analysis(built_site: Path
         " ".join(card.get_text(" ", strip=True).split()) for card in takeaways
     )
     assert "Typical is not universal" in takeaway_text
-    assert "82.5% to 69.0%" in takeaway_text
+    share = summary["three_mph_share_within_10_minutes"]
+    overhead_share = summary["three_mph_share_within_10_minutes_with_2min_overhead"]
+    assert f"{share:.1%} to {overhead_share:.1%}" in takeaway_text
     assert "not observed trips or late arrivals" in takeaway_text
 
     script = (built_site / "script.js").read_text()
